@@ -1,0 +1,35 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[nolist]{acronym}
+\usepackage[backend=bibtex]{biblatex}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\addbibresource{master-proposal.bib}
+
+\begin{document}
+
+  \title{Proposal: Model Checking UI with GLSP}
+
+  \author{\IEEEauthorblockN{Florian Weidner}
+    \IEEEauthorblockA{Philipps-University Marburg, Germany\\
+      Department of Mathematics and Computer Science, Software engineering group\\
+      February 09, 2025\\
+  }}
+
+  \maketitle
+
+  \IEEEpeerreviewmaketitle
+
+  \section{Introduction}
+  \label{sec:introduction}
+  The goal of this project is to create a user interface for a model checking tool using the \ac{glsp} framework. The \ac{glsp} is a framework that allows developers to create graphical user interfaces for web-based diagram editors. \cite{glsp-repo}
+
+
+  \printbibliography
+
+  \begin{acronym}
+    \acro{glsp}[GLSP]{Graphical Language Server Platform}
+  \end{acronym}
+
+\end{document}
