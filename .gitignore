@@ -52,3 +52,6 @@ lib
 
 
 tsconfig.tsbuildinfo
+
+**/.vscode/
+**/.settings/
