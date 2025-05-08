@@ -1,4 +1,4 @@
-\documentclass[conference]{IEEEtran}
+\documentclass[conference,onecolumn]{IEEEtran}
 
 \usepackage[nolist]{acronym}
 \usepackage[backend=bibtex]{biblatex}
@@ -14,7 +14,7 @@
   \author{\IEEEauthorblockN{Florian Weidner}
     \IEEEauthorblockA{Philipps-University Marburg, Germany\\
       Department of Mathematics and Computer Science, Software engineering group\\
-      February 09, 2025\\
+      May 06, 2025\\
   }}
 
   \maketitle
@@ -23,13 +23,77 @@
 
   \section{Introduction}
   \label{sec:introduction}
-  The goal of this project is to create a user interface for a model checking tool using the \ac{glsp} framework. The \ac{glsp} is a framework that allows developers to create graphical user interfaces for web-based diagram editors. \cite{glsp-repo}
+  The goal of this project is to create a user interface for a model checking tool using the \ac{glsp} framework. 
+
+  \section{Background}
+  \label{sec:background}
+  Theoretic Background and Frameworks used.
+
+  \subsection{Model Checking}
+  \label{subsec:model-checking}
+  Model checking is an automatic technique for verifying finite-state reactive systems, such as sequential circuit designs and communication protocols.
+  \cite{modelchecking1} \cite{modelchecking2}
+
+  \subsection{\ac{emf}}
+  \label{subsec:emf}
+
+  The EMF project is a modeling framework and code generation facility for building tools and other applications based on a structured data model.
+  \cite{emf} \cite{emf-repo}
+
+  \subsection{\ac{glsp}}
+  \label{subsec:glsp}
+
+  The \ac{glsp} is a framework that allows developers to create graphical user interfaces for web-based diagram editors.
+  \cite{glsp-repo}
+
+  \subsection{Henshin}
+  \label{subsec:henshin}
+  Henshin is an in-place model transformation language for the Eclipse Modeling Framework (EMF).
+  \cite{henshin-repo}
+
+  \section{Related Work/Software}
+  \label{sec:related-work}
+
+  Similar already existing tools for model checking: Henshin, Groovy...
+
+  \section{Project Plan}
+  \label{sec:project-plan}
+
+  Things that need to be done:
+
+  \begin{itemize}
+    \item GLSP Editor for the metamodel (.ecore)
+    \item GLSP Rule Editor for the transformation rules (.henshin)
+    \item GLSP Editor for creating instance models and applying rules to the instance model (.xmi)
+    \item Option to start the model checking process
+    \item Connect Rules and Instance Models to the metamodel
+  \end{itemize}
+
+  \section{Scientific Contribution}
+  \label{sec:scientific-contribution}
+
+  Comparison of the existing tools and the new tool.
+
+  \section{Open Questions}
+
+  \begin{itemize}
+    \item Was soll alles ins Proposal?
+    \item GLSP Vorlagen?
+    \item Hensin Sdk Dokumentation?
+    \item How to use Henshin SDK in the GLSP application?
+    \item Repository Gitlab oder Github?
+    \item Welchen Umfang hat die Arbeit?
+
+  \end{itemize}
+
 
 
   \printbibliography
 
   \begin{acronym}
     \acro{glsp}[GLSP]{Graphical Language Server Platform}
+    \acro{emf}[EMF]{Eclipse Modeling Framework}
+
   \end{acronym}
 
 \end{document}

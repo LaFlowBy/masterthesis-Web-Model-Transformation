@@ -216,5 +216,6 @@ INPUT ./master-proposal.out
 INPUT ./master-proposal.out
 INPUT master-proposal.run.xml
 OUTPUT master-proposal.run.xml
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

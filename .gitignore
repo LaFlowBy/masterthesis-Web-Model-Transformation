@@ -1,3 +1,12 @@
+### latex ###
+tex/**/*.aux
+tex/**/*.fdb_latexmk
+tex/**/*.log
+tex/**/*.synctex.gz
+tex/**/*.bbl
+tex/**/*.blg
+tex/**/*.out
+
 ### Eclipse ###
 .metadata
 bin/
