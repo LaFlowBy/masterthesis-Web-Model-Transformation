@@ -44,11 +44,11 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>master-proposal.aux</file>
-      <file>master-proposal-blx.bib</file>
+      <file>master-thesis.aux</file>
+      <file>master-thesis-blx.bib</file>
     </provides>
     <requires type="dynamic">
-      <file>master-proposal.bbl</file>
+      <file>master-thesis.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,20 +67,20 @@
     <cmdline>
       <binary>bibtex</binary>
       <option>-min-crossrefs 2</option>
-      <infile>master-proposal</infile>
+      <infile>master-thesis</infile>
     </cmdline>
     <input>
-      <file>master-proposal.aux</file>
+      <file>master-thesis.aux</file>
     </input>
     <output>
-      <file>master-proposal.bbl</file>
+      <file>master-thesis.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>master-proposal.bbl</file>
+      <file>master-thesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>master-proposal.aux</file>
-      <file>master-proposal-blx.bib</file>
+      <file>master-thesis.aux</file>
+      <file>master-thesis-blx.bib</file>
     </requires>
     <requires type="editable">
       <file>../master-thesis.bib</file>
