@@ -1,15 +1,18 @@
 \documentclass[conference,onecolumn]{IEEEtran}
-
+\usepackage{setspace}
+\onehalfspacing
 \usepackage[nolist]{acronym}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[margin=3cm]{geometry}
+\usepackage[english]{babel}
 
 \addbibresource{../master-thesis.bib}
 
 \begin{document}
 
-  \title{Proposal: Creating a web-based model transformation UI (with GLSP)}
+  \title{Scientific Work: Creating a web-based model transformation UI (with GLSP)}
 
   \author{\IEEEauthorblockN{Florian Weidner}
     \IEEEauthorblockA{Philipps-University Marburg, Germany\\
@@ -21,7 +24,6 @@
 
   \IEEEpeerreviewmaketitle
 
-  \tableofcontents
   \newpage
 
   \section{Motivation and introduction}
@@ -33,62 +35,50 @@
 
   \ac{glsp} is a open-source framework by the Eclipse Foundation to develop custom diagram editors for distributed web-applications. \cite{glsp-repo} It can be used in Eclipse Desktop IDE, Eclipse Theia, Visual Studio Code and embedded in any website. With these fuctionalities, \ac{glsp} fits to create an accessible, intuitive application to create and apply Henshin model transformations.
 
+
+
+
+
   \section{Background}
   \label{sec:background}
-  Theoretic Background and Frameworks used.
-
-  \subsection{Model transformation}
-  \label{subsec:model-checking}
-  Model checking is an automatic technique for verifying finite-state reactive systems, such as sequential circuit designs and communication protocols.
-  \cite{modelchecking1} \cite{modelchecking2}
+  In this section, the theoretical background of the project and used technologies are described. 
 
   \subsection{Eclipse Foundation}
   \label{subsec:eclipse-foundation}
-  The Eclipse Foundation is a not-for-profit, member-supported corporation that hosts the Eclipse open-source community.
+  The Eclipse Foundation is a not-for-profit, member-supported corporation that provides an environment for individuals and organizations for collaborative and innovative software. \cite{eclipse-review} The Eclipse Foundation grew out of the Publication of the Eclipse \ac{ide} code from IBM in 2001. The Eclipse Foundation itself was founded in 2004. The new organization was founded to continue the development of Eclipse IDE as an open source platform. Over time many different projects were initiated by the organization in the Eclipse environment, all running under the Eclipse Public License. \cite{heise-eclipse-foundation,eclipse-review} In the recent years, the key initatives of the Eclipse Foundation are contributing to european digital souvereignty, enhancing security measures, innovating \ac{sdv}, organizing community events and improving their most popular projects. Popular projects are for example the Jakarta EE, a ecosystem for cloud native applications with java, Eclipse Temurin, providing open source Java Development Kits and the Eclipse IDE. \cite{eclipse-report} In total, the Eclipse Foundation hosts more than 400 open source projects, supported 14 european research projects in 2024 and has 117 organisations participating in commits \cite{eclipse-report} The scope of this work refers to many projects of the Eclipse Foundation and the development of a web-based model transformation UI is mainly based on \ac{emf}, Henshin and \ac{glsp}, which all are projects running under the Eclipse Foundation.
 
-  \subsection{\ac{emf}}
+  The Eclipse \ac{ide} is not the main project but it is still an important part of the Eclipse infrastructure. It is divided into four main components: Equinox, the Platform, the \ac{jdt} and the \ac{pde}. Together they provide everything to develop and extend Eclipse-based tools. Equinox and the Platform are the core of the Eclipse \ac{ide}. With expanding the core with the \ac{jdt} or other plugins, the \ac{ide} can be used to develop different programming languages, like Java, C/C++ or PHP. \cite{emf} Eclipse provides different packages to download, depending on the use case. One package is the Eclipse Modeling Tools package by the Eclipse Modeling Project. It provides tools and runtimes to build model-based applications. It can be used to graphically design domain models and test those models by creating and editing dynamic instances. Also Java code can be generated from the models to get a basis for applications. \cite{eclipse_modeling} The base of the Eclipse Modeling Tool is \ac{emf} (section \ref{subsec:emf}). Other modeling tools and projects, that are built on top of the \ac{emf} core functionality, provide capabilites for model transformation, database integration, or graphical editor generation. \cite{emf}
+
+  \subsection{Henshin}
+  \label{subsec:henshin}
+
+  One part of the Eclipse Modeling Project for model transformation is Henshin. It can be used as a plugin in the Eclipse \ac{ide} and provides a graphical and textual syntax to define model transformation rules and apply them on \ac{emf} XMI instance models. It can be used for endogenous transformations, where \ac{emf} model instances are directly transformed, and exogenous transformations, where new instances are generated from given instances using a trace model. It also brings efficient in-place execution of transformations using a interpreter with debugging support and a performance profiler. Henshin also provides confilct and dependency analysis, and state space analysis for verification. \cite{henshin-repo}
+
+  \subsection{\acf{emf}}
   \label{subsec:emf}
 
-  The EMF project is a modeling framework and code generation facility for building tools and other applications based on a structured data model.
-  \cite{emf} \cite{emf-repo}
+  \begin{quote}
+    \glqq\acf{emf} is a modeling framework and code generation facility for building tools and other applications based on a structured data model.\grqq{} \autocite{emf-repo}
+  \end{quote}
+
+  \acfi{emf} is the core part of the Eclipse Modeling Project and consists of three components.
 
   \subsection{\ac{glsp}}
   \label{subsec:glsp}
 
-  The \ac{glsp} is a framework that allows developers to create graphical user interfaces for web-based diagram editors.
+  \ac{glsp} is a framework that provides components for the development of \acp{gui} for web-based diagram editors.
   \cite{glsp-repo}
-
-  \subsection{Henshin}
-  \label{subsec:henshin}
-  Henshin is an in-place model transformation language for the Eclipse Modeling Framework (EMF).
-  \cite{henshin-repo}
 
   \section{Related Work/Software}
   \label{sec:related-work}
 
   Similar already existing tools for model checking: Henshin, Groovy...
 
-  \section{Project}
-  \label{sec:project-plan}
+  % \section{Project}
+  % \label{sec:project-plan}
 
-  \subsection{Requirements}
-  \label{subsec:requirements}
-
-
-
-  \subsection{Project Plan}
-  \label{subsec:project-plan}
-    When all requirements are realized, the application should be able to include every use case that you can also do in the Eclipse IDE with the Henshin plugin.
-
-    \begin{itemize}
-    \item Create a viewer for \ac{emf} XMI instances
-    \item Provide a posibility to display the transformation rules from a henshin file and apply them on the instance model with parameters
-    \item Create a viewer for Henshin transformation rules.
-    \item Provide editing functionality for transformation rules.
-    \item Provide editing functionality for XMI instance models.
-    \item Create a viewer for \ac{emf} Ecore metamodels.
-    \item Provide editing functionality for Ecore metamodels.
-  \end{itemize}
+  % \subsection{Requirements}
+  % \label{subsec:requirements}
 
   \subsection{Implementation}
   \label{subsec:implementation}
@@ -96,20 +86,18 @@
 
   \section{Conclusion}
 
-
-% 1 & Requirements analysis and specification & 1 week & Week 1 \\
-%       2 & Design of system architecture & 1 week & Week 2 \\
-%       3 & Implementation of EMF XMI instance viewer & 1 week & Week 3 \\
-%       4 & Implementation of Henshin transformation rule viewer & 1 week & Week 4 \\
-%       5 & Apply transformation rules to instance models & 1 week & Week 5 \\
-%       6 & Editing functionality for transformation rules & 1 week & Week 6 \\
-%       7 & Editing functionality for XMI instance models & 1 week & Week 7 \\
-%       8 & Viewer and editor for Ecore metamodels & 1 week & Week 8 \\
-%       9 & Integration and testing & 1 week & Week 9 \\
-%       10 & Documentation and final review & 1 week & Week 10 \\
-
   \printbibliography
 
-\include{../acronyms}
+\begin{acronym}
+  \acro{glsp}[GLSP]{Graphical Language Server Platform}
+  \acro{emf}[EMF]{Eclipse Modeling Framework}
+  \acro{mde}[MDE]{Model-Driven Engineering}
+  \acro{gui}[GUI]{Graphical User Interface}
+  \acroplural{gui}[GUIs]{\ac{gui}s}
+  \acro{ide}[IDE]{Integrated Development Environment}
+  \acro{sdv}[SDV]{Software-Defined Vehicle}
+  \acro{jdt}[JDT]{Java Development Tools}
+  \acro{pde}[PDE]{Plug-in Development Environment}
+\end{acronym}
 
 \end{document}

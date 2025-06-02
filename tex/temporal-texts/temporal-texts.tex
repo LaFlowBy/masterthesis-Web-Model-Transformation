@@ -39,10 +39,41 @@
     \item 2 stufen: instance transformationen -> regeln spezifizieren
   \end{itemize}
 
-  Meeting 22.05.2025:
+  Meeting 22.05.2025 Fragen:
+  \begin{itemize}
+    \item POC zeigen/besprechen (Henshin maven package)
+    \item Name für Software/Projekt?
+    \item Anforderungen abgleichen/ergänzen
+    \item Daniel Strüber
+    \item undo redo transformation
+    \item matches anzeigen?
+  \end{itemize}
+
+  \section{Implementation Esperiences}
+
+  \subsection{Inclusion of Henshin into the GLSP Maven Project}
+
+  \begin{itemize}
+    \item   Glsp nutzt maven
+    \item Henshin kein offizielles maven package -> einfachster weg zum einbetten.
+    \item Möglichkeiten:
+      \begin{itemize}
+        \item Henshin SDK als maven package
+        \item Henshin SDK als git submodule
+        \item Henshin SDK als jar file
+      \end{itemize}
+    \item Henshin SDK jar importiert Plugins und hat nicht alle .class dateien direkt im jar.
+    \item jars vereinen nicht möglich -> Henshin Plugins sind signiert.
+    \item Shading nicht möglich -> GLSP shaded auch und das ist nicht doppelt möglich.
+    \item Atuelle Lösung: Henshin Plugins einzeln als maven package importieren.
+    \item Es hat sich herausgestellt, das das model plugin eine weitere abhängigkeit auf nashorn (JavaScript Engine) hat -> registrieren von Nashorn über Service Provider Interface (SPI) (META-INF/services).
+  \end{itemize}
+
+  \subsection{Layout der GLSP UI}
   \begin{itemize}
     \item 
   \end{itemize}
+
 
 
   \printbibliography
