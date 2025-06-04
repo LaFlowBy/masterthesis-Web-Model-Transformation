@@ -28,6 +28,46 @@
   commit       = {157748e0ecdc2368d1cf451ca9c7fc78431c6c91}
 }
 
+@misc{lsp-repo,
+  author       = {Microsoft},
+  title        = {Language Server Protocol},
+  year         = {2025},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/microsoft/language-server-protocol}},
+  commit       = {fb079951948ed4fe4100f96f8819e9d9facffc40}
+}
+
+@misc{guice-repo,
+  author       = {Google},
+  title        = {Google Guice},
+  year         = {2025},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/google/guice}},
+  commit       = {5e17283ce6780728c6524ecd47709cb23e978863}
+}
+
+@misc{gson-repo,
+  author       = {Google},
+  title        = {Gson},
+  year         = {2025},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/google/gson}},
+  commit       = {dd2fe59c0d3390b2ad3dd365ed6938a5c15844cb}
+}
+
+@misc{sprotty-repo,
+  author       = {Eclipse Foundation},
+  title        = {Sprotty},
+  year         = {2025},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/eclipse-sprotty/sprotty}},
+  commit       = {a30b0a3a589b66d8fc163f48c8318fccb87ba78a}
+}
+
 @book{emf,
   author    = {Steinberg, David and Budinsky, Frank and Paternostro, Marcelo and Merks, Ed},
   title     = {EMF: Eclipse Modeling Framework 2.0},
@@ -131,11 +171,11 @@
   isbn      = {978-3-319-61470-0}
 }
 
-@misc{eclipseGLSP,
+@misc{glsp-doc,
   author = {{Eclipse Foundation}},
-  title  = {Eclipse GLSP™ – Graphical Language Server Platform},
+  title  = {Eclipse GLSP™ – Documentation},
   year   = {2025},
-  url    = {https://eclipse.dev/glsp/},
+  url    = {https://eclipse.dev/glsp/documentation},
   note   = {Accessed: 2025-05-20}
 }
 
@@ -184,4 +224,52 @@
   url       = {https://eclipse.dev/emf/},
   note      = {Accessed: 2025-06-02},
   publisher = {Eclipse Foundation}
+}
+
+@inproceedings{glsp-vision,
+  author    = {Bork, Dominik
+               and Langer, Philip
+               and Ortmayr, Tobias},
+  editor    = {Almeida, Jo{\~a}o Paulo A.
+               and Kaczmarek-He{\ss}, Monika
+               and Koschmider, Agnes
+               and Proper, Henderik A.},
+  title     = {A Vision for Flexible GLSP-Based Web Modeling Tools},
+  booktitle = {The Practice of Enterprise Modeling},
+  year      = {2024},
+  publisher = {Springer Nature Switzerland},
+  address   = {Cham},
+  pages     = {109--124},
+  abstract  = {In the past decade, the modeling community has produced many feature-rich modeling editors and tool prototypes not only for modeling standards but particularly also for many domain-specific languages. More recently, however, web-based modeling tools have started to become increasingly popular in the industry for visualizing and editing models adhering to such languages. This new generation of modeling tools is built with web technologies and offers much more flexibility when it comes to their user experience, accessibility, reuse, and deployment options. One of the technologies behind this new generation of tools is the Graphical Language Server Platform (GLSP), an open-source client-server framework hosted under the Eclipse foundation, which allows tool developers to build modern diagram editors for modeling tools that run in the browser or can be easily integrated into IDEs such as Eclipse, VS Code, or Theia. In this paper, we describe our vision for more flexible modeling tools which is based on our experiences from developing several traditional and web-based modeling tools in an industrial and academic context. With that, we aim at sparking a new line of research and innovation in the modeling community for modeling tool development practices and to explore opportunities, advantages, and limitations of web-based modeling tools, as well as bridge the gap between scientific tool prototypes and industrial tools being used in practice.},
+  isbn      = {978-3-031-48583-1}
+}
+
+@inproceedings{glsp-lessons,
+  author    = {Metin, Haydar and Bork, Dominik},
+  booktitle = {2023 ACM/IEEE 26th International Conference on Model Driven Engineering Languages and Systems (MODELS)},
+  title     = {On Developing and Operating GLSP-based Web Modeling Tools: Lessons Learned from BIGUML},
+  year      = {2023},
+  volume    = {},
+  number    = {},
+  pages     = {129-139},
+  keywords  = {Knowledge engineering;Codes;Unified modeling language;Computer architecture;Reflection;Software;Model driven engineering;Modeling tool;GLSP;web modeling;lessons learned;LSP;eclipse},
+  doi       = {10.1109/MODELS58315.2023.00031}
+}
+
+@inproceedings{glsp-zoom,
+  author    = {De Carlo, Giuliano and Langer, Philip and Bork, Dominik},
+  title     = {Advanced visualization and interaction in GLSP-based web modeling: realizing semantic zoom and off-screen elements},
+  year      = {2022},
+  isbn      = {9781450394666},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3550355.3552412},
+  doi       = {10.1145/3550355.3552412},
+  abstract  = {Conceptual modeling is widely adopted in industrial practices, e.g., process, software, and systems modeling. Providing adequate and usable modeling tools is essential for the efficient adoption of modeling. Metamodeling platforms provide a rich set of functionalities and maturely realize state-of-the-art modeling tools. However, despite their maturity and stability, most of these platforms only slowly - if at all - leverage the full extent of functionalities and the ease of exploitation and integration enabled by web technologies. With the Graphical Language Server Protocol (GLSP), it is now possible to realize much richer, advanced opportunities for visualizing and interacting with conceptual models. This paper presents a concept and a prototypical implementation of two advanced model visualization and interaction functionalities with the Eclipse GLSP platform: Semantic Zoom and Off-Screen Elements. We believe such advanced functionalities pave the way for a prosperous modeling future and spark innovation in modeling tool development.},
+  booktitle = {Proceedings of the 25th International Conference on Model Driven Engineering Languages and Systems},
+  pages     = {221–231},
+  numpages  = {11},
+  keywords  = {web modeling, visualization, modeling tools, language server protocol},
+  location  = {Montreal, Quebec, Canada},
+  series    = {MODELS '22}
 }

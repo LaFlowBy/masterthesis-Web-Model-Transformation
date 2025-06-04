@@ -11,9 +11,11 @@
 
 \addbibresource{../master-thesis.bib}
 
+\newcommand{\code}[1]{\texttt{#1}}
+
 \begin{document}
 
-  \title{Scientific Work: Creating a web-based model transformation UI (with GLSP)}
+  \title{Scientific Work: Creating a web-based model transformation diagram editor}
 
   \author{\IEEEauthorblockN{Florian Weidner}
     \IEEEauthorblockA{Philipps-University Marburg, Germany\\
@@ -36,84 +38,14 @@
 
   \ac{glsp} is a open-source framework by the Eclipse Foundation to develop custom diagram editors for distributed web-applications. \cite{glsp-repo} It can be used in Eclipse Desktop IDE, Eclipse Theia, Visual Studio Code and embedded in any website. With these fuctionalities, \ac{glsp} fits to create an accessible, intuitive application to create and apply Henshin model transformations.
 
+  The goal of this scientific work is to provide relevant information about the used technologies and to research how they fit together to create a web-based model transformation editor.
 
-
-
-
-  \section{Background}
-  \label{sec:background}
-  In this section, the theoretical background of the project and used technologies are described. 
-
-  \subsection{Eclipse Foundation}
-  \label{subsec:eclipse-foundation}
-  The Eclipse Foundation is a not-for-profit, member-supported corporation that provides an environment for individuals and organizations for collaborative and innovative software development. \cite{eclipse-review} The Eclipse Foundation grew out of the publication of the Eclipse \ac{ide} code from IBM in 2001. The Eclipse Foundation itself was founded in 2004. The new organization was founded to continue the development of Eclipse IDE as an open source platform. Over time many different projects were initiated by the organization in the Eclipse environment, all running under the Eclipse Public License. \cite{heise-eclipse-foundation,eclipse-review} In the recent years, the key initatives of the Eclipse Foundation are contributing to european digital souvereignty, enhancing security measures, innovating \ac{sdv}, organizing community events and improving their most popular projects. Popular projects are for example the Jakarta EE, a ecosystem for cloud native applications with java, Eclipse Temurin, providing open source Java Development Kits and the Eclipse IDE. \cite{eclipse-report} In total, the Eclipse Foundation hosts more than 400 open source projects, supported 14 european research projects in 2024 and has 117 organisations participating in commits \cite{eclipse-report}
-
-  The scope of this work remains within the Eclipse Foundation ecosystem. All frameworks used are projects from the Eclipse Foundation. The used frameworks are described in the sections \ref{subsec:emf}, \ref{subsec:henshin} and \ref{subsec:glsp}.
-
-  The Eclipse \ac{ide} is not the main project but it is still an important part of the Eclipse infrastructure. It is divided into four main components: Equinox, the Platform, the \ac{jdt} and the \ac{pde}. Together they provide everything to develop and extend Eclipse-based tools. Equinox and the Platform are the core of the Eclipse \ac{ide}. With expanding the core with the \ac{jdt} or other plugins, the \ac{ide} can be used to develop different programming languages, like Java, C/C++ or PHP. \cite{emf} Eclipse provides different packages to download, depending on the use case. One package is the Eclipse Modeling Tools package by the Eclipse Modeling Project. It provides tools and runtimes to build model-based applications. It can be used to graphically design domain models and test those models by creating and editing dynamic instances. Also Java code can be generated from the models to get a scaffold, that can be used to create application on top. \cite{eclipse_modeling} The base of the Eclipse Modeling Tool is \ac{emf} (section \ref{subsec:emf}). Other modeling tools and projects, that are built on top of the \ac{emf} core functionality, provide capabilites for model transformation, database integration, or graphical editor generation. \cite{emf}
-
-  \subsection{\acf{emf}}
-    \label{subsec:emf}
-
-    \begin{quote}
-      \glqq\acf{emf} is a modeling framework and code generation facility for building tools and other applications based on a structured data model.\grqq{} \autocite{emf-repo}
-    \end{quote}
-
-    \acfi{emf} is the core part of the Eclipse Modeling Project and unifies the representation of models in \acs{uml}, \acs{xml} and Java. You can define your model in one of these formats and use \ac{emf} to generate the other formats.
-    
-    \ac{emf} consists of three components. The \ac{emf} core part, provides Ecore meta models, a runtime support for the models, and a basic \acs{api} for manipulating \ac{emf} objects generically. Ecore meta models are used to describe the structure of a model. \cite{eclipse_emf} They can be serialized in \ac{xmi} 2.0, as Ecore \ac{xmi} and have the file extension \textit{.ecore}. There are several Ecore classes to represent a model, here are the most important ones:
-
-    \begin{itemize}
-      \item \textbf{EClass}: A class in the model that is identified by a name, containing attributes and references to other classes. It can also refer to a number of other classes as its supertypes to support inheritance.\cite{emf}
-      \item \textbf{EAttribute}: An attribute of a class, that are identified by a name and have a type.\cite{emf}
-      \item \textbf{EDataType}: A simple data type like \textit{EString}, \textit{EBoolean} or \textit{EJavaClass}\cite{emf}
-      \item \textbf{EReference}: A reference to another class, containing a link to an instance of that class.\cite{emf}
-    \end{itemize}
-
-
-    Together \citeauthor{emf} called these classes the Ecore kernel. In figure \ref{fig:emf-kernel} you can see the kernel classes and their relations. these classes are enough to define simple models. \textbf{EAttribute} and \textbf{EReference} have a lot of similarities. They both define the state of an instance of an \textbf{EClass} and have a name and a type. For that Ecore provides a common interface for both, called \textbf{EStructuralFeature}. Ecore can also model behavioral features of classes as \textbf{EOperation} using \textbf{EParameter}.
-    Related classes are grouped into packages called \textbf{EPackage}. It is represented by the root element when the model is serialized. \cite{emf}
-
-    \begin{figure}[h]
-      \centering
-      \includegraphics[width=0.7\textwidth]{emf-kernel}
-      \caption{The Ecore kernel. Image obtained from \cite{emf}}
-      \label{fig:emf-kernel}
-    \end{figure}
-
-    The second component of \ac{emf} is \ac{emf}.Edit. It provides generic reusable classes to build viewers and editors for \ac{emf} models. With these classes \ac{emf} meta models can be displayed in JFace viewers, that are part of the Eclipse \acs{ui}. \cite{eclipse_emf} The Eclipse \ac{ide} can display a Ecore model in a tree viewer. Eclipse acceses the data over the \textit{ITreeContentProvider} interface to navigate the content and the\textit{ILabelProvider} interface to provide the label text and icons for the displayed objects.  The properties of objects are displayed in a Property Sheet over the \textit{IPropertySourceProvider}, where the user can edit the model.  \ac{emf}.Edit also provides undo and redo operations when creating or editing a instance model. For that it uses a command framework with commands like a \textit{AddCommand}, \textit{SetCommand} or \textit{CopyCommand}. \cite{emf}
-
-    The third component is \ac{emf}.Codegen. It can generate Java code for a complete editor for \ac{emf} instance models of a Ecore meta model. It provides different generation options. So unlike \ac{emf}.Edit, that just provides generic classes for Ecore models, \ac{emf}.Codegen directly generates complete editors with a \acs{ui}. \cite{eclipse_emf} The generation can be done over a wizard in the Eclipse \ac{ide} or by using the command line interface. \cite{emf} The generation can be sepertated in to three levels. The first level is to generate Java interfaces and implementations for the Ecore model classes and a factory and package implementation class. The second level generates specific \textit{ItemProviders} to edit instance models based on the meta model.The classes are structured like the \ac{emf}.Edit component for the Ecore models. The third level generates a structured editor with \acs{ui} that works like the Ecore editor in the Eclipse \ac{ide} and can be a starting point for customization. \cite{eclipse_emf} There are many frameworks that build on top of \ac{emf} using these generation capabilites to create further modeling functionality. One of these frameworks is Henshin, that is described in section \ref{subsec:henshin}.
-
-  \subsection{Henshin}
-  \label{subsec:henshin}
-
-  One part of the Eclipse Modeling Project for model transformations is Henshin. It can be used as a plugin in the Eclipse \ac{ide} or as an \acs{sdk}. It provides a graphical and textual syntax to define model transformation rules and apply them on \ac{emf} XMI instance models. It can be used for endogenous transformations, where \ac{emf} model instances are directly transformed, and exogenous transformations, where new instances are generated from given instances using a trace model. It also brings efficient in-place execution of transformations using a interpreter with debugging support and a performance profiler. Henshin also provides confilct and dependency analysis, and state space analysis for verification. \cite{henshin-repo}
-
-  Henshin builds on top of \ac{emf}. It uses an Ecore meta model to define the structure of the transformation rules, resulting in a serialized \ac{xmi} file with the file extension \textit{.hensin}, that can therefore be edited in the Eclipse tree editor. \cite{henshin-repo} The meta model of the transformation rules uses another Ecore meta model that models the model structure of the domain, to type the nodes, egdes and attributes of the rules. \cite{henshin} In figure \ref{fig:henshin-rule-model} you can see the Henshin transformation rule meta model. A rule consits of a \ac{rhs} Graph, a \ac{lhs} Graph and attribute conditions. Additionally mappings between the \ac{lhs} and \ac{rhs} Graph are defined between nodes. The mapping of the edges is done implicitly by the mapping of the source and target nodes. \cite{henshin} Henshin uses Units to control the order of rule applications. With Units, control structures can be defined. Also parameters can be passed from the previous executed rule to the next one to have a controlled object flow. Henshins tansformation language is based on algebraic graph transformations, complying with the syntactical and semantic structure of rules and transformation units. This ensures a language usable for formal verification or validation. \cite{henshin}
-
-  In the Eclipse \ac{ide}, rules can also be edited in a graphical editor. The rules are displayed as a single graph, calculated from the \ac{lhs} and \ac{rhs} Graphs. The nodes and edges are annotated with \textit{\textless{}\textless{}preserve\textgreater\textgreater}, \textit{\textless{}\textless{}create\textgreater\textgreater}, \textit{\textless{}\textless{}delete\textgreater\textgreater}, \textit{\textless{}\textless{}forbid\textgreater\textgreater} or \textit{\textless{}\textless{}require\textgreater\textgreater} to indicate what happens to the nodes and edges when applying the rule. These annotations can be directly edited in the graphical editor and the the \ac{lhs} and \ac{rhs} Graphs are then adapted to the change. Also multible \acp{nac}, \acp{pac} and Paramters can be specified directly. \cite{henshin-repo} When a set of transformation rules are specified, they can be applied to an \ac{emf} \ac{xmi} instance model, by using a wizard in the Eclipse \ac{ide}. There the source model, the rule and its parameters can be selected. The result of the transformation can be seen in a new \ac{xmi} instance file. \cite{henshin-repo} Next to the graphical editor, Henshin also provides a textual syntax to define transformation rules and units. In a \textit{.henshin\_rule} file with the keyword \textbf{rule} a name and paramters, a new rule can be described. If you want to define a node, you can use the keyword \textbf{node} with a its action keyword like \textbf{create} or \textbf{preserve} to specify the action of the node in the transformation. 
-
-  The Henshin \acs{sdk} consists of multible packages oriented to the package structure of \ac{emf}. Next to a model, edit and editor package, it provides an interpreter package, that contains a default engine to execute model transformations.
-
-  \begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{henshin-rule-model}
-    \caption{Henshin transformation rule meta model. Image obtained from \cite{henshin-repo}}
-    \label{fig:henshin-rule-model}
-  \end{figure}
-
-
-  \subsection{\acf{glsp}}
-  \label{subsec:glsp}
-
-  \ac{glsp} is a framework that provides components for the development of \acsp{gui} for web-based diagram editors.
-  \cite{glsp-repo}
+  \input{../theoretical-background.tex}
 
   \section{Related Work/Software}
   \label{sec:related-work}
 
-  Similar already existing tools for model checking: Henshin, Groovy...
+  GLSP Ecore editor.
 
   % \section{Project}
   % \label{sec:project-plan}
@@ -121,38 +53,31 @@
   % \subsection{Requirements}
   % \label{subsec:requirements}
 
-  \subsection{Implementation}
+  \section{Implementation}
   \label{subsec:implementation}
+  This chapter describes and shows the implementation of specific importants parts of the project. 
+
+  \subsection{Combining Henshin and GLSP}
+  \label{subsec:henshin-glsp}
+
+  \subsection{Indexing EMF models}
+  \label{subsec:indexing}
+  During the transformation of the source model into the graphical model, elements need to be accesed multible times. For example, a node is accesed from the \ac{emf} package when it is mapped into a \code{GNode} and then again for all its connedted edges and attributes. To avoid multible lookups in the \ac{emf} model, a index is created for each node, edge or attribute.
+
+  \subsection{Layouting}
+  \label{subsec:layouting}
+
+ 
+
+
 
 
   \section{Conclusion}
+  \label{sec:conclusion}
+  This scientific work described the parts used to build a web-based model transformation editor and showed that the frameworks good work together.
 
   \printbibliography
 
-  \newpage
-  \section{Acronyms}
-  \label{sec:acronyms}
-
-  \begin{acronym}
-    \acro{glsp}[GLSP]{Graphical Language Server Platform}
-    \acro{emf}[EMF]{Eclipse Modeling Framework}
-    \acro{mde}[MDE]{Model-Driven Engineering}
-    \acro{ui}[UI]{User Interface}
-    \acro{gui}[GUI]{Graphical \acf{ui}}
-    \acro{ide}[IDE]{Integrated Development Environment}
-    \acro{sdv}[SDV]{Software-Defined Vehicle}
-    \acro{jdt}[JDT]{Java Development Tools}
-    \acro{pde}[PDE]{Plug-in Development Environment}
-    \acro{sdk}[SDK]{Software Development Kit}
-    \acro{api}[API]{Application Programming Interface}
-    \acro{uml}[UML]{Unified Modeling Language}
-    \acro{xmi}[XMI]{XML Metadata Interchange}
-    \acro{xml}[XML]{Extensible Markup Language}
-    \acro{lhs}[LHS]{Left-Hand Side}
-    \acro{rhs}[RHS]{Right-Hand Side}
-    \acro{nac}[NAC]{Negative Application Condition}
-    \acro{pac}[PAC]{Positive Application Condition}
-    
-  \end{acronym}
+  \input{../acronyms.tex}
 
 \end{document}
