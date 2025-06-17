@@ -4,11 +4,12 @@
 \usepackage{acronym}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{graphicx}
+\usepackage{csquotes}
 \usepackage{hyperref}
 \usepackage[margin=3cm]{geometry}
 \usepackage[english]{babel}
+\usepackage{float} % Added to support [H] float option
 \graphicspath{ {./figures/} }
-
 \addbibresource{../master-thesis.bib}
 
 \newcommand{\code}[1]{\texttt{#1}}
@@ -45,39 +46,65 @@
   \section{Related Work/Software}
   \label{sec:related-work}
 
-  GLSP Ecore editor.
+  There are many existing tools for model transformations. \citeauthor{kahani2019survey} created a survey in \citeyear{kahani2019survey} of various model transformation tools. They classified 60 different tools, also including Henshin. In figure \ref{fig:tools-environments}, you can see how many tools provide specific execution environments. 73\% of the tools provide plugins for the Eclipse \ac{ide} and 20\% of the tools are integrated/dependent on other \acp{ide}. 18\% have no \ac{ide} support, and only two tools are web-based. Also 89\% of the tools have external dependencies like an \ac{ide} or other tools. Dependencies often complicate the installation and usage of the tool. \cite{kahani2019survey}
 
-  % \section{Project}
-  % \label{sec:project-plan}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{model-tools.png}
+    \caption{Execution environments of model transformation tools. Image obtained from \cite{kahani2019survey}}
+    \label{fig:tools-environments}
+  \end{figure}
 
-  % \subsection{Requirements}
-  % \label{subsec:requirements}
+  One web-based tool included in the survey is \ac{AToMPM} \cite{atompm}. 
+
+
+  There are also already web-based tools for model transformations. MDEForge \cite{mdeforge-repo}.
+  WebGME \cite{webGME}
+  WebDPF\cite{WebDPF}
+  There is also a \ac{glsp}-based ecore editor, created by the \ac{glsp} development team. It was implemented with the \ac{glsp} version 0.9 but never updated further. It allows to create and edit \ac{emf} Ecore models in a Theia web editor. Even though the project cannot be used directly, due to major updates in the \ac{glsp} framework, it provides various classes that can be used in the Henshin Web Ecore viewer. One example is the Factory code that mapps the \ac{emf} Ecore model to the graphical model. \cite{glsp-ecore-repo}
 
   \section{Implementation}
   \label{subsec:implementation}
-  This chapter describes and shows the implementation of specific importants parts of the project. 
+  This chapter describes and shows the solution and implementation of specific problems, that appeared while implementing a \ac{poc} to disply \ac{xmi} instances and apply model transformation rules on them. The main problems with the \ac{poc} was the integration of Henshin into a \ac{glsp} project, the layouting of the graphical model and the indexing of \ac{emf} model elements. The \acs{gui} of the \ac{poc} can be seen in figure \ref{fig:poc}.
 
-  \subsection{Combining Henshin and GLSP}
+  \subsection{Integration of Henshin into a GLSP project} 
   \label{subsec:henshin-glsp}
 
-  \subsection{Indexing EMF models}
-  \label{subsec:indexing}
-  During the transformation of the source model into the graphical model, elements need to be accesed multible times. For example, a node is accesed from the \ac{emf} package when it is mapped into a \code{GNode} and then again for all its connedted edges and attributes. To avoid multible lookups in the \ac{emf} model, a index is created for each node, edge or attribute.
+  The Henshin source code provides both the Eclipse \ac{ide} plugin and a Java SDK for using the Henshin interpreter. The project is structured as an Eclipse project and is available as a set of Eclipse plugins and features. \cite{henshin-repo} On the other hand, \ac{glsp} projects typically use a Maven project structure. \cite{glsp-repo} To add dependencies to a Maven project, the dependencies should ideally be available as Maven artifacts. However, Henshin doesn't provide a Maven artifact, since that is not needed for a Eclipse plugin. The Henshin version 1.8.0 is compatible with \acs{jdk} 11 and higher. \ac{glsp} version 2.3.0 has the prerequisite of \acs{jdk} 17. Therefore, the versions are compatible to run together. The Henshin code consists of 45 plugins from which 22 are contained in the Henshin SDK, that we need as a dependency in our Henshin Web \ac{glsp} project. Each plugin can be downloaded as a \acs{jar} file. To create maven packages from the \acsp{jar}, a powershell script is used. It reads all \acsp{jar} files from a folder, renames them to the correct Maven artifact name, creates a basic \code{pom.xml} file for them, deploys them to the Gitlab package repository and creates a list that needs to be included in the Maven \code{pom.xml} file of the \ac{glsp} project. To provide the Henshin dependencies to anyone, the packages are stored in the Giblab package registry of the Henshin Web Gitlab repository. A package of each plugin is created, because for the Henshin Web editor, only parts of the Henshin SDK are needed. To use the Henshin model package, the additional dependency of the Nashorn JavaScript engine \cite{nashorn-repo} is needed. The Nashorn engine is used to execute calculation expressions of transformation rules. \cite{henshin}
 
   \subsection{Layouting}
   \label{subsec:layouting}
 
- 
+  \ac{emf} Ecore meta files (\textit{.ecore}), Henshin rule files (\textit{.henshin}) and \ac{emf} instance files (\textit{.xmi}), don't contain information about the position or size of elements in a graph. \cite{emf,henshin-repo} To provide a good user experience, the graphical editors need to provide a consistent marco layout of nodes and edges. Newly created nodes should not overlap with existing nodes and the nodes should stay in the same place after reloading the editor. In general the \ac{glsp} server is responsible for the macro layouting. \cite{glsp-doc} \ac{glsp} provides multiple options to layout the graph. The interface \code{LayoutEngine} can be used to create a custom layout algorithm, that is applied after the creation of the graphical model from the soucre model. \ac{glsp} provides the \code{ElkLayoutEngine} implementation, that uses the \ac{elk} to layout the graphical model. \cite{elk-engine} With \ac{elk}, different layout algorithms can be used and aditionally configured. Even though \ac{elk} provides much flexibility for the layout, the layout is newly created after every change to the source model. This means that the layout is not consistent and nodes can move around after every change. To provide a consistent layout, the position of nodes need to be stored additionaly to the source model. The \ac{glsp} server provides a notation model, that can be used to store the position and size of nodes and edges. \cite{glsp-repo} This brings the overhead of updating the notation model every time, when the source model is updated. \ac{glsp} provides classes to make the syncronization of the noation model easier. The notation model ist stored in an additional \textit{.notation} file, that is loaded together with the source model and applied to the graphical model in the \code{GModelFactory} when using the \code{NotationUtil.applyShapeData(shape, builder)} method. To capture changes of position and size of nodes, the \ac{glsp} client sends the \code{ChangeRoutingPointsOperation} and \code{ChangeBoundsOperation} operations automatically when moving or resizing a node or edge. At the server the corresponding handlers are updating the notation model using commands, to provide undo and redo fuctionalities.
 
+  To achieve layouting in the Henshin Web editor, notation models for the metamodel, Hensin rules and instances are used. For the \ac{xmi} instance models, layouting over the notation models is implemented in the \acs{poc}. The \textit{.notation} file is created when the instance model is loaded for the first time. Here \ac{elk} can be used to create a fitting initial layout. When createing the graphical model in the \code{GModelFactory}, the shape data from the noatation model is added to the \ac{emf} elements over an \ac{emf} Adapter. Each \ac{emf} \code{EObject} has a list of Adapters, that can be used to store additional information. \cite{emf} To connect the notation to an element the \code{NotationAdapter.getOrAssignNotation()} method checks if the element already has a notation, ether returning the existing notation or appending a new Adapter with the notation information.
 
+  \subsection{Indexing EMF models}
+  \label{subsec:indexing}
+
+  Next to layout information, \ac{emf} Ecore metamodels and \ac{emf} \ac{xmi} instance models don't by default contain unique identifiers for nodes, edges or attributes. \cite{emf,emf-repo} 
+  During the transformation of the source model into the graphical model, elements need to be accesed multiple times. For example, a node is accesed from the \ac{emf} package when it is mapped into a \code{GNode} and then again for all its connected edges and attributes. To avoid multiple lookups in the \ac{emf} model, a index is created for each node, edge or attribute. Additionally the graphical model of \ac{glsp} needs identifiers for each element, to be able to spefify the element for operations on the source model. When no identifiers are specified, \ac{glsp} generates own unique identifiers for each element, but they can not be mapped back to the corresponding \ac{emf} element. To keep an uniqui identifier close to the \ac{emf} element, an \ac{emf} Adapter is used. 
+
+  For adding indexes to the graphical model elements, random \acp{uuid} can be used. The same identifiers can be hold for the lifetime of the corresponding client session. During this time, operations on the source model can access \ac{emf} elements by their \acp{uuid} over a \code{HashMap} and then apply the operation. The use of content independent identifiers has the advantage, that the identifiers are not changing when nodes are updated. The problem with temporary identifiers on the other hand is, that they cannot be mapped to the source elements after the client session is closed. One usecase for that are the  notation models, where the \acp{uuid} cannot be used, because the same notation model needs to be loaded across client sessions. To achieve a session independent solution to connect the notation models elements to the \ac{emf} elements, content hashes are used as identifiers. Each node in the source model is identifieable by the class name and their combined attribute values. These content hashes are stored in the notation model and generated every time the graphical model is created the first time in a session. The combination of the \acp{uuid} and content hashes allows flexibility for editing the source model, while keeping the connection to the notation model.
 
 
   \section{Conclusion}
   \label{sec:conclusion}
-  This scientific work described the parts used to build a web-based model transformation editor and showed that the frameworks good work together.
-
-  \printbibliography
+  This scientific work motivated a web-based model transformation graph editor and introduced all important frameworks needed for the planned project. Also related work and similar software was presented. With the discussed implementations of the \ac{poc}, it was shown that the introduced frameworks can be used together to create a web-based model transformation editor. The \ac{poc} is a piercing, representing the workflow from the data source to the displayed graphical model. To achieve a fully functional editor, realizing all requirements, the \ac{poc} can to be extended with the required features.
 
   \input{../acronyms.tex}
+
+  \section{Appendix}
+  \label{sec:appendix}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{poc}
+    \caption{Henshin Web Theia \ac{poc} graph editor}
+    \label{fig:poc}
+  \end{figure}
+
+  
+  \printbibliography
 
 \end{document}
