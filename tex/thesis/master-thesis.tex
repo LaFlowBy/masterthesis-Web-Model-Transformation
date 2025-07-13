@@ -1,26 +1,26 @@
-\documentclass[conference, onecolumn]{IEEEtran}
-
-\usepackage[nolist]{acronym}
+\documentclass[conference,onecolumn]{IEEEtran}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{acronym}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{graphicx}
+\usepackage{csquotes}
 \usepackage{hyperref}
-
+\usepackage[margin=3cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{float} % Added to support [H] float option
+\graphicspath{ {./figures/} }
 \addbibresource{../master-thesis.bib}
-
+\newcommand{\code}[1]{\texttt{#1}}
+\pagestyle{plain}
 \begin{document}
 
-  \title{Exploring artefacts of \acl{vit} feature maps}
+  \input{../title-page.tex}
 
-  \author{\IEEEauthorblockN{Florian Weidner}
-    \IEEEauthorblockA{Philipps-University Marburg, Germany\\
-      Department of Mathematics and Computer Science, Deep Learning Group\\
-      February 09, 2025\\
-  }}
-
-  \maketitle
+  \newpage
 
   \begin{abstract}
-  abstract
+  lipsum bla bla bla
   \end{abstract}
 
   % \begin{IEEEkeywords}
@@ -34,157 +34,37 @@
  \tableofcontents
   \newpage
 
-  \section{Introduction}
-  \label{sec:introduction}
+  \input{chapters/introuction.tex}
 
-  \subsection{Background and Motivation}
-  \label{subsec:motivation}
+  \input{chapters/theoretical_background.tex}
 
-  \subsection{Problem Statement}
-  \label{subsec:problem-statement}
+  \input{chapters/relatedwork.tex}
 
-  \subsection{Research Questions}
-  \label{subsec:research-questions}
+  \input{chapters/requirements.tex}
 
-  \subsection{Scope and Limitations}
-  \label{subsec:scope-limitations}
+  \input{chapters/architecture.tex}
 
-  \subsection{Structure of the Thesis}
-  \label{subsec:structure-thesis}
+  \input{chapters/deployment.tex}
+
+  \input{chapters/implementation.tex}
+
+  \input{chapters/testing.tex}
+
+  \input{chapters/discussion-conclusion.tex}
+
+  \input{../acronyms.tex}
+
+  \section{Appendix}
+  \label{sec:appendix}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{poc}
+    \caption{Henshin Web Theia \ac{poc} graph editor}
+    \label{fig:poc}
+  \end{figure}
 
   
-
-  \section{Theoretical Background}
-  \label{sec:background}
-
-  \subsection{Model-Driven Engineering}
-  \label{subsec:model-driven-engineering}
-
-  \subsection{Model transformation}
-  \label{subsec:model-checking}
-
-  \subsection{Eclipse Foundation}
-  \label{subsec:eclipse-foundation}
-
-  \subsection{\acf{emf}}
-  \label{subsec:emf}
-
-  \subsection{Henshin}
-  \label{subsec:henshin}
-
-  \subsection{\ac{glsp}}
-  \label{subsec:glsp}
-
-  \section{Related Work}
-  \label{sec:related-work}
-
-  \subsection{Scientific Literature}
-  \label{subsec:related-scientific-literature}
-
-  \subsection{Existing Tools and Technologies}
-  \label{subsec:related-tools}
-
-  \subsection{Comparison and Gaps}
-  \label{subsec:related-comparison}
-
-
-
-  \section{Requirements Analysis}
-  \label{subsec:requirements}
-
-  \subsection{Functional Requirements}
-  \label{subsec:functional-requirements}
-
-  \subsection{Non-Functional Requirements}
-  \label{subsec:non-functional-requirements}
-
-  \subsection{Stakeholders and Use Cases}
-  \label{subsec:stakeholders}
-
-  \subsection{System Constraints}
-  \label{subsec:system-constraints}
-
-
-
-  \section{System Design and Architecture}
-  \label{sec:system-design}
-
-  \subsection{High-Level Architecture}
-  \label{subsec:high-level-architecture}
-
-  \subsection{Component Design}
-  \label{subsec:component-design}
-
-  \subsection{Data Flow and Control Flow}
-  \label{subsec:data-flow}
-
-  \subsection{Data Models and Structures}
-  \label{subsec:data-models}
-
-  \subsection{User Interface Design}
-  \label{subsec:user-interface-design}
-
-
-
-
-  \section{Implementation}
-  \label{subsec:implementation}
-
-  \subsection{Development Process}
-  \label{subsec:development-process}
-
-  \subsection{Key Features and Functionality}
-  \label{subsec:key-features}
-
-  \subsection{Tooling and Environment}
-  \label{subsec:tooling}
-
-  \subsection{Code Examples...}
-  \label{subsec:code-examples}
-
-  \section{Testing and Evaluation}
-  \label{sec:testing}
-
-  \subsection{Testing Strategy}
-  \label{subsec:testing-strategy}
-
-  \subsection{Test Results and Coverage}
-  \label{subsec:test-results}
-
-  \subsection{Performance Evaluation}
-  \label{subsec:performance-evaluation}
-
-  \subsection{User Feedback}
-  \label{subsec:user-feedback}
-
-  \subsection{Comparison with Requirements}
-  \label{subsec:comparison-requirements}
-
-  \section{Discussion}
-  \label{sec:discussion}
-
-  \subsection{Interpretation of Results}
-  \label{subsec:interpretation-results}
-
-  \subsection{Challenges and Limitations}
-  \label{subsec:challenges-limitations}
-
-  \section{Conclusion and Future Work}
-  \label{sec:conclusion}
-
-  \subsection{Summary of Contributions}
-  \label{subsec:summary-contributions}
-
-  \subsection{Suggestions for Future Development}
-  \label{subsec:suggestions-future-development}
-
   \printbibliography
 
-\begin{acronym}
-  \acro{glsp}[GLSP]{Graphical Language Server Platform}
-  \acro{emf}[EMF]{Eclipse Modeling Framework}
-  \acro{mde}[MDE]{Model-Driven Engineering}
-\end{acronym}
-
-that's all folks
 \end{document}
