@@ -1,6 +1,13 @@
   \section{System Design and Architecture}
   \label{sec:system-design}
 
+    \ac{glsp} uses a client-server architecture. The client and server communicate via a websocket connection and JSON-RCP. The backend will be implemented in Java, which is the main programming language for \ac{emf} and especially the Henshin SDK. The \ac{glsp} backend supports integration with \ac{emf} models as the underlying source model for the diagrams. That makes the integration of Henshin easier because all files needed are based on \ac{emf}. The \textit{HenshinRessourceSet} can be loaded directly over the \ac{emf} integration of \ac{glsp} into the \textit{ModelState}. For the XMI instance files, the Henshin rule files, and the Ecore metamodel files, a mapping to the \ac{glsp} internal graphical model needs to be implemented. \cite{eclipseGLSP}
+
+  For providing editing functionality, all commands need to be implemented as Actions and Handlers in the \ac{glsp} backend. They are manipulating the source files directly. The \ac{glsp} architecture is built that after manipulating the source model, the new state is mapped to the graphical model of \ac{glsp} again and then displayed in the client. \cite{eclipseGLSP} 
+
+  The \ac{glsp} client is implemented in TypeScript. It uses Sprotty, an SVG-based diagramming framework, to render the diagrams.
+  Different diagram languages can be defined for multible file types. For each file type, a different backend module must be registered. The ecore metamodel, the Henshin rule file and the XMI instance files should be in the same folder in a workspace. There you can open the corresponding file and EMF model should be displayed in a graphical editor.
+
   \subsection{High-Level Architecture}
   \label{subsec:high-level-architecture}
 

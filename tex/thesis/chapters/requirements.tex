@@ -4,8 +4,40 @@
   \subsection{Functional Requirements}
   \label{subsec:functional-requirements}
 
+  The following requirements are a list of the functional and non-functional requirements (that I came up with). The client should be integrated as an Eclipse Theia client. Additional clients can be added in the future without impacting other parts of your implementation. \cite{eclipseGLSP} The backend should be implemented with Java.
+
+  Functional requirements:
+
+  \begin{itemize}
+  
+    \item \ac{emf} XMI instance files should be displayed in a graphical editor
+    \item Henshin rule files should be displayed in a graphical editor
+    \item \ac{emf} Ecore metafiles should be displayed in a graphical editor
+    \item The instance editor should display all rules that can be applied to the instance model.
+    \item Parameters of the rules should be editable when applying a rule.
+    \item After applying a rule, the instance model should be updated and displayed in the instance editor as a temporal file that can be used to apply multiple rules. The initial instance model should not be changed.
+    \item The instance editor should provide editing functionality for the instance model.
+    \item The Henshin rule editor should provide editing functionality for the transformation rules.
+    \item The Ecore editor should provide editing functionality for the Ecore metamodel.
+
+  \end{itemize}
+
+  Once all functional requirements are implemented, the application should fully support a basic model transformation workflow. Its functionality should be equivalent to using the Henshin plugin within the Eclipse editor. It should be possible, that additional Henshin functionalities like State Space analysis or conflict and dependency analysis can be added in the future.
+
+
+
   \subsection{Non-Functional Requirements}
   \label{subsec:non-functional-requirements}
+
+  Non-functional requirements:
+
+  \begin{itemize}
+    \item The application should be web-based and accessible via a web browser.
+    \item The application should be responsive and work on different screen sizes.
+    \item The application should be user-friendly and intuitive to use.
+    \item The application should be performant and handle large models efficiently.
+\end{itemize}
+
 
   \subsection{Stakeholders and Use Cases}
   \label{subsec:stakeholders}
