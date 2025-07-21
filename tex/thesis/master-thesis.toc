@@ -21,9 +21,9 @@
 \contentsline {subsection}{\numberline {\mbox {IV-D}}Non-Functional Requirements}{13}{subsection.4.4}%
 \contentsline {subsection}{\numberline {\mbox {IV-E}}System Constraints}{13}{subsection.4.5}%
 \contentsline {section}{\numberline {V}System Design and Architecture}{14}{section.5}%
-\contentsline {subsection}{\numberline {\mbox {V-A}}Following the \ac {glsp} Architecture}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {\mbox {V-B}}Data Models and Structures}{15}{subsection.5.2}%
-\contentsline {subsection}{\numberline {\mbox {V-C}}Data Flow and Control Flow}{16}{subsection.5.3}%
+\contentsline {subsection}{\numberline {\mbox {V-A}}Design Decisions}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {\mbox {V-B}}Following the \ac {glsp} Architecture}{14}{subsection.5.2}%
+\contentsline {subsection}{\numberline {\mbox {V-C}}Data Models and Structures}{15}{subsection.5.3}%
 \contentsline {subsection}{\numberline {\mbox {V-D}}Component Design}{16}{subsection.5.4}%
 \contentsline {subsection}{\numberline {\mbox {V-E}}User Interface Design}{16}{subsection.5.5}%
 \contentsline {section}{\numberline {VI}Deployment and Usage}{16}{section.6}%

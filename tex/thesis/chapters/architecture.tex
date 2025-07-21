@@ -3,6 +3,14 @@
 
   In this chapter, the architecture of the system is described. The system is designed to achieve following goals. The system should be modular and easily extensible to allow future extensions towards a full model transformation platform for production use cases. The system should also be maintainable. In the folowing sections, the high-level architecture following the \ac{glsp} architecture is described. Then the design of the components, control flow and data models is described. In the end the UI design is explained.
 
+  \subsection{Design Decisions}
+  \label{subsec:design-decisions}
+
+  In the section \ref{sec:background} the used frameworks and technologies were described. The selection of these framworks still leave some open design decisions. One decisoion is to use \ac{glsp} with a Eclipse Theia client. 
+
+  Another decision was ???
+
+
   \subsection{Following the \ac{glsp} Architecture}
   \label{subsec:high-level-architecture}
 
@@ -26,12 +34,10 @@
 
   The user has to select or create a workspace in the UI, where all the source models are located. Each workspace for Henshin Web has to be in a specific structure. It should contain one \textit{.ecore} metamodel and one \textit{.henshin} transformations file. Additionally, arbitrary \textit{.xmi} instance files can be added. All of these files should be stored in the root folder of the workspace. When creating a new model file or opening it for the first time, a new notation file is generated and stored in the \textit{.notation} subfolder of the workspace. These notation files are not displayed in the theia explorer.  
 
-
-  \subsection{Data Flow and Control Flow}
-  \label{subsec:data-flow}
-
   \subsection{Component Design}
   \label{subsec:component-design}
+
+  client -> glsp -> theia modules
 
   \subsection{User Interface Design}
   \label{subsec:user-interface-design}
