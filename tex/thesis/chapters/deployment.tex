@@ -41,3 +41,36 @@ A \ac{glsp} editor can be deployed and used in production in various ways. \ac{g
   Because of the limited file access of the browser, the user has to upload and download all files to the server to use them. To be able to access the local file system of the user directly, the server needs to be hosted locally. For that, \ac{glsp} Theia application can be hosted in a Docker container. \cite{docker} The Docker container can contain the Java server and the TypeScript client, that are started together. The user can then access the editor via a web browser. On a machine with a Docker environment, this solution can be started locally in an easy way and has the access to the file system. The Docker container can also be used to deploy the application on a server so that it can be accessed by multiple users. The single Docker container solution doesn't provide as much scalability as using a cluster with Theia Cloud.
 
   The \ac{glsp} Theia application can also be used as a desktop application. Theia uses Electron \cite{electron-repo} to bundle the application into a desktop application, that can be installed via an installer. This approach also provides access to the local file system, since the electron application works like a self-hosted web application, and therefore the \ac{glsp} Java server is started locally. All in all, the \ac{glsp} Theia integration provides all different options to use the Henshin Web editor. Further clients can always be added later if needed.
+
+  In table \ref{tab:deployment-comparison} the different deployment options are compared. The self-hosted Docker and Desktop Electron bring no costs to provide the application. Here the Desktop option is easier to install and use, as no external dependencies need to be installed before. Even thought it doesn't use the browser, it uses web-based technologies. Theia Cloud on the other hand brings many features for deploying the application with authentication, authorization and predefined workspaces with it. On the other hand, it brings a more complicated deployment and costs for hosting the kubernetes cluster. To sum it up, the two best options are to use Electron or Theia Cloud.
+
+
+
+  \begin{table}[h]
+  \centering
+  \caption{Comparison of GLSP Theia deployment options}
+  \label{tab:deployment-comparison}
+  \resizebox{\textwidth}{!}{
+    \begin{tabular}{|l|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
+      \hline
+      \textbf{Option} & \textbf{Self-hosted Container} & \textbf{Cloud Hosted Container} & \textbf{Theia Cloud} & \textbf{Desktop (Electron)} \\
+      \hline
+      \textbf{Installation Effort} & Local Docker Setup required & None (access via browser) & None (creating an account) & Installing over a standard installer \\
+      \hline
+      \textbf{Dependencies} & Docker runtime, web browser & Web browser only & Web browser only & Application installer \\
+      \hline
+      \textbf{Multi-user Support} & Single user & Multi-user possible but no shared editor & Built-in shared workspaces, but no shared editor & Single user per installation \\
+      \hline
+      \textbf{Hosting Requirements} & Local & Cloud service (Container hosting) & Kubernetes cluster & Local machine \\
+      \hline
+      \textbf{Cross-platform} & Yes (via browser) & Yes (via browser) & Yes (via browser) & Platform-specific builds \\
+      \hline
+      \textbf{Offline Usage} & Yes & No & No & Yes \\
+      \hline
+      \textbf{File System Access} & Full local access & Upload/download required & Upload/download required & Full local access \\
+      \hline
+      \textbf{Costs} & No Costs & Cloud server costs & Cost of Google Cloud Kubernetes cluster & No Costs (maybe provisioning of installer) \\
+      \hline
+    \end{tabular}
+  }
+\end{table}
