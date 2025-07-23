@@ -1,0 +1,23 @@
+\begin{table*}[h]
+    \centering
+    \caption{Comparison of GLSP Platform Integrations}
+    \label{tab:glsp-platform-comparison}
+    \resizebox{\textwidth}{!}{
+        \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+            \hline
+            \textbf{Criteria} & \textbf{Eclipse Theia} & \textbf{\ac{vscode}} & \textbf{Eclipse \acs{ide}} & \textbf{Standalone} \\
+            \hline
+
+            \textbf{Deployment Options} & Web-app, Desktop (Electron) & Desktop, Web-app & Desktop & Custom (Web or Desktop)\\
+            \hline
+            \textbf{Extendability} & Access to all Theia internal \acsp{api} & Through VS Code Extension \acsp{api} & Moderate, via Eclipse plugins (OSGi-based) & Fully customizable (with own implementations) \\
+            \hline
+            \textbf{Provided Environment} & Complete \acs{ide} & Complete \acs{ide} & Complete \acs{ide} & No other features included \\
+            \hline
+            \textbf{Result Format} & Own \acs{ide} or as a plugin & \ac{vscode} extension & Eclipse \acs{ide} plugin & javascript based web editor module \\
+            \hline
+            \textbf{Dependencies Needed} & browser & \ac{vscode} Desktop or browser & Eclipse \acs{ide}& browser \\
+            \hline
+        \end{tabular}
+    }
+\end{table*}

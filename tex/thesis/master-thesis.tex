@@ -9,6 +9,49 @@
 \usepackage[margin=3cm]{geometry}
 \usepackage[english]{babel}
 \usepackage{float} % Added to support [H] float option
+
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegray}{gray}{0.95}
+\definecolor{keywordcolor}{rgb}{0.36,0.15,0.80}
+\definecolor{stringcolor}{rgb}{0.31,0.60,0.02}
+\definecolor{commentcolor}{gray}{0.4}
+
+% Global style
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{keywordcolor}\bfseries,
+  commentstyle=\color{commentcolor}\itshape,
+  stringstyle=\color{stringcolor},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=2,
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  captionpos=b
+}
+
+\lstdefinelanguage{TypeScript}{
+  morekeywords={
+    break, case, catch, class, const, continue, debugger, default, delete, do, else,
+    enum, export, extends, false, finally, for, function, if, import, in, instanceof,
+    new, null, return, super, switch, this, throw, true, try, typeof, var, void,
+    while, with, yield, let, await, async, of, as, implements, interface, type,
+    from, declare, readonly, keyof, infer, never, unknown, any, boolean, string, number, symbol
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[b]`,
+}
+
 \graphicspath{ {./figures/} }
 \addbibresource{../master-thesis.bib}
 \newcommand{\code}[1]{\texttt{#1}}
@@ -78,9 +121,6 @@
     \label{fig:xmi-ui}
   \end{figure}
 
-
-
-  
   \printbibliography
 
 \end{document}

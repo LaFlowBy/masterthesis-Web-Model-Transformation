@@ -1,0 +1,66 @@
+% \begin{lstlisting}[language=TypeScript, caption={TypeScript example}, label={lst:ts-example}]
+% export class RuleNameUIExtension extends GLSPAbstractUIExtension {
+%     static readonly ID = 'rule-name-ui-extension';
+
+%     @inject(EditorContextService)
+%     protected editorContext: EditorContextService;
+
+%     @inject(TYPES.IActionDispatcher)
+%     protected readonly actionDispatcher: IActionDispatcher;
+
+%     private fullRuleString: string = '';
+
+%     id(): string {
+%         return RuleNameUIExtension.ID;
+%     }
+%     override containerClass(): string {
+%         return RuleNameUIExtension.ID;
+%     }
+%     protected initializeContents(containerElement: HTMLElement): void {
+%         containerElement.innerHTML = '';
+%         const ruleNameElement = document.createElement('div');
+%         ruleNameElement.textContent = this.fullRuleString;
+%         ruleNameElement.className = 'rule-name-header';
+%         containerElement.appendChild(ruleNameElement);
+%     }
+
+%     async postModelInitialization(): Promise<MaybePromise<void>> {
+%         await this.setRuleName('');
+%     }
+
+%     public async setRuleName(ruleName: string): Promise<void> {
+%         if (this.editorContext.diagramType === 'rule-diagram') {
+%             var response = await this.actionDispatcher.request<GetParametersOfRuleResponseAction>(
+%                 GetParametersOfRuleAction.create(ruleName)
+%             );
+%             this.fullRuleString =
+%                 'Rule ' + response.ruleName + '(' + response.parameters.map(p => p.kind + ' ' + p.name + ':' + p.typeName).join(', ') + ')';
+
+%             if (this.containerElement) {
+%                 this.initializeContents(this.containerElement);
+%             }
+%             this.show(this.editorContext.modelRoot);
+%         }
+%     }
+
+%     public async updateRuleName(ruleName: string): Promise<void> {
+%         this.hide();
+%         this.setRuleName(ruleName);
+%     }
+% }
+% \end{lstlisting}
+
+
+
+% % \begin{lstlisting}[language=Java, caption={A simple Java method}, label={lst:java-greet}]
+% % public class Greeter {
+% %     public static String greet(String name) {
+% %         return "Hello, " + name + "!";
+% %     }
+
+% %     public static void main(String[] args) {
+% %         String user = "Flo";
+% %         System.out.println(greet(user));
+% %     }
+% % }
+% % \end{lstlisting}

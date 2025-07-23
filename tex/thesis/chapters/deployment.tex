@@ -44,33 +44,4 @@ A \ac{glsp} editor can be deployed and used in production in various ways. \ac{g
 
   In table \ref{tab:deployment-comparison} the different deployment options are compared. The self-hosted Docker and Desktop Electron bring no costs to provide the application. Here the Desktop option is easier to install and use, as no external dependencies need to be installed before. Even thought it doesn't use the browser, it uses web-based technologies. Theia Cloud on the other hand brings many features for deploying the application with authentication, authorization and predefined workspaces with it. On the other hand, it brings a more complicated deployment and costs for hosting the kubernetes cluster. To sum it up, the two best options are to use Electron or Theia Cloud.
 
-
-
-  \begin{table}[h]
-  \centering
-  \caption{Comparison of GLSP Theia deployment options}
-  \label{tab:deployment-comparison}
-  \resizebox{\textwidth}{!}{
-    \begin{tabular}{|l|p{3.2cm}|p{3.2cm}|p{3.2cm}|p{3.2cm}|}
-      \hline
-      \textbf{Option} & \textbf{Self-hosted Container} & \textbf{Cloud Hosted Container} & \textbf{Theia Cloud} & \textbf{Desktop (Electron)} \\
-      \hline
-      \textbf{Installation Effort} & Local Docker Setup required & None (access via browser) & None (creating an account) & Installing over a standard installer \\
-      \hline
-      \textbf{Dependencies} & Docker runtime, web browser & Web browser only & Web browser only & Application installer \\
-      \hline
-      \textbf{Multi-user Support} & Single user & Multi-user possible but no shared editor & Built-in shared workspaces, but no shared editor & Single user per installation \\
-      \hline
-      \textbf{Hosting Requirements} & Local & Cloud service (Container hosting) & Kubernetes cluster & Local machine \\
-      \hline
-      \textbf{Cross-platform} & Yes (via browser) & Yes (via browser) & Yes (via browser) & Platform-specific builds \\
-      \hline
-      \textbf{Offline Usage} & Yes & No & No & Yes \\
-      \hline
-      \textbf{File System Access} & Full local access & Upload/download required & Upload/download required & Full local access \\
-      \hline
-      \textbf{Costs} & No Costs & Cloud server costs & Cost of Google Cloud Kubernetes cluster & No Costs (maybe provisioning of installer) \\
-      \hline
-    \end{tabular}
-  }
-\end{table}
+  \input{tables/deployment-comparison.tex}
