@@ -384,6 +384,18 @@ INPUT ./figures/xmi-ui.png
 INPUT ./figures/xmi-ui.png
 INPUT ./figures/xmi-ui.png
 INPUT ./figures/xmi-ui.png
+INPUT ./listings/notation-adapter.tex
+INPUT ./listings/notation-adapter.tex
+INPUT listings/notation-adapter.tex
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrro7t.tfm
+INPUT ./listings/gmodel-factory.tex
+INPUT ./listings/gmodel-factory.tex
+INPUT listings/gmodel-factory.tex
+INPUT c:/texlive/2024/texmf-dist/fonts/vf/adobe/courier/pcrro7t.vf
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -399,6 +411,7 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb
+INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb

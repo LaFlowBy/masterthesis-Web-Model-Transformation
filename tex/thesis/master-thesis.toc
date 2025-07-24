@@ -32,20 +32,22 @@
 \contentsline {subsection}{\numberline {\mbox {VII-B}}Tooling and Environment}{23}{subsection.7.2}%
 \contentsline {subsection}{\numberline {\mbox {VII-C}}Code Examples...}{23}{subsection.7.3}%
 \contentsline {subsubsection}{\numberline {\mbox {VII-C}1}Integration of Henshin into a GLSP project}{23}{subsubsection.7.3.1}%
-\contentsline {subsubsection}{\numberline {\mbox {VII-C}2}Layouting}{23}{subsubsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {\mbox {VII-C}3}Indexing EMF models}{24}{subsubsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {\mbox {VII-C}4}Custom UI extensions}{26}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {\mbox {VII-C}2}GModelFactory}{23}{subsubsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {\mbox {VII-C}3}Layouting}{24}{subsubsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {\mbox {VII-C}4}Indexing EMF models}{25}{subsubsection.7.3.4}%
+\contentsline {subsubsection}{\numberline {\mbox {VII-C}5}Custom UI extensions}{27}{subsubsection.7.3.5}%
 \contentsline {section}{\numberline {VIII}Testing and Evaluation}{27}{section.8}%
 \contentsline {subsection}{\numberline {\mbox {VIII-A}}Testing Strategy}{27}{subsection.8.1}%
-\contentsline {subsection}{\numberline {\mbox {VIII-B}}Test Results and Coverage}{27}{subsection.8.2}%
-\contentsline {subsection}{\numberline {\mbox {VIII-C}}Performance Evaluation}{27}{subsection.8.3}%
-\contentsline {subsection}{\numberline {\mbox {VIII-D}}User Feedback}{27}{subsection.8.4}%
-\contentsline {subsection}{\numberline {\mbox {VIII-E}}Comparison with Requirements}{27}{subsection.8.5}%
-\contentsline {section}{\numberline {IX}Discussion}{27}{section.9}%
-\contentsline {subsection}{\numberline {\mbox {IX-A}}Interpretation of Results}{27}{subsection.9.1}%
-\contentsline {subsection}{\numberline {\mbox {IX-B}}Challenges and Limitations}{27}{subsection.9.2}%
-\contentsline {section}{\numberline {X}Conclusion and Future Work}{27}{section.10}%
-\contentsline {subsection}{\numberline {\mbox {X-A}}Summary of Contributions}{27}{subsection.10.1}%
-\contentsline {subsection}{\numberline {\mbox {X-B}}Suggestions for Future Development}{27}{subsection.10.2}%
-\contentsline {section}{\numberline {XI}Acronyms}{28}{section.11}%
-\contentsline {section}{\numberline {XII}Appendix}{29}{section.12}%
+\contentsline {subsection}{\numberline {\mbox {VIII-B}}Unit Tests}{28}{subsection.8.2}%
+\contentsline {subsection}{\numberline {\mbox {VIII-C}}E2E Tests}{28}{subsection.8.3}%
+\contentsline {subsection}{\numberline {\mbox {VIII-D}}Limitations}{28}{subsection.8.4}%
+\contentsline {section}{\numberline {IX}Discussion}{28}{section.9}%
+\contentsline {subsection}{\numberline {\mbox {IX-A}}Interpretation of Results}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {\mbox {IX-B}}Challenges and Limitations}{28}{subsection.9.2}%
+\contentsline {section}{\numberline {X}Conclusion and Future Work}{28}{section.10}%
+\contentsline {subsection}{\numberline {\mbox {X-A}}Summary of Contributions}{28}{subsection.10.1}%
+\contentsline {subsection}{\numberline {\mbox {X-B}}Suggestions for Future Development}{28}{subsection.10.2}%
+\contentsline {section}{\numberline {XI}Acronyms}{29}{section.11}%
+\contentsline {section}{\numberline {XII}Appendix}{30}{section.12}%
+\contentsline {subsection}{\numberline {\mbox {XII-A}}Figures}{30}{subsection.12.1}%
+\contentsline {subsection}{\numberline {\mbox {XII-B}}Code Listings}{31}{subsection.12.2}%
