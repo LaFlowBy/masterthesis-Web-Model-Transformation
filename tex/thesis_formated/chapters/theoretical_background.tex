@@ -1,8 +1,8 @@
-\section{Background}
+\chapter{Background}
 \label{sec:background}
   In this section, the theoretical background of the project and used technologies are described. First the Eclipse Foundation is introduced, as many used frameworks are developed under the Eclipse Foundation. Then, the Eclipse Modeling Framework is described, as it is the core of the used frameworks. After that, the model transformation language Henshin is introduced. Finally, the framework \ac{glsp} is described, that is used to create web-based diagram editors.
 
-  \subsection{Eclipse Foundation}
+  \section{Eclipse Foundation}
   \label{subsec:eclipse-foundation}
   The Eclipse Foundation is a not-for-profit, member-supported corporation that provides an environment for individuals and organizations for collaborative and innovative software development. \cite{eclipse-review} The Eclipse Foundation grew out of the publication of the Eclipse \ac{ide} code from IBM in 2001. The Eclipse Foundation itself was founded in 2004. The new organization was founded to continue the development of Eclipse IDE as an open source platform. Over time, the organization initiated numerous projects in the Eclipse environment, all operating under the Eclipse Public License. \cite{heise-eclipse-foundation,eclipse-review} In the recent years, the key initiatives of the Eclipse Foundation are contributing to european digital sovereignty, enhancing security measures, innovating \ac{sdv}, organizing community events, and improving their most popular projects. Popular projects are for example the Jakarta EE, an ecosystem for cloud-native applications with java, Eclipse Temurin, providing open source Java Development Kits and the Eclipse IDE. \cite{eclipse-report} In total, the Eclipse Foundation hosts more than 400 open source projects, supported 14 european research projects in 2024, and has 117 organizations participating in commits. \cite{eclipse-report}
 
@@ -10,7 +10,7 @@
 
   The Eclipse \ac{ide} is not the main project, but it is still an important part of the Eclipse infrastructure. It is divided into four main components: Equinox, the Platform, the \ac{jdt} and the \ac{pde}. Together they provide everything to develop and extend Eclipse-based tools. Equinox and the Platform are the core of the Eclipse \ac{ide}. With expanding the core with the \ac{jdt} or other plugins, the \ac{ide} can be used to develop different programming languages, like Java, C/C++, or PHP. \cite{emf} Eclipse provides different packages to download, depending on the use case. One package is the Eclipse Modeling Tools package by the Eclipse Modeling Project. It provides tools and runtimes to build model-based applications. It can be used to graphically design domain models and test those models by creating and editing dynamic instances. Also, Java code can be generated from the models to get a scaffold that can be used to create applications on top. \cite{eclipse_modeling} The base of the Eclipse Modeling Tool is \ac{emf} (section \ref{subsec:emf}). Other modeling tools and projects that are built on top of the \ac{emf} core functionality provide capabilities for model transformation, database integration, or graphical editor generation. \cite{emf}
 
-  \subsection{\acf{emf}}
+  \section{\acf{emf}}
     \label{subsec:emf}
 
     \begin{quote}
@@ -42,7 +42,7 @@
 
     The third component is \ac{emf}.Codegen. It can generate Java code for a complete editor for \ac{emf} instance models of an Ecore metamodel. It provides different generation options. So, unlike \ac{emf}.Edit, that just provides generic classes for Ecore models, \ac{emf}.Codegen directly generates complete editors with a \acs{ui}. \cite{eclipse_emf} The generation can be done over a wizard in the Eclipse \ac{ide} or by using the command line interface. \cite{emf} The generation can be separated into three levels. The first level is to generate Java interfaces and implementations for the Ecore model classes and a factory- and package-implementation class. The second level generates specific \code{ItemProviders} to edit instance models based on the metamodel. The classes are structured like the \ac{emf}.Edit component for the Ecore models. The third level generates a structured editor with \acs{ui} that works like the Ecore editor in the Eclipse \ac{ide} and can be a starting point for customization. \cite{eclipse_emf} There are many frameworks that build on top of \ac{emf}, using these generation capabilities to create further modeling functionality. For model transformations the most popular frameworks that build upon \ac{emf} are Eclipse Acceleo, Eclipse VIATRA, Eclipse ATL, Eclipse QVT Operational, Eclipse QVT Declarative and Henshin \ref{subsec:henshin}.
 
-  \subsection{Henshin}
+  \section{Henshin}
   \label{subsec:henshin}
 
   One part of the Eclipse Modeling Project for model transformations is Henshin. It can be used as a plugin in the Eclipse \ac{ide} or as an \acs{sdk}. It provides a graphical and textual syntax to define model transformation rules and apply them to \ac{emf} XMI instance models. It can be used for endogenous transformations, where \ac{emf} model instances are directly transformed, and exogenous transformations, where new instances are generated from given instances using a trace model. It also brings efficient in-place execution of transformations using an interpreter with debugging support and a performance profiler. Henshin also provides conflict and dependency analysis, and state space analysis for verification. \cite{henshin-repo}
@@ -60,7 +60,7 @@
     \label{fig:henshin-rule-model}
   \end{figure}
 
-  \subsection{\acf{glsp}}
+  \section{\acf{glsp}}
   \label{subsec:glsp}
 
   \ac{glsp} is a framework that provides components for the development of \acsp{gui} for web-based diagram editors.

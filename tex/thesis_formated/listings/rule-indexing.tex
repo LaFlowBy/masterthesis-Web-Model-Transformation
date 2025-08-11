@@ -1,0 +1,29 @@
+\begin{lstlisting}[language=TypeScript, caption={Parts of \code{RuleModelIndex}}, label={lst:rule-indexing}]
+public void indexRuleElement(String id, GraphElement element) {
+    if(ruleElementIndex.containsKey(id))
+        return;
+    ruleElementIndex.put(id, element);
+}
+
+public GraphElement getRuleElement(String id) {
+    if (rhsToLhs.containsKey(id)) {
+        String lhsId = rhsToLhs.inverseMap().get(id);
+        if (ruleElementIndex.containsKey(lhsId)) {
+            return ruleElementIndex.get(lhsId);
+        }
+    }
+    return ruleElementIndex.get(id);
+}
+
+public String getRuleElementId(GraphElement element) {
+    String id = element.eResource().getURIFragment(element);
+    if(rhsToLhs.inverseMap().containsKey(id)){
+        return rhsToLhs.inverseMap().get(id);
+    }
+    if(lhrToRhs.inverseMap().containsKey(id)){
+        return lhrToRhs.inverseMap().get(id);
+    }
+
+    return ruleElementIndex.inverse().get(element);
+}
+\end{lstlisting}

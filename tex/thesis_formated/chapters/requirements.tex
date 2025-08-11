@@ -1,0 +1,73 @@
+  \chapter{Requirements Analysis}
+  \label{subsec:requirements}
+
+  The purpose of this chapter is to systematically identify, analyze, and document the requirements of the software system developed in the context of this thesis. The chapter outlines functional and non-functional requirements as well as the system stakeholders and constraints.
+
+\section{Stakeholders and User Needs}
+  \label{subsec:stakeholders}
+
+  \begin{itemize}
+    \item \textbf{Students}: Students who want to learn about \ac{mde} and transformation rules, want a very simple and intuitive entry into the topic. Trying out transformations in the browser is a good start, without having to install a lot of software. For Students the core functionality is sufficient, as they only want to try out transformation rules and learn how they work.
+    \item \textbf{Researchers}: Researchers, that are researching for \ac{mde} and come arcross Henshin, want to be able to test or try out model transformations of Henshin. For Researchers the core functionality could be sufficient, but editing capabilites of the transformation rules and metamodels are pracitcal for them.
+    \item \textbf{Software Engineers}: Software engineers, that are using \ac{mde}, want to be able to test their transformation rules. They want a powerful editor and a colaborative environment to work on their models. For Software Engineers the defined additional functionality as well as some code generation support are needed to cover their needs.
+  \end{itemize}
+
+  The different Stakeholders show, that for more features the application provides, more users can be reached. With more features and use cases the application can cover, it provides more value for enterprise users, that work for production systems.
+
+  \section{System Scope and Context}
+  \label{subsec:system-scope}
+
+  The Eclipse \acs{ide} plugin of Henshin works as a template for the functionality of the application. It provides functionality to create, edit and apply Henshin transformation rules for Ecore metamodels on \ac{xmi} instances. To create a full enterprise application, that will get used for projects in the industry, the application has to also provide very similar functionality.
+  The defined core functionality is the minimum set of features that the application must provide to be useful for the users. They are only a subset of requirements to provide a full web-based copy of the Henshin Eclipse plugin.
+
+  The core functional requirements extends already existing functionality, that Eclipse Theia and \ac{glsp} already provide. Theia provides various views like the explorer for basic file management, including opening, saving, closing, creating and deleting files, a problems view, a integrated terminal, or edit operations like copy or paste. \ac{glsp} provides default functionality for each graphical editor. That includes selection of elements, moving nodes, realinging edges, zooming, or moving and reseting the viewport. Most of these features can be further configured to be able to create an editor fitting the specific needs.
+
+  \section{Functional Requirements}
+  \label{subsec:functional-requirements}
+
+  The main use case that the application should support is that a user can try out transformation rules on \ac{emf} \ac{xmi} instance files. In this usecase, the user already has a metamodel and transformation rules. He wants to test the transformation rules on various instances in an accessible, intuitive, and easy to use graphical editor. From that use case the following core functional requirements can be derived.
+
+  \textbf{Core Functionallity:}
+  \begin{itemize}
+    \item \ac{emf} \ac{xmi} instance files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model.
+    \item The \ac{xmi} instance editor should provide editing functionality to create, update and delete nodes, edges and attributes.
+    \item In the \ac{xmi} instance editor all applicable transformation rules should be listed.  When a rule is selected to get applied, all parameters have to be specifiable.
+    \item When a rule gets appplied, the graphical editor of the \ac{xmi} instance should be updated to reflect the changes made by the transformation rule. The application should also support undo and redo functionality for the applied transformation rules.
+    \item Henshin transformation rule files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model and their action types. The user should be able to switch between all rules of a \textit{.henshin} file.
+    \item \ac{emf} Ecore metamodel should be displayed in a graphical editor. That contains the nodes, edges and attributes of the metamodel.
+\end{itemize}
+
+Next to the core use case, the second use case is that a user wants to create a full transformation language from scratch, that can be used to model and test the system and generate production code from it. In this use case, the user wants to create and edit metamodels and transformation rules. To support this use case, the following additional functional requirements are defined:
+
+\textbf{Additional Functionallity:}
+  \begin{itemize}
+    \item The Henshin rule editor should provide editing functionality to create, update and delete nodes, edges, attributes and their action types.
+    \item The Ecore metamodel editor should provide editing functionality to create, update and delete nodes, edges and attributes.
+    \item Henshin transformation units are also listed in the \ac{xmi} instance editor and can be applied.
+    \item Show the possible transformation rule matches in the \ac{xmi} instance editor, when selecting a transformation rule.
+    \item Provide the functionality to apply a State Space analysis on a \ac{xmi} instance.
+    \item Provide the functionality to apply a conflict and dependency analysis on a \ac{xmi} instance. 
+  \end{itemize}
+
+  There exist many more use cases for model transformations and \ac{mde} in general. The application can grow to a web-based platform for \ac{mde} in th future. Additional functionality will be disscused in section \ref{subsec:suggestions-future-development} but these usecases are not scope of this thesis.
+
+  \section{Non-Functional Requirements}
+  \label{subsec:non-functional-requirements}
+
+  In addition to the core functionality, the system must meet several non-functional requirements:
+
+  \textbf{Non-Functional Requirements:}
+  \begin{itemize}
+    \item The application should be web-based and preferably accessible via a web browser.
+    \item The application should be responsive and work on different screen sizes. It does not have to support mobile devices and touch interactions, since \ac{glsp} is also not supporting touch interactions \cite{glsp-repo}.
+    \item The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the exploerer and the predefined UI contorls of \ac{glsp}, like the tool palette or the context menu.
+  \end{itemize}
+
+  \section{System Constraints}
+  \label{subsec:system-constraints}
+
+  One constraint is the use of Henshin as a tranformation language. Henshin is a Java-based framework, which menas that the application needs a possibility to run Java code in the backend. The easiest way for that is to use a Java-based backend, that can directly use the Henshin SDK code.
+  The use of Henshin also brings the constraint that, metamodels and instances are based on \ac{emf}.
+
+  Another constraint is the use of web-based technologies and preferably a resulting web application. For model transformations, there exist many applications, but not many of them are web-based. This constraint is also a non functional requirement and was also motivated in previous sections.
+  The initial version of the application will support English only.

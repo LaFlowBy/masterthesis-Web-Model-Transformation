@@ -1,0 +1,25 @@
+\chapter{Introduction}
+\label{sec:introduction}
+
+\section{Background and Motivation}
+\label{subsec:motivation}
+
+In software engineering, often \ac{mde} is used to increase development productivity and quality. \cite{transformations-modeldriven} Concepts are modeled closer to the domain, so that they describe important aspects of a solution with human-friendly abstractions. The models can also be used to generate application fragments, that can be directly used as a template source code. In the process of \ac{mde}, many activities need to transform source models into different target models, while following a set of transformation rules. This model transformation process is based on algebraic graph transformations. A metamodel is used to model the structure and rules of the concept. The resulting transformation language can provide automatic model creation, development, and maintenance activities. \cite{transformations-modeldriven} One framework to use \ac{mde} is \ac{emf} by the Eclipse Foundation. It provides a basis for application development, using modeling and code generation facilities. Many frameworks build upon \ac{emf}, providing various \ac{mde} tools like code generators, graphical diagramming, model transformation, or model validation. \cite{emf} One model transformation framework is Henshin. \cite{henshin-repo} It tries to provide model transformation capabilities with a high level of usability. \cite{henshin-usability} For metamodels it uses \ac{emf} Ecore files and for instance models \ac{emf} XMI files. The framework enables transformations on XMI instance files with a defined transformation language. It provides a graphical and textual syntax to create these transformation rules. \cite{henshin-repo} Henshin can be used as a Eclipse plugin. Eclipse makes it easy to access, but especially for new users, the heavy editor makes the use of Henshin unintuitive.
+Therefore, the goal exists to create a graphical option to use the Henshin model transformations without the overhead of the heavy Eclipse editor. A web-based graphical editor would make the use of Henshin even more accessible and intuitive.
+
+\ac{glsp} is a open-source framework by the Eclipse Foundation, which can be used to build a web-based Henshin graph editor. The framework is used to develop custom diagram editors for distributed web-applications. \cite{glsp-repo} It can provide graph editors for the Eclipse Desktop IDE, Eclipse Theia, \ac{vscode} and a stanalone version usable in any website. It brings the support of \ac{emf} models as a data source and the Henshin SDK can be used from the Java server of \ac{glsp}. \cite{glsp-doc} With these functionalities, \ac{glsp} fits to create an easy accessible, intuitive application to create and apply Henshin model transformations, called Henshin Web.
+
+
+The goal of this scientific work is to provide relevant information about the used technologies. Also existing web-based model transformation tools will be compared in the related work section. In section \ref{sec:deployment}, the deployment and usage of the Henshin Web editor will be discussed. The goal is to provide a web-based editor that can be used without any dependencies, like an installed \acs{ide} or other tools. The editor should be easy to access and use, so that it can be used by new users without any prior knowledge of model transformations or Henshin.
+
+\section{Problem Statement}
+\label{subsec:problem-statement}
+
+\section{Research Questions}
+\label{subsec:research-questions}
+
+\section{Scope and Limitations}
+\label{subsec:scope-limitations}
+
+\section{Structure of the Thesis}
+\label{subsec:structure-thesis}

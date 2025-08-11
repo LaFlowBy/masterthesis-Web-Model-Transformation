@@ -1,0 +1,190 @@
+\documentclass[11pt,a4paper,oneside,listof=totoc,bibliography=totoc]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage{lipsum} % for blindtext
+\usepackage[backend=biber,url=true,style=numeric,  sorting=none]{biblatex} 
+\usepackage{graphicx} % for images
+\usepackage{float}
+\usepackage{array,booktabs}  %for tables
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{enumitem}
+
+% Configure URL breaking
+\usepackage{breakurl}
+\Urlmuskip=0mu plus 1mu\relax % Allow URL breaking at any character
+\def\UrlBreaks{\do\/\do-\do.\do_\do?\do&\do=\do\%}
+
+\usepackage{hyperref}
+\usepackage[ngerman,english]{babel} 
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{amsmath, amssymb}
+\usepackage{xargs}
+\usetikzlibrary{arrows.meta}
+\usepackage{rotating}  % Put this in your preamble
+\usetikzlibrary{positioning, shapes.multipart}
+\usetikzlibrary{calc}
+\usepackage{subcaption}
+\usepackage{amsthm}  % already often used for theorems/definitions
+\usepackage{listings}
+\usepackage{xcolor}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+
+% ----------------------------------------------
+% Settings
+% ----------------------------------------------
+% set bib file (source references.bib)
+\bibliography{../master-thesis.bib}
+\graphicspath{ {./figures/} }
+
+% Better line breaking and hyphenation
+\sloppy % Allow more flexible line breaking
+\emergencystretch=10pt % Add extra stretch to help with line breaking
+\hyphenpenalty=50 % Reduce penalty for hyphenation
+\exhyphenpenalty=50 % Reduce penalty for explicit hyphens
+\widowpenalty=10000 % Prevent widows
+\clubpenalty=10000 % Prevent orphans
+
+% Better handling of URLs and long text
+\usepackage{microtype} % Improves typography and helps with overfull boxes
+\microtypesetup{protrusion=true,expansion=true}
+
+%listings
+\definecolor{codegray}{gray}{0.95}
+\definecolor{keywordcolor}{rgb}{0.36,0.15,0.80}
+\definecolor{stringcolor}{rgb}{0.31,0.60,0.02}
+\definecolor{commentcolor}{gray}{0.4}
+
+% Global style
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{keywordcolor}\bfseries,
+  commentstyle=\color{commentcolor}\itshape,
+  stringstyle=\color{stringcolor},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=2,
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  captionpos=b
+}
+
+\lstdefinelanguage{TypeScript}{
+  morekeywords={
+    break, case, catch, class, const, continue, debugger, default, delete, do, else,
+    enum, export, extends, false, finally, for, function, if, import, in, instanceof,
+    new, null, return, super, switch, this, throw, true, try, typeof, var, void,
+    while, with, yield, let, await, async, of, as, implements, interface, type,
+    from, declare, readonly, keyof, infer, never, unknown, any, boolean, string, number, symbol
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[b]`,
+}
+
+% definitions for tables
+\newcommand {\otoprule}{\midrule [\heavyrulewidth]}
+\newcolumntype {+}{ >{\global\let\currentrowstyle\relax}}
+\newcolumntype {^}{ >{\currentrowstyle }}
+ \newcommand {\rowstyle}[1]{\gdef\currentrowstyle{#1} %
+ #1\ignorespaces
+ }
+\newcommand{\tabhead}{\rowstyle{\bfseries}}
+
+\usepackage[colorinlistoftodos,prependcaption,textsize=tiny]{todonotes}
+\newcommandx{\unsure}[2][1=]{\todo[linecolor=red,backgroundcolor=red!25,bordercolor=red,#1]{#2}}
+\newcommandx{\change}[2][1=]{\todo[linecolor=blue,backgroundcolor=blue!25,bordercolor=blue,#1]{#2}}
+\newcommandx{\info}[2][1=]{\todo[linecolor=OliveGreen,backgroundcolor=OliveGreen!25,bordercolor=OliveGreen,#1]{#2}}
+\newcommandx{\improvement}[2][1=]{\todo[linecolor=Plum,backgroundcolor=Plum!25,bordercolor=Plum,#1]{#2}}
+\newcommandx{\thiswillnotshow}[2][1=]{\todo[disable,#1]{#2}}
+
+% Improved code command that allows line breaks
+\usepackage{xparse}
+\NewDocumentCommand{\code}{m}{%
+  \begingroup
+  \ttfamily
+  \hyphenchar\font=`\-% Enable hyphenation in typewriter font
+  \allowbreak
+  #1%
+  \endgroup
+}
+
+% Alternative inline code command with better breaking
+\newcommand{\inlinecode}[1]{%
+  \begingroup
+  \ttfamily
+  \fontdimen2\font=0.4em% Adjust inter-word space
+  \fontdimen3\font=0.2em% Adjust inter-word stretch
+  \fontdimen4\font=0.1em% Adjust inter-word shrink
+  \hyphenchar\font=`\-% Enable hyphenation
+  #1%
+  \endgroup
+}
+
+\usepackage[shortcuts, acronym]{glossaries}
+\makeglossaries
+\input{acronyms}
+
+\begin{document}
+\input{meta/metadata}
+\input{meta/title}
+
+
+\pagenumbering{alph}
+
+\input{meta/disclaimer}
+\input{chapters/abstract}
+
+
+\tableofcontents
+
+\printglossary[type=\acronymtype, title=List of Acronyms]
+
+% --------------------------------------------
+% Main Matter
+% --------------------------------------------
+\pagenumbering{arabic}
+
+\input{chapters/introuction.tex}
+\input{chapters/theoretical_background.tex}
+\input{chapters/relatedwork.tex}
+\input{chapters/requirements.tex}
+\input{chapters/architecture.tex}
+\input{chapters/deployment.tex}
+\input{chapters/implementation.tex}
+\input{chapters/testing.tex}
+\input{chapters/discussion-conclusion.tex}
+
+
+% A. Here argue first why we use continous based (downstream tasks).  Put detailed explanation of methods/ .code/ etc. in Appendix. Show the results, and give recomenddation based on results
+% B. Look also at output of other non-cont. methods /baselines. 
+
+% \input{content/Baselines}
+% \input{content/Experiments}
+
+
+
+% --------------------------------------------
+% Backmatter starts here
+% --------------------------------------------
+\printbibliography{} % bibliography
+\appendix
+\input{chapters/appendix}
+
+
+\listoffigures{}
+\listoftables{} 
+
+\end{document}
