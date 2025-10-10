@@ -1,0 +1,97 @@
+
+% Global style
+\lstset{
+  backgroundcolor=\color{codegray},
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{keywordcolor}\bfseries,
+  commentstyle=\color{commentcolor}\itshape,
+  stringstyle=\color{stringcolor},
+  numberstyle=\tiny\color{gray},
+  numbers=left,
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=2,
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  breakatwhitespace=true,
+  captionpos=b
+}
+
+\lstdefinelanguage{TypeScript}{
+  morekeywords={
+    break, case, catch, class, const, continue, debugger, default, delete, do, else,
+    enum, export, extends, false, finally, for, function, if, import, in, instanceof,
+    new, null, return, super, switch, this, throw, true, try, typeof, var, void,
+    while, with, yield, let, await, async, of, as, implements, interface, type,
+    from, declare, readonly, keyof, infer, never, unknown, any, boolean, string, number, symbol
+  },
+  sensitive=true,
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[b]`,
+}
+
+\lstdefinelanguage{hcl}{
+  keywords={resource, variable, output, locals, module, provider, data, terraform, required_providers, required_version, source, version, default, description, type, sensitive, depends_on, count, for_each, lifecycle, provisioner, connection, backend, workspace},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={string, number, bool, list, map, object, any, true, false, null},
+  ndkeywordstyle=\color{purple}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{\#},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]",
+  morestring=[b]',
+  morecomment=[s]{/*}{*/},
+  showstringspaces=false,
+  breaklines=true,
+  frame=tb,
+  framerule=1pt,
+  xleftmargin=\fboxsep,
+  xrightmargin=-\fboxsep,
+  rulecolor=\color{gray!30},
+  backgroundcolor=\color{gray!5},
+  basicstyle=\small\ttfamily,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  tabsize=2,
+  captionpos=b
+}
+
+\lstdefinelanguage{powershell}{
+  keywords={if, else, elseif, switch, while, for, foreach, do, until, function, filter, param, begin, process, end, try, catch, finally, throw, return, break, continue, exit, where, select, sort, group, measure, tee, out, export, import, new, get, set, add, remove, clear, copy, move, rename, test, start, stop, restart, invoke, enter, exit, push, pop, write, read, format, convert, compare, join, split},
+  keywordstyle=\color{blue}\bfseries,
+  ndkeywords={true, false, null, \$true, \$false, \$null, \$_},
+  ndkeywordstyle=\color{purple}\bfseries,
+  identifierstyle=\color{black},
+  sensitive=false,
+  comment=[l]{\#},
+  commentstyle=\color{gray}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  morestring=[b]",
+  morestring=[b]',
+  morestring=[s]{\@"}{"\@},
+  morestring=[s]{\@'}{'\@},
+  showstringspaces=false,
+  breaklines=true,
+  frame=tb,
+  framerule=1pt,
+  xleftmargin=\fboxsep,
+  xrightmargin=-\fboxsep,
+  rulecolor=\color{gray!30},
+  backgroundcolor=\color{gray!5},
+  basicstyle=\small\ttfamily,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  numbersep=5pt,
+  tabsize=2,
+  captionpos=b,
+  escapeinside={\%*}{*\%},
+  morekeywords=[2]{Set-Location, Write-Host, docker, terraform, gcloud, \$env:, \$PSScriptRoot, \$LASTEXITCODE, \$ErrorActionPreference},
+  keywordstyle=[2]\color{orange}\bfseries
+}

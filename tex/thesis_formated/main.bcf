@@ -2500,6 +2500,7 @@
     <bcf:citekey order="118" intorder="1">theia-cloud-doc</bcf:citekey>
     <bcf:citekey order="119" intorder="1">docker</bcf:citekey>
     <bcf:citekey order="120" intorder="1">electron-repo</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">terraform-repo</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
