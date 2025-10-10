@@ -1,5 +1,6 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{b}{chapter*.1}%
+\contentsline {chapter}{Zusammenfassung}{b}{chapter*.1}%
+\contentsline {chapter}{Abstract}{c}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and Motivation}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{3}{section.1.2}%
@@ -27,31 +28,52 @@
 \contentsline {section}{\numberline {5.3}Data Models and Structures}{21}{section.5.3}%
 \contentsline {section}{\numberline {5.4}\ac {glsp} Client Structure}{22}{section.5.4}%
 \contentsline {section}{\numberline {5.5}User Interface Design}{22}{section.5.5}%
-\contentsline {chapter}{\numberline {6}Deployment and Usage}{24}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Implementation}{28}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Development Process}{28}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Tooling and Environment}{29}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Code Examples...}{29}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Integration of Henshin into a GLSP project}{29}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}GModelFactory}{30}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Layouting}{30}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.4}Indexing EMF models}{31}{subsection.7.3.4}%
-\contentsline {subsection}{\numberline {7.3.5}Custom UI extensions}{33}{subsection.7.3.5}%
-\contentsline {chapter}{\numberline {8}Testing and Evaluation}{35}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Testing Strategy}{35}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Unit Tests}{35}{section.8.2}%
-\contentsline {section}{\numberline {8.3}E2E Tests}{35}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Limitations}{35}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Discussion}{36}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Interpretation of Results}{36}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Challenges and Limitations}{36}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Conclusion and Future Work}{36}{section.9.3}%
-\contentsline {section}{\numberline {9.4}Summary of Contributions}{36}{section.9.4}%
-\contentsline {section}{\numberline {9.5}Suggestions for Future Development}{36}{section.9.5}%
-\contentsline {chapter}{\nonumberline Bibliography}{37}{chapter*.15}%
-\contentsline {chapter}{\numberline {A}Appendix}{40}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Figures}{40}{subsection.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Code Listings}{41}{subsection.A.0.2}%
-\contentsline {chapter}{\nonumberline List of Figures}{42}{chapter*.19}%
-\contentsline {chapter}{\nonumberline List of Tables}{43}{chapter*.20}%
+\contentsline {chapter}{\numberline {6}Implementation}{24}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Development Process}{24}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Tooling and Environment}{25}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Code Examples...}{25}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Integration of Henshin into a GLSP project}{25}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}GModelFactory}{26}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Layouting}{26}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.4}Indexing EMF models}{27}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.5}Custom UI extensions}{29}{subsection.6.3.5}%
+\contentsline {chapter}{\numberline {7}Testing and Evaluation}{31}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Testing Strategy}{31}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Unit Tests}{31}{section.7.2}%
+\contentsline {section}{\numberline {7.3}E2E Tests}{31}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Limitations}{31}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Deployment and Usage}{32}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Usage}{36}{chapter.9}%
+\contentsline {section}{\numberline {9.1}User Guide}{36}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Development Setup}{38}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Prerequisites}{38}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Quick Start}{38}{subsection.9.2.2}%
+\contentsline {subsubsection}{\nonumberline Repository Setup}{39}{subsubsection*.17}%
+\contentsline {subsubsection}{\nonumberline Building the Application}{39}{subsubsection*.19}%
+\contentsline {subsubsection}{\nonumberline Starting the Application}{39}{subsubsection*.21}%
+\contentsline {subsection}{\numberline {9.2.3}IDE Setup}{39}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}Building the Project}{40}{subsection.9.2.4}%
+\contentsline {subsubsection}{\nonumberline Complete Build}{40}{subsubsection*.23}%
+\contentsline {subsubsection}{\nonumberline Individual Component Builds}{40}{subsubsection*.25}%
+\contentsline {subsubsection}{\nonumberline Available VS Code Tasks}{40}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {9.2.5}Development and Debugging}{40}{subsection.9.2.5}%
+\contentsline {subsection}{\numberline {9.2.6}Project Structure Overview}{41}{subsection.9.2.6}%
+\contentsline {subsubsection}{\nonumberline Client Components (\texttt {src/glsp-client/})}{41}{subsubsection*.29}%
+\contentsline {subsubsection}{\nonumberline Server Components (\texttt {src/glsp-server/})}{41}{subsubsection*.31}%
+\contentsline {subsubsection}{\nonumberline Henshin SDK Package (\texttt {hensin-package/})}{41}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {9.2.7}Container Deployment}{41}{subsection.9.2.7}%
+\contentsline {subsubsection}{\nonumberline Building the Docker Image}{41}{subsubsection*.35}%
+\contentsline {subsubsection}{\nonumberline Running the Container}{42}{subsubsection*.37}%
+\contentsline {chapter}{\numberline {10}Discussion}{43}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Interpretation of Results}{43}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Challenges and Limitations}{43}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Conclusion and Future Work}{43}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Summary of Contributions}{43}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Suggestions for Future Development}{43}{section.10.5}%
+\contentsline {chapter}{\nonumberline Bibliography}{44}{chapter*.38}%
+\contentsline {chapter}{\numberline {A}Appendix}{47}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Figures}{47}{subsection.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Code Listings}{48}{subsection.A.0.2}%
+\contentsline {chapter}{\nonumberline List of Figures}{51}{chapter*.47}%
+\contentsline {chapter}{\nonumberline List of Tables}{52}{chapter*.48}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
