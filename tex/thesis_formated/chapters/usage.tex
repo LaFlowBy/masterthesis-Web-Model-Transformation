@@ -34,14 +34,17 @@ Now elements of the graph can be created and deleted. To edit the properties of 
     \end{itemize}
 \end{itemize}
 
+\section{User Administration Guide}
+\label{sec:admin-guide}
+
+The deployment of Heshin Web with Theia Cloud provides a user management. Here users can be created, deleted and managed. The administration is done over the Keycloak admin console, which is available at \url{http://<your-domain>/auth/admin/} after the deployment of Henshin Web. 
+
+
 
 \section{Development Setup}
-\label{sec:dev_setup}
+\label{sec:dev-setup}
 
 This section describes how to set up a complete development environment for the Henshin Web project. The project is built using Eclipse \ac{glsp} with a Java server backend and a Theia-based client frontend.
-
-\subsection{Prerequisites}
-\label{subsec:prerequisites}
 
 Before setting up the development environment, ensure that the following software components are installed on your system:
 
@@ -52,23 +55,33 @@ Before setting up the development environment, ensure that the following softwar
     \item \textbf{Maven} (version $\geq$ 3.6.0): Build tool for the Java server component
 \end{itemize}
 
-Additionally, since the project is built on Eclipse Theia, it is recommended to check the \href{https://github.com/eclipse-theia/theia/blob/master/doc/Developing.md\#prerequisites}{Theia prerequisites} for any platform-specific requirements.
-
-\subsection{Quick Start}
-\label{subsec:quick_start}
-
-To get the Henshin Web Model Transformation application up and running quickly, follow these steps:
-
-\subsubsection{Repository Setup}
-
-First, clone the repository and navigate to the project directory:
+First, get access to the gitlab repository, clone it and navigate to the project directory:
 
 \begin{lstlisting}[language=bash]
 git clone https://gitlab.uni-marburg.de/weidnerf/henshin-web-model-transformation.git
 cd henshin-web-model-transformation
 \end{lstlisting}
 
-\subsubsection{Building the Application}
+Before you can build the \ac{glsp} backend project, you need to specify maven authentication settings, to be able to access the private maven repository with the Henshin artefacts. To do that, create a \texttt{settings.xml} file in the \texttt{.m2} folder in your home directory (e.g., \texttt{C:\textbackslash Users\textbackslash <username>\textbackslash .m2\textbackslash settings.xml} on Windows). The file should contain the following content with your gitlab username and a personal access token as password:
+
+\begin{lstlisting}[language=xml, caption=Maven Settings]
+    <settings>
+  <servers>
+    <server>
+      <id>gitlab-maven</id>
+      <username>YOUR_USERNAME</username>
+      <password>YOUR_PASSWORD</password>
+      <configuration>
+        <authenticationInfo>
+          <userName>YOUR_USERNAME</userName>
+          <password>YOUR_PASSWORD</password>
+        </authenticationInfo>
+      </configuration>
+    </server>
+  </servers>
+</settings>
+\end{lstlisting}
+
 
 Navigate to the source directory and build both client and server components:
 
@@ -77,182 +90,49 @@ cd src
 yarn build
 \end{lstlisting}
 
-This command will:
-\begin{itemize}
-    \item Build the GLSP server using Maven
-    \item Install and build all client dependencies
-    \item Prepare the application for execution
-\end{itemize}
-
-\subsubsection{Starting the Application}
-
-Once the build is complete, start the application:
+This command will build the GLSP server using Maven, install and build all client dependencies, and prepare the application for execution. Once the build is complete, start the application:
 
 \begin{lstlisting}[language=bash]
 cd glsp-client
 yarn start
 \end{lstlisting}
 
-The application will be available at \url{http://localhost:3000}.
+The application will be available at \url{http://localhost:3000}. 
 
-\subsection{IDE Setup}
-\label{subsec:ide_setup}
 
-The project includes a dedicated Visual Studio Code workspace configuration that provides an optimal development experience. The workspace file \texttt{fmcheck.code-workspace} is located in the \texttt{src} directory.
-
-To set up the VS Code workspace:
-
-\begin{enumerate}
-    \item Open Visual Studio Code
-    \item Navigate to \texttt{File > Open Workspace from File...}
-    \item Select the \texttt{src/fmcheck.code-workspace} file
-    \item When prompted, install the recommended extensions for the best development experience
-\end{enumerate}
-
-The workspace provides:
-\begin{itemize}
-    \item Integrated debugging configurations
-    \item Recommended extensions for Henshin development
-    \item Pre-configured build and run tasks
-\end{itemize}
-
-\subsection{Building the Project}
-\label{subsec:building}
-
-\subsubsection{Complete Build}
-
-To build all components together:
+If you want to debug the Java server, you have to start the client separately. So start the Java server in debug mode (e.g., with IntelliJ). You can then start the client with the following command in the \texttt{glsp-client} folder:
 
 \begin{lstlisting}[language=bash]
-yarn build
+yarn start:external
 \end{lstlisting}
 
-\subsubsection{Individual Component Builds}
+You can additionally use \code{yarn watch} in the \texttt{glsp-client} folder to automatically rebuild the client on code changes. That makes the development much easier, because you do not have to rebuild the client manually after each change.
 
-Components can be built separately for targeted development:
-
-\begin{lstlisting}[language=bash]
-# Build only the client components
-yarn build:client
-
-# Build only the server components  
-yarn build:server
-\end{lstlisting}
-
-\subsubsection{Available VS Code Tasks}
-
-The workspace includes pre-configured tasks accessible via \texttt{Terminal > Run Task...}:
+To have a better overview of the project structure, here is a brief description of the main components of the Henshin Web project:
 
 \begin{itemize}
-    \item \texttt{Build Henshin GLSP Server}: Builds the Java server component
-    \item \texttt{Build Henshin GLSP Client}: Builds the TypeScript client application
-    \item \texttt{Watch Henshin GLSP Client}: Enables watch mode for continuous development
-\end{itemize}
-
-\subsection{Development and Debugging}
-\label{subsec:debugging}
-
-The VS Code workspace provides several launch configurations for debugging different components of the Henshin Web application. These can be accessed through the Run and Debug view (\texttt{Ctrl + Shift + D}):
-
-\begin{itemize}
-    \item \textbf{Launch Henshin GLSP Server}: Debug the Java server component with breakpoint support
-    \item \textbf{Launch Henshin Theia Backend}: Debug the Theia backend application
-    \item \textbf{Launch Theia Frontend}: Debug the browser frontend with Chrome developer tools integration
-\end{itemize}
-
-For continuous TypeScript development, enable watch mode to automatically compile files as they are modified:
-
-\begin{lstlisting}[language=bash]
-yarn watch
-\end{lstlisting}
-
-This functionality is also available as the VS Code task \texttt{Watch Henshin GLSP Client}.
-
-\subsection{Project Structure Overview}
-\label{subsec:project_structure}
-
-Understanding the project structure is crucial for effective development. The Henshin Web Model Transformation project is organized into several key components:
-
-\subsubsection{Client Components (\texttt{src/glsp-client/})}
-
-\begin{itemize}
-    \item \textbf{henshin-browser-app/}: Main browser application integrating Theia with Henshin-specific plugins
-    \item \textbf{henshin-glsp/}: Core diagram client for rendering and user interface modules
-    \item \textbf{ecore-theia/}: Ecore model integration for Theia
-    \item \textbf{xmi-theia/}: XMI file handling and integration
-    \item \textbf{rules-theia/}: Henshin rule-specific Theia extensions
-\end{itemize}
-
-\subsubsection{Server Components (\texttt{src/glsp-server/})}
-
-\begin{itemize}
-    \item \textbf{src/main/java/}: Core Java server implementation
+    \item \textbf{Client Components}
     \begin{itemize}
-        \item \texttt{handler/}: Action handlers for diagram operations
-        \item \texttt{model/}: Source model, graphical model, and state management
-        \item \texttt{launch/}: GLSP server launcher and configuration
-        \item \texttt{palette/}: Custom palette providers for Henshin elements
+        \item \textbf{\texttt{henshin-browser-app/}}: Main browser application integrating Theia with the \ac{glsp} extensions
+        \item \textbf{\texttt{henshin-glsp/}}: Core \ac{glsp} client module containing code for custom \acs{ui} elements and logic. The module is used in all three following diagram editor modules. 
+        \item \textbf{\texttt{ecore-theia/}}: Client module for the Ecore diagram editor. Contains code for context menu and command contributions.
+        \item \textbf{\texttt{xmi-theia/}}: Client module for the XMI diagram editor. Contains code for context menu and command contributions.
+        \item \textbf{\texttt{rules-theia/}}: Client module for the Henshin rule editor. Contains code for context menu and command contributions. It also contains the code for the Theia explorer extensions.
     \end{itemize}
+
+    \item \textbf{Server Components}: The server project is structured in following parts for each diagram module and a base module:
+    \begin{itemize}
+        \item \texttt{actions/}: Custom actions for diagram operations
+        \item \texttt{handler/}: Action handlers for diagram operations
+        \item \texttt{model/}: Defines source model storage, graphical model factory, and state management
+        \item \texttt{provider/}: Custom providers for the tool palette 
+    \end{itemize}
+
+    \item \textbf{Henshin SDK Packager}
+    \begin{itemize}
+        \item Pre-packaged Henshin SDK JAR files and dependencies
+        \item Maven configuration for Henshin integration
+        \item Deployment scripts for package registry
+    \end{itemize}
+
 \end{itemize}
-
-\subsubsection{Henshin SDK Package (\texttt{hensin-package/})}
-
-\begin{itemize}
-    \item Pre-packaged Henshin SDK JAR files and dependencies
-    \item Maven configuration for Henshin integration
-    \item Deployment scripts for package registry
-\end{itemize}
-
-\subsection{Container Deployment}
-\label{subsec:deployment}
-
-The Henshin Web application supports Docker deployment for consistent environments across different platforms.
-
-\subsubsection{Building the Docker Image}
-
-The project includes automated build scripts:
-
-% \begin{lstlisting}[language=powershell]
-% # Using the build script (recommended)
-% .\build-and-push.ps1
-
-% # With custom parameters
-% .\build-and-push.ps1 -Tag "v1.0.0" -Registry "your-registry.com" -ImageName "henshin-web"
-% \end{lstlisting}
-
-Alternatively, build manually:
-
-\begin{lstlisting}[language=bash]
-# Build the Docker image
-docker build -t henshin-web-model-transformation:latest .
-
-# Tag for registry
-docker tag henshin-web-model-transformation:latest gcr.io/henshinwebeditor/henshin-web-model-transformation:latest
-
-# Push to registry
-docker push gcr.io/henshinwebeditor/henshin-web-model-transformation:latest
-\end{lstlisting}
-
-\subsubsection{Running the Container}
-
-For local development, use the provided script:
-
-% \begin{lstlisting}[language=powershell]
-% .\run-container.ps1
-% \end{lstlisting}
-
-This will start the container and make the application available at \url{http://localhost:3000}.
-
-For manual container execution:
-
-\begin{lstlisting}[language=bash]
-# Run the container
-docker run -d -p 3000:3000 --name henshin-web-editor henshin-web-model-transformation:latest
-
-# Check container status
-docker ps
-
-# View logs
-docker logs henshin-web-editor
-\end{lstlisting}
-
