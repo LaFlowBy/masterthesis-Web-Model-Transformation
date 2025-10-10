@@ -15,11 +15,58 @@ The goal of this scientific work is to provide relevant information about the us
 \section{Problem Statement}
 \label{subsec:problem-statement}
 
+Despite the powerful capabilities of Henshin for model transformations, its current usage presents significant barriers to adoption and accessibility. The framework is exclusively available as an Eclipse \ac{ide} plugin, which requires users to install and configure the complete Eclipse environment before they can begin working with model transformations. This dependency creates several critical problems that limit the framework's reach and usability.
+
+First, the requirement for Eclipse installation presents a substantial entry barrier, particularly for newcomers to \ac{mde} who wish to explore model transformation concepts without committing to a full development environment setup. Students and researchers who want to quickly experiment with transformation rules or demonstrate concepts face unnecessary complexity in simply accessing the tool. The installation process, environment configuration, and learning the Eclipse interface add cognitive overhead that detracts from the core learning objectives.
+
+Second, the Eclipse \ac{ide} presents usability challenges even for experienced users. The interface is designed as a comprehensive development environment, which makes it heavyweight and can feel overwhelming when the primary goal is to create and test simple model transformations. Users must navigate through multiple perspectives, views, and menus to accomplish basic transformation tasks, leading to reduced productivity and increased frustration. The complexity of the Eclipse environment often overshadows the elegance of the Henshin transformation language itself.
+
+Furthermore, the current setup limits collaborative possibilities and portability. Sharing transformation examples or collaborating on transformation development requires all participants to have compatible Eclipse installations and configurations. This creates friction in educational settings, research collaborations, and distributed development teams where quick access and seamless sharing of transformation artifacts would be beneficial.
+
+The web-based nature of modern software development practices also highlights the limitations of the current desktop-only approach. Many users now expect tools to be accessible through web browsers, offering immediate availability without installation requirements, better integration with cloud-based workflows, and easier deployment in various computing environments.
+
+These accessibility and usability challenges prevent Henshin from reaching its full potential as a model transformation solution, particularly in educational contexts and among users who could benefit from quick, intuitive access to transformation capabilities without the overhead of a complete \ac{ide} setup.
+
 \section{Research Questions}
 \label{subsec:research-questions}
 
+Based on the identified problems with the current Eclipse-based approach to Henshin model transformations, this thesis aims to address the following research questions that guide the development and evaluation of a web-based solution:
+
+% \textbf{RQ1: How can Henshin model transformation capabilities be effectively adapted for web-based environments?}
+% This question investigates the technical feasibility and architectural considerations for translating the desktop-based Henshin functionality into a web application. It examines how the core transformation engine, metamodel handling, and rule definition capabilities can be preserved while adapting to web technologies and browser constraints.
+
+\textbf{RQ2: What are the essential functional requirements for a web-based Henshin editor that maintains usability while reducing complexity?}
+This question focuses on identifying the minimum viable feature set that provides meaningful transformation capabilities without overwhelming users. It explores how to balance functional completeness with the simplicity that makes web-based tools attractive, particularly for educational and experimental use cases.
+
+\textbf{RQ3: How does a web-based approach improve accessibility and user experience compared to the traditional Eclipse plugin?}
+This question evaluates the effectiveness of the web-based solution in addressing the identified barriers to adoption. It examines metrics such as installation complexity, learning curve, collaboration capabilities, and overall user satisfaction when working with model transformations.
+
+\textbf{RQ4: What are the performance and scalability considerations when implementing Henshin transformations in a web-based architecture?}
+This question investigates the technical challenges and limitations of running model transformations through web technologies. It addresses concerns about processing efficiency, memory management, file handling, and the overall viability of web-based approaches for practical transformation scenarios.
+
+\textbf{RQ5: How can the web-based editor integrate with existing \ac{emf} and Henshin ecosystems while providing standalone functionality?}
+This question explores the compatibility and interoperability requirements for ensuring that the web-based solution can work with existing metamodels, transformation rules, and instance files created in the traditional Eclipse environment, while also providing value as an independent tool.
+
+These research questions collectively address the goal of creating an accessible, intuitive, and functionally adequate web-based alternative to the current Eclipse-dependent Henshin workflow, while ensuring that the solution provides genuine value to the identified stakeholder groups.
+
 \section{Scope and Limitations}
 \label{subsec:scope-limitations}
+
+This thesis focuses on developing a web-based solution for Henshin model transformations, with specific boundaries and constraints that define the research scope and acknowledge inherent limitations.
+
+\textbf{Scope of the Research:}
+The primary scope encompasses the design, implementation, and evaluation of a web-based editor that provides core Henshin transformation capabilities through the \ac{glsp} framework. The work includes adapting the essential features of the Henshin Eclipse plugin for web environments, focusing on transformation rule creation, metamodel handling, and instance file processing. The implementation targets the fundamental workflow of loading \ac{emf} Ecore metamodels, creating transformation rules through a graphical interface, and applying these transformations to \ac{xmi} instance files.
+
+The research specifically addresses accessibility improvements for educational and experimental use cases, where users need quick access to model transformation capabilities without extensive setup requirements. The evaluation covers usability aspects, performance characteristics, and functional completeness compared to the traditional Eclipse-based approach. Integration with existing \ac{emf} and Henshin ecosystems is considered to ensure compatibility with established workflows and file formats.
+
+\textbf{Limitations and Constraints:}
+Several limitations constrain the scope of this research. The web-based implementation does not aim to replicate every advanced feature available in the mature Eclipse Henshin plugin. Complex transformation scenarios, advanced debugging capabilities, and extensive integration with other Eclipse modeling tools are beyond the current scope. The focus remains on core functionality that serves the primary use cases identified in the requirements analysis.
+
+The evaluation methodology is constrained by the availability of test scenarios and user groups within the academic environment. While the research aims to demonstrate improvements over the Eclipse approach, comprehensive long-term studies or extensive industrial validation are outside the scope of this thesis work.
+
+Additionally, the research does not extend to developing new transformation algorithms or enhancing the underlying Henshin transformation engine itself. The focus remains on providing better accessibility and usability for existing Henshin capabilities rather than advancing the theoretical foundations of model transformation techniques.
+
+These scope definitions and limitations ensure that the research remains focused and achievable within the constraints of a master's thesis while addressing the core problems identified in current Henshin usage patterns.
 
 \section{Structure of the Thesis}
 \label{subsec:structure-thesis}
