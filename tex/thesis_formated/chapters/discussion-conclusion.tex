@@ -4,18 +4,79 @@
   \section{Interpretation of Results}
   \label{subsec:interpretation-results}
 
+  The development of Henshin Web demonstrates a successful implementation of a web-based model transformation editor that addresses the identified accessibility and usability barriers of the traditional Eclipse-based Henshin plugin. The project successfully translated the core functionality of Henshin model transformations into a modern, web-accessible platform built on the \ac{glsp} framework and Eclipse Theia.
+
+  The architectural decisions made throughout the development process have proven effective in achieving the stated research objectives. The choice of Eclipse Theia as the primary platform integration provides the optimal balance between functionality and accessibility, offering a complete \ac{ide} environment without requiring local installation of complex development tools. The modular \ac{glsp} architecture, implementing three distinct diagram modules for \ac{xmi} instances, Henshin rules, and Ecore metamodels, ensures maintainability and extensibility while providing specialized functionality for each model type.
+
+  The implementation successfully addresses the primary research questions posed in this thesis. \textbf{RQ2}, concerning essential functional requirements, is answered through the systematic requirement analysis and implementation of core functionality including graphical editing capabilities, transformation rule application, and seamless integration with existing \ac{emf} ecosystems. The application provides the minimal viable feature set that enables meaningful model transformation work without overwhelming users with unnecessary complexity.
+
+  \textbf{RQ3}, evaluating accessibility and user experience improvements, is demonstrated through the elimination of Eclipse installation requirements and the provision of browser-based access. The web-based approach removes significant barriers to entry, particularly beneficial for educational scenarios and collaborative development environments. The integration of familiar web interface patterns and the reduction of cognitive overhead associated with navigating complex \ac{ide} environments represents a substantial improvement in user accessibility.
+
+  The performance considerations addressed in \textbf{RQ4} reveal both strengths and limitations of the web-based approach. The client-server architecture effectively handles model transformation processing on the server side, leveraging the full capabilities of the Henshin \ac{sdk} while providing responsive graphical interfaces. However, the approach introduces network latency considerations and file management constraints that differ from desktop applications.
+
+  \textbf{RQ5}, concerning integration with existing ecosystems, is successfully addressed through the preservation of standard \ac{emf} file formats and the direct integration of the Henshin \ac{sdk}. The application maintains full compatibility with existing \textit{.ecore}, \textit{.henshin}, and \textit{.xmi} files, ensuring seamless interoperability with established workflows while providing standalone functionality.
+
+  The deployment options evaluation and implementation using Theia Cloud demonstrates the viability of cloud-based model transformation environments. The Infrastructure as Code approach using Terraform provides reproducible deployments while addressing security and scalability concerns through proper authentication and resource management.
+
   \section{Challenges and Limitations}
   \label{subsec:challenges-limitations}
 
-  \section{Conclusion and Future Work}
-  \label{sec:conclusion}
+  Several significant challenges emerged during the development process, providing valuable insights into the complexities of adapting desktop-based modeling tools for web environments. The integration of the Henshin \ac{sdk} into the Maven-based \ac{glsp} project structure required substantial effort to overcome architectural incompatibilities. The Henshin framework's Eclipse plugin architecture necessitated the creation of custom Maven artifacts and dependency management solutions, highlighting the challenges of modernizing legacy academic software for contemporary development workflows.
+
+  The implementation of consistent indexing mechanisms across different \ac{emf} model types presented considerable technical complexity. Each model type (\ac{xmi} instances, Henshin rules, and Ecore metamodels) required distinct indexing strategies due to their different internal structures and identifier management approaches. The \ac{xmi} instance indexing, in particular, required sophisticated content hashing mechanisms to maintain notation model consistency across sessions while accommodating dynamic content changes.
+
+  Layout management and persistence emerged as another significant challenge, as \ac{emf} models inherently lack positional information for graphical elements. The implementation of notation models for each diagram type, combined with the need for consistent macro layout across sessions, required careful synchronization between graphical and semantic models. The decision to use different indexing approaches for different model types, while technically necessary, increases the overall system complexity and maintenance overhead.
+
+  The current implementation exhibits several notable limitations that constrain its applicability in certain scenarios. The web-based architecture introduces file management constraints that differ significantly from traditional desktop applications. Users cannot directly access their local file systems and must rely on upload/download mechanisms when using cloud-hosted deployments. This limitation particularly affects workflows that involve large numbers of files or frequent iteration between different modeling tools.
+
+  The testing strategy, while comprehensive for core functionality, lacks extensive performance evaluation under high-load conditions or with complex model transformations. The focus on unit testing and basic end-to-end testing does not capture potential scalability issues that might emerge in production environments with multiple concurrent users or large model files.
+
+  Documentation and \ac{api} availability for some of the underlying frameworks, particularly Henshin, presented ongoing challenges throughout the development process. The reliance on source code analysis rather than comprehensive documentation slowed development progress and may impact future maintenance efforts. This highlights broader issues in the academic software ecosystem regarding sustainability and developer accessibility.
+
+  The current implementation does not fully replicate all advanced features available in the mature Eclipse Henshin plugin. Complex debugging capabilities, extensive validation mechanisms, and integration with other Eclipse modeling tools remain outside the scope of this implementation. While this limitation is intentional to maintain focus on core accessibility goals, it may limit adoption for users requiring advanced transformation development capabilities.
 
   \section{Summary of Contributions}
   \label{subsec:summary-contributions}
 
+  This thesis contributes to the field of model-driven engineering through the development of an accessible, web-based alternative to traditional desktop model transformation tools. The primary contributions can be categorized into technical, methodological, and practical domains.
+
+  \textbf{Technical Contributions:} The successful integration of the Henshin model transformation framework with the \ac{glsp} web-based diagramming platform represents a novel technical achievement. The implementation demonstrates how academic modeling tools can be modernized and made accessible through contemporary web technologies while preserving their core functionality. The development of specialized diagram modules for different \ac{emf} model types, each with customized indexing and layout management strategies, provides a blueprint for similar modernization efforts in the model-driven engineering community.
+
+  The creation of custom Maven artifacts from Eclipse plugin components and the subsequent integration into a \ac{glsp} project addresses a common challenge in academic software development: bridging the gap between legacy Eclipse-based architectures and modern development practices. The PowerShell-based packaging solution provides a reusable approach for similar integration challenges.
+
+  The implementation of sophisticated indexing mechanisms for different \ac{emf} model types contributes methodological insights into managing identifier consistency across graphical and semantic model representations. The combination of content hashing for session-independent persistence and UUID-based indexing for session-specific operations provides a robust foundation for web-based model editing applications.
+
+  \textbf{Methodological Contributions:} The systematic requirements analysis approach, distinguishing between core and additional functionality while considering diverse stakeholder needs, provides a methodological framework for similar tool development projects. The evaluation of different platform integration options and deployment strategies offers valuable guidance for academic software projects seeking broader accessibility.
+
+  The Infrastructure as Code approach to deployment, utilizing Terraform and containerization, demonstrates how academic prototypes can be transitioned to production-ready cloud services. The Theia Cloud integration showcases the potential for scalable, multi-user model transformation environments in educational and research contexts.
+
+  \textbf{Practical Contributions:} The resulting Henshin Web application directly addresses identified barriers to model transformation adoption, particularly in educational settings. The elimination of Eclipse installation requirements and the provision of browser-based access significantly reduces the entry barrier for students and researchers exploring model transformation concepts.
+
+  The preservation of full compatibility with existing \ac{emf} file formats ensures that the tool can integrate with established workflows while providing value as a standalone educational and experimental platform. This compatibility maintains the investment in existing model artifacts while extending their accessibility.
+
+  The deployment flexibility, offering both local development and cloud-hosted production options, accommodates different usage scenarios and organizational constraints. The container-based architecture facilitates deployment across various cloud platforms and local environments.
+
+  The comprehensive documentation of development setup, deployment procedures, and user guidance contributes to the sustainability and adoptability of the solution within the academic community. The open-source nature of the implementation ensures that the contributions can be extended and adapted for related projects.
+
   \section{Suggestions for Future Development}
   \label{subsec:suggestions-future-development}
 
-  Edapt
+  The foundation established by Henshin Web creates numerous opportunities for future development that could further enhance its capabilities and extend its impact in the model-driven engineering community. These suggestions are organized by their potential impact and implementation complexity.
 
-  Collaborative Modeling
+  \textbf{Enhanced Collaboration Features:} The web-based architecture provides an ideal foundation for implementing real-time collaborative editing capabilities. Future development could introduce multi-user editing sessions where multiple researchers or students can simultaneously work on transformation rules or model instances. This would involve implementing conflict resolution mechanisms, user awareness indicators, and synchronized change propagation across connected clients. Such features would be particularly valuable in educational settings where instructors could guide students through transformation development in real-time.
+
+  \textbf{Advanced Validation and Analysis:} Building upon the basic model validation currently provided by \ac{glsp}, future versions could integrate more sophisticated analysis capabilities available in the Henshin ecosystem. This includes the implementation of conflict and dependency analysis directly within the web interface, providing visual feedback about potential rule interactions. State space analysis capabilities could be integrated to help users understand the behavior of their transformation rules across different model states.
+
+  \textbf{Integration with External Tools and Platforms:} The web-based architecture facilitates integration with other cloud-based modeling and development tools. Future development could include connectors to version control systems like Git, enabling seamless integration with software development workflows. Integration with cloud storage platforms could address current file management limitations by providing native access to popular file storage services. Additionally, \ac{api} endpoints could be developed to enable integration with other modeling tools and platforms, creating a more connected modeling ecosystem.
+
+  \textbf{Performance Optimization and Scalability Enhancements:} As the platform grows in usage, performance optimization becomes increasingly important. Future development could focus on implementing caching mechanisms for frequently accessed models, optimizing the client-server communication protocols, and developing more efficient serialization strategies for large models. Load balancing and horizontal scaling capabilities could be enhanced to support larger user bases and more computationally intensive transformations.
+
+  \textbf{Extended Platform Support:} While the current implementation focuses on Eclipse Theia integration, future development could expand platform support to include native \ac{vscode} extensions and standalone web applications. Each platform integration offers unique advantages: \ac{vscode} extensions would tap into the large existing user base, while standalone applications could provide more specialized interfaces optimized for specific modeling tasks.
+
+  \textbf{Educational and Training Features:} Given the tool's particular value in educational contexts, future development could include specialized features for learning model transformations. This might include interactive tutorials, example galleries with progressively complex transformation scenarios, and assessment tools that allow instructors to evaluate student understanding of transformation concepts. Integration with learning management systems could facilitate the use of Henshin Web in formal course structures.
+
+  \textbf{Advanced Metamodeling Capabilities:} Future versions could expand beyond basic Ecore editing to include more advanced metamodeling features such as constraint definition using \ac{ocl}, profile mechanisms for domain-specific extensions, and code generation capabilities. Integration with frameworks like Edapt could provide model migration capabilities, allowing users to evolve their metamodels while maintaining instance compatibility.
+
+  \textbf{Community and Ecosystem Development:} The success of Henshin Web could be enhanced through the development of a community ecosystem including transformation rule repositories, best practice guides, and user forums. A marketplace for transformation patterns and templates could accelerate adoption by providing ready-to-use solutions for common modeling scenarios.
+
+  These future development directions would transform Henshin Web from a foundational tool into a comprehensive platform for web-based model-driven engineering. The modular architecture established in this thesis provides a solid foundation for implementing these enhancements while maintaining the core accessibility and usability principles that motivated the original development.
