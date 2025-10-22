@@ -2501,6 +2501,10 @@
     <bcf:citekey order="119" intorder="1">docker</bcf:citekey>
     <bcf:citekey order="120" intorder="1">electron-repo</bcf:citekey>
     <bcf:citekey order="121" intorder="1">terraform-repo</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">keycloak-repo</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

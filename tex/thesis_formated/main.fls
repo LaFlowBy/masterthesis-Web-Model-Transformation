@@ -557,11 +557,11 @@ INPUT ./chapters/introuction.tex
 INPUT ./chapters/introuction.tex
 INPUT chapters/introuction.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
 INPUT ./chapters/theoretical_background.tex
 INPUT ./chapters/theoretical_background.tex
 INPUT chapters/theoretical_background.tex
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT ./figures/emf-kernel.png
@@ -690,6 +690,10 @@ INPUT ./figures/rule-editor.png
 INPUT ./figures/rule-editor.png
 INPUT ./figures/rule-editor.png
 INPUT ./figures/rule-editor.png
+INPUT ./figures/admin-console.png
+INPUT ./figures/admin-console.png
+INPUT ./figures/admin-console.png
+INPUT ./figures/admin-console.png
 INPUT ./listings/dockerfile.tex
 INPUT ./listings/dockerfile.tex
 INPUT listings/dockerfile.tex
