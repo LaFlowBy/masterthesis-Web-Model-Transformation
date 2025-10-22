@@ -40,28 +40,28 @@
 \contentsline {chapter}{\numberline {7}Testing and Evaluation}{35}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Testing Strategy}{35}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Unit Tests}{35}{section.7.2}%
-\contentsline {section}{\numberline {7.3}E2E Tests}{35}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Limitations}{35}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Deployment}{36}{chapter.8}%
-\contentsline {section}{\numberline {8.1}GLSP Integration Options}{36}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Deployment Options and Evaluation}{38}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Deployment Implementation}{40}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Docker Container Architecture}{40}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Terraform Configuration}{41}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Deployment Execution}{42}{subsection.8.3.3}%
-\contentsline {chapter}{\numberline {9}Usage}{45}{chapter.9}%
-\contentsline {section}{\numberline {9.1}User Guide}{45}{section.9.1}%
-\contentsline {section}{\numberline {9.2}User Administration Guide}{47}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Development Setup}{48}{section.9.3}%
-\contentsline {chapter}{\numberline {10}Discussion}{51}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Interpretation of Results}{51}{section.10.1}%
-\contentsline {section}{\numberline {10.2}Challenges and Limitations}{52}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Summary of Contributions}{53}{section.10.3}%
-\contentsline {section}{\numberline {10.4}Suggestions for Future Development}{54}{section.10.4}%
-\contentsline {chapter}{\nonumberline Bibliography}{56}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Appendix}{59}{appendix.A}%
-\contentsline {subsection}{\numberline {A.0.1}Figures}{59}{subsection.A.0.1}%
-\contentsline {subsection}{\numberline {A.0.2}Code Listings}{60}{subsection.A.0.2}%
-\contentsline {chapter}{\nonumberline List of Figures}{66}{chapter*.26}%
-\contentsline {chapter}{\nonumberline List of Tables}{67}{chapter*.27}%
+\contentsline {section}{\numberline {7.3}E2E Tests}{36}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Limitations}{37}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Deployment}{38}{chapter.8}%
+\contentsline {section}{\numberline {8.1}GLSP Integration Options}{38}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Deployment Options and Evaluation}{40}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Deployment Implementation}{42}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Docker Container Architecture}{42}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Terraform Configuration}{43}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Deployment Execution}{44}{subsection.8.3.3}%
+\contentsline {chapter}{\numberline {9}Usage}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}User Guide}{47}{section.9.1}%
+\contentsline {section}{\numberline {9.2}User Administration Guide}{49}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Development Setup}{50}{section.9.3}%
+\contentsline {chapter}{\numberline {10}Discussion}{53}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Interpretation of Results}{53}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Challenges and Limitations}{54}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Summary of Contributions}{55}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Suggestions for Future Development}{55}{section.10.4}%
+\contentsline {chapter}{\nonumberline Bibliography}{57}{chapter*.17}%
+\contentsline {chapter}{\numberline {A}Appendix}{60}{appendix.A}%
+\contentsline {subsection}{\numberline {A.0.1}Figures}{60}{subsection.A.0.1}%
+\contentsline {subsection}{\numberline {A.0.2}Code Listings}{61}{subsection.A.0.2}%
+\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.27}%
+\contentsline {chapter}{\nonumberline List of Tables}{68}{chapter*.28}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

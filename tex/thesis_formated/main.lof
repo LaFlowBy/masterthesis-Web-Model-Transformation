@@ -13,19 +13,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Theia high level extensions and plugins architecture. Image obtained from \blx@tocontentsinit {0}\cite {theia-doc}}}{38}{figure.caption.13}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Interaction between Theia Cloud components. Image obtained from \blx@tocontentsinit {0}\cite {theia-cloud-doc}}}{39}{figure.caption.14}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Theia high level extensions and plugins architecture. Image obtained from \blx@tocontentsinit {0}\cite {theia-doc}}}{40}{figure.caption.13}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Interaction between Theia Cloud components. Image obtained from \blx@tocontentsinit {0}\cite {theia-cloud-doc}}}{41}{figure.caption.14}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {10.1}{\ignorespaces GLSP Real-Time Collaboration Extension \blx@tocontentsinit {0}\cite {glsp-collab}}}{56}{figure.caption.16}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Henshin Web Ecore graph editor}}{59}{figure.caption.17}%
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Henshin Web Rules graph editor}}{60}{figure.caption.18}%
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Henshin Web Instance graph editor}}{60}{figure.caption.19}%
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Attribute Editor Window}}{61}{figure.caption.20}%
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Operation Editor Window}}{62}{figure.caption.21}%
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Reference Editor Window}}{62}{figure.caption.22}%
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Enum Editor Window}}{63}{figure.caption.23}%
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Rule Editor Window}}{64}{figure.caption.24}%
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Keycloak Admin Console}}{65}{figure.caption.25}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Henshin Web Ecore graph editor}}{60}{figure.caption.18}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Henshin Web Rules graph editor}}{61}{figure.caption.19}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Henshin Web Instance graph editor}}{61}{figure.caption.20}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Attribute Editor Window}}{62}{figure.caption.21}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Operation Editor Window}}{63}{figure.caption.22}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Reference Editor Window}}{63}{figure.caption.23}%
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Enum Editor Window}}{64}{figure.caption.24}%
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Rule Editor Window}}{65}{figure.caption.25}%
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Keycloak Admin Console}}{66}{figure.caption.26}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

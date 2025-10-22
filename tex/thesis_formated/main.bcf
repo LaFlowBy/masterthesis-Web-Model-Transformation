@@ -2505,6 +2505,10 @@
     <bcf:citekey order="123" intorder="1">keycloak-repo</bcf:citekey>
     <bcf:citekey order="124" intorder="1">keycloak-repo</bcf:citekey>
     <bcf:citekey order="125" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">edapt-repo</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">glsp-collab</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">glsp-collab</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">glsp-collab</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
