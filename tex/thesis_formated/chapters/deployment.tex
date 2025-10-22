@@ -73,7 +73,7 @@ A \ac{glsp} editor can be deployed and used in production in various ways. \ac{g
 
 When the docker image is built, it can be used to deploy the application on \ac{gke} to make it accessible via the internet for everyone. Theia Cloud provides a modular terraform \cite{terraform-repo} configuration to deploy the Kubernetes cluster to the Google Cloud. This \ac{iac} approach provides the advantage that the infrastructure can be defined as code and therefore can be easily adapted, versioned, and reused.
 
-The Terraform configuration follows a modular architecture with three main components: cluster creation, Helm chart deployment, and Keycloak authentication setup. The main configuration file orchestrates the deployment by calling specialized modules that handle specific infrastructure concerns.
+The Terraform configuration follows a modular architecture with three main components: cluster creation, Helm chart deployment, and Keycloak \cite{keycloak-repo} authentication setup. The main configuration file orchestrates the deployment by calling specialized modules that handle specific infrastructure concerns.
 
 The cluster creation module provisions a production-ready \ac{gke} cluster with auto-scaling node pools. The configuration removes the default node pool to enable custom machine types (\texttt{e2-standard-2}) and scaling parameters (1-2 nodes), providing cost optimization while ensuring adequate resources:
 
@@ -87,9 +87,9 @@ resource "google_container_cluster" "primary" {
 }
 \end{lstlisting}
 
-Network connectivity is established through a reserved static IP address that supports both custom domains and automatic DNS resolution via sslip.io. The configuration integrates multiple providers (Google Cloud, Helm, Kubectl, Keycloak) with dynamic authentication using cluster credentials obtained from the GKE module.
+Network connectivity is established through a reserved static IP address that supports both custom domains and automatic DNS resolution via sslip.io. The configuration integrates multiple providers (Google Cloud, Helm, Kubectl, Keycloak \cite{keycloak-repo}) with dynamic authentication using cluster credentials obtained from the GKE module.
 
-The Helm module manages the deployment of essential Kubernetes applications including NGINX Ingress Controller, Cert-Manager for SSL certificates, Keycloak for authentication, PostgreSQL database, and the Theia Cloud application components. Variable management separates configuration from sensitive data, with security-sensitive variables marked appropriately:
+The Helm module manages the deployment of essential Kubernetes applications including NGINX Ingress Controller, Cert-Manager for SSL certificates, Keycloak \cite{keycloak-repo} for authentication, PostgreSQL database, and the Theia Cloud application components. Variable management separates configuration from sensitive data, with security-sensitive variables marked appropriately:
 
 \begin{lstlisting}[language=hcl, caption=Variable Configuration]
 variable "keycloak_admin_password" {
