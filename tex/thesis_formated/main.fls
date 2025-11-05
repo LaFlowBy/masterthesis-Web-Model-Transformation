@@ -517,6 +517,7 @@ INPUT chapters/abstract.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecss1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx2074.tfm
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT ./main.toc
 INPUT ./main.toc
 INPUT main.toc
@@ -557,7 +558,6 @@ INPUT ./chapters/introuction.tex
 INPUT ./chapters/introuction.tex
 INPUT chapters/introuction.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecti1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
 INPUT ./chapters/theoretical_background.tex

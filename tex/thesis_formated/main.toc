@@ -1,6 +1,6 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Zusammenfassung}{b}{chapter*.1}%
-\contentsline {chapter}{Abstract}{c}{chapter*.2}%
+\contentsline {chapter}{Abstract}{d}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and Motivation}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{3}{section.1.2}%
@@ -41,7 +41,8 @@
 \contentsline {section}{\numberline {7.1}Testing Strategy}{35}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Unit Tests}{35}{section.7.2}%
 \contentsline {section}{\numberline {7.3}E2E Tests}{36}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Limitations}{36}{section.7.4}%
+\contentsline {section}{\numberline {7.4}Test Cases}{36}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Limitations}{37}{section.7.5}%
 \contentsline {chapter}{\numberline {8}Deployment}{38}{chapter.8}%
 \contentsline {section}{\numberline {8.1}GLSP Integration Options}{38}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Deployment Options and Evaluation}{40}{section.8.2}%

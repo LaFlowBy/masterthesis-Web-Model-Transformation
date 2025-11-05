@@ -28,26 +28,75 @@
   The main use case that the application should support is that a user can try out transformation rules on \ac{emf} \ac{xmi} instance files. In this usecase, the user already has a metamodel and transformation rules. He wants to test the transformation rules on various instances in an accessible, intuitive, and easy to use graphical editor. From that use case the following core functional requirements can be derived.
 
   \textbf{Core Functionallity:}
-  \begin{itemize}
-    \item \textbf{R1:} \ac{emf} \ac{xmi} instance files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model.
-    \item \textbf{R2:} The \ac{xmi} instance editor should provide editing functionality to create, update and delete nodes, edges and attributes.
-    \item \textbf{R3:} In the \ac{xmi} instance editor all applicable transformation rules should be listed.  When a rule is selected to get applied, all parameters have to be specifiable.
-    \item \textbf{R4:} When a rule gets appplied, the graphical editor of the \ac{xmi} instance should be updated to reflect the changes made by the transformation rule. The application should also support undo and redo functionality for the applied transformation rules.
-    \item \textbf{R5:} Henshin transformation rule files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model and their action types. The user should be able to switch between all rules of a \textit{.henshin} file.
-    \item \textbf{R6:} \ac{emf} Ecore metamodel should be displayed in a graphical editor. That contains the nodes, edges and attributes of the metamodel.
-\end{itemize}
+
+\begin{requirement}
+    \label{r:xmi-graphical-display}
+    \ac{emf} \ac{xmi} instance files should be displayed in a graphical editor. That contains the all nodes, adjacent edges and attributes of the model. All graphical elemets should be arangable to create an own layout.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:xmi-node-editing}
+    The \ac{xmi} instance editor should provide editing functionality to create, update and delete nodes
+\end{requirement}
+
+\begin{requirement}
+    \label{r:xmi-attribute-editing}
+    The \ac{xmi} instance editor should provide editing functionality to set custom values to all attributes.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:xmi-rule-listing}
+    In the \ac{xmi} instance editor all applicable transformation rules should be listed.  When a rule is selected to get applied, all parameters have to be specifiable.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:xmi-rule-application}
+    When a rule gets appplied, the graphical editor of the \ac{xmi} instance should be updated to reflect the changes made by the transformation rule. The application should also support undo and redo functionality for the applied transformation rules.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:henshin-graphical-display}
+    Henshin transformation rule files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model and their action types. The user should be able to switch between all rules of a \textit{.henshin} file.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:ecore-graphical-display}
+    \ac{emf} Ecore metamodel should be displayed in a graphical editor. That contains the nodes, edges and attributes of the metamodel.
+\end{requirement}
 
 Next to the core use case, the second use case is that a user wants to create a full transformation language from scratch, that can be used to model and test the system and generate production code from it. In this use case, the user wants to create and edit metamodels and transformation rules. To support this use case, the following additional functional requirements are defined:
 
 \textbf{Additional Functionallity:}
-  \begin{itemize}
-    \item \textbf{R7:} The Henshin rule editor should provide editing functionality to create, update and delete nodes, edges, attributes and their action types.
-    \item \textbf{R8:} The Ecore metamodel editor should provide editing functionality to create, update and delete nodes, edges and attributes.
-    \item \textbf{R9:} Henshin transformation units are also listed in the \ac{xmi} instance editor and can be applied.
-    \item \textbf{R10:} Show the possible transformation rule matches in the \ac{xmi} instance editor, when selecting a transformation rule.
-    \item \textbf{R11:} Provide the functionality to apply a State Space analysis on a \ac{xmi} instance.
-    \item \textbf{R12:} Provide the functionality to apply a conflict and dependency analysis on a \ac{xmi} instance. 
-  \end{itemize}
+
+\begin{requirement}
+    \label{r:henshin-rule-editing}
+    The Henshin rule editor should provide editing functionality to create, update and delete nodes, edges, attributes and their action types.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:ecore-metamodel-editing}
+    The Ecore metamodel editor should provide editing functionality to create, update and delete nodes, edges and attributes.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:transformation-units}
+    Henshin transformation units are also listed in the \ac{xmi} instance editor and can be applied.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:rule-matches}
+    Show the possible transformation rule matches in the \ac{xmi} instance editor, when selecting a transformation rule.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:state-space-analysis}
+    Provide the functionality to apply a State Space analysis on a \ac{xmi} instance.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:conflict-dependency-analysis}
+    Provide the functionality to apply a conflict and dependency analysis on a \ac{xmi} instance. 
+\end{requirement}
 
   There exist many more use cases for model transformations and \ac{mde} in general. The application can grow to a web-based platform for \ac{mde} in th future. Additional functionality will be disscused in section \ref{subsec:suggestions-future-development} but these usecases are not scope of this thesis.
 
@@ -57,11 +106,21 @@ Next to the core use case, the second use case is that a user wants to create a 
   In addition to the core functionality, the system must meet several non-functional requirements:
 
   \textbf{Non-Functional Requirements:}
-  \begin{itemize}
-    \item \textbf{R13:} The application should be web-based and preferably accessible via a web browser.
-    \item \textbf{R14:} The application should be responsive and work on different screen sizes. It does not have to support mobile devices and touch interactions, since \ac{glsp} is also not supporting touch interactions \cite{glsp-repo}.
-    \item \textbf{R15:} The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the exploerer and the predefined UI contorls of \ac{glsp}, like the tool palette or the context menu.
-  \end{itemize}
+
+\begin{requirement}
+    \label{r:web-based-access}
+    The application should be web-based and preferably accessible via a web browser.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:responsive-design}
+    The application should be responsive and work on different screen sizes. It does not have to support mobile devices and touch interactions, since \ac{glsp} is also not supporting touch interactions \cite{glsp-repo}.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:user-friendly-interface}
+    The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the exploerer and the predefined UI contorls of \ac{glsp}, like the tool palette or the context menu.
+\end{requirement}
 
   \section{System Constraints}
   \label{subsec:system-constraints}
