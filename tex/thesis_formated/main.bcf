@@ -2493,22 +2493,28 @@
     <bcf:citekey order="111" intorder="1">glsp-repo</bcf:citekey>
     <bcf:citekey order="112" intorder="1">theia-doc</bcf:citekey>
     <bcf:citekey order="113" intorder="1">theia-doc</bcf:citekey>
-    <bcf:citekey order="114" intorder="1">theia-cloud-doc</bcf:citekey>
-    <bcf:citekey order="115" intorder="1">kubernetes</bcf:citekey>
-    <bcf:citekey order="116" intorder="1">theia-cloud-doc</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">docker</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">theia-cloud-doc</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">kubernetes</bcf:citekey>
     <bcf:citekey order="117" intorder="1">theia-cloud-doc</bcf:citekey>
-    <bcf:citekey order="118" intorder="1">theia-cloud-doc</bcf:citekey>
-    <bcf:citekey order="119" intorder="1">docker</bcf:citekey>
-    <bcf:citekey order="120" intorder="1">electron-repo</bcf:citekey>
-    <bcf:citekey order="121" intorder="1">terraform-repo</bcf:citekey>
-    <bcf:citekey order="122" intorder="1">keycloak-repo</bcf:citekey>
-    <bcf:citekey order="123" intorder="1">keycloak-repo</bcf:citekey>
-    <bcf:citekey order="124" intorder="1">keycloak-repo</bcf:citekey>
-    <bcf:citekey order="125" intorder="1">keycloak-repo</bcf:citekey>
-    <bcf:citekey order="126" intorder="1">edapt-repo</bcf:citekey>
-    <bcf:citekey order="127" intorder="1">glsp-collab</bcf:citekey>
-    <bcf:citekey order="128" intorder="1">glsp-collab</bcf:citekey>
-    <bcf:citekey order="129" intorder="1">glsp-collab</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">minikube-repo</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">minikube-repo</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">minikube-repo</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">theia-cloud-minikube</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">gke-doc</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">gke-doc</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">theia-cloud-doc</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">theia-cloud-doc</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">electron-repo</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">terraform-repo</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">keycloak-repo</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">edapt-repo</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">glsp-collab</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">glsp-collab</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">glsp-collab</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
