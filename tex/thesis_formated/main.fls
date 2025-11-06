@@ -587,6 +587,7 @@ INPUT ./figures/model-tools.png
 INPUT ./chapters/requirements.tex
 INPUT ./chapters/requirements.tex
 INPUT chapters/requirements.tex
+INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ./chapters/architecture.tex
 INPUT ./chapters/architecture.tex
 INPUT chapters/architecture.tex
@@ -604,7 +605,6 @@ INPUT ./figures/architecture.png
 INPUT ./chapters/implementation.tex
 INPUT ./chapters/implementation.tex
 INPUT chapters/implementation.tex
-INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1200.tfm
 INPUT ./listings/rule-indexing.tex
 INPUT ./listings/rule-indexing.tex
 INPUT listings/rule-indexing.tex

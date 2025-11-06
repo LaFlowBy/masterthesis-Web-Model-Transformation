@@ -20,23 +20,50 @@
   The Eclipse \acs{ide} plugin of Henshin works as a template for the functionality of the application. It provides functionality to create, edit and apply Henshin transformation rules for Ecore metamodels on \ac{xmi} instances. To create a full enterprise application, that will get used for projects in the industry, the application has to also provide very similar functionality.
   The defined core functionality is the minimum set of features that the application must provide to be useful for the users. They are only a subset of requirements to provide a full web-based copy of the Henshin Eclipse plugin.
 
-  The core functional requirements extends already existing functionality, that Eclipse Theia and \ac{glsp} already provide. Theia provides various views like the explorer for basic file management, including opening, saving, closing, creating and deleting files, a problems view, a integrated terminal, or edit operations like copy or paste. \ac{glsp} provides default functionality for each graphical editor. That includes selection of elements, moving nodes, realinging edges, zooming, or moving and reseting the viewport. Most of these features can be further configured to be able to create an editor fitting the specific needs.
-
   \section{Functional Requirements}
   \label{subsec:functional-requirements}
 
-  The main use case that the application should support is that a user can try out transformation rules on \ac{emf} \ac{xmi} instance files. In this usecase, the user already has a metamodel and transformation rules. He wants to test the transformation rules on various instances in an accessible, intuitive, and easy to use graphical editor. From that use case the following core functional requirements can be derived.
+  The main use case that the application should support is that a user can try out transformation rules on \ac{emf} \ac{xmi} instance files. In this use case, the user already has a metamodel and transformation rules. He wants to test the transformation rules on various instances in an accessible, intuitive, and easy to use graphical editor. The extended use case is that a user wants to create a full transformation language from scratch, that can be used to model and test the system and generate production code from it. In this use case, the user wants to create and edit metamodels and transformation rules. To support this use case, the following functional requirements are defined:
 
-  \textbf{Core Functionallity:}
+\subsection{General requirements}
+
+\begin{requirement}
+    \label{r:login}
+    The application should provide a login functionality to authenticate users and persist their workspace.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:editor-zoom}
+    The application should provide zooming and panning functionality for the graphical editor.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:nodes-selectable-draggable}
+    All graphical elements should be selectable and draggable to create an own layout. That layout should be persisted and restored when reopening the editor.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:undo-redo}
+    The application should provide undo and redo functionality for all editing operations in all editors.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:project-manage}
+    The application should provide functionality to upload, download, create and delete projects and workspaces.
+\end{requirement}
+
+  Some of these requirements are already provided by  Eclipse Theia and \ac{glsp}. Theia provides various views like the explorer for basic file management, including opening, saving, closing, creating and deleting files, a problems view, a integrated terminal, or edit operations like copy or paste. \ac{glsp} provides default functionality for each graphical editor. That includes selection of elements, moving nodes, realinging edges, zooming, or moving and reseting the viewport. Most of these features can be further configured to be able to create an editor fitting the specific needs.
+
+\subsection{\ac{xmi} editor requirements}
 
 \begin{requirement}
     \label{r:xmi-graphical-display}
-    \ac{emf} \ac{xmi} instance files should be displayed in a graphical editor. That contains the all nodes, adjacent edges and attributes of the model. All graphical elemets should be arangable to create an own layout.
+    \ac{emf} \ac{xmi} instance files should be displayed in a graphical editor. That contains the all nodes, adjacent edges and attributes of the node.
 \end{requirement}
 
 \begin{requirement}
     \label{r:xmi-node-editing}
-    The \ac{xmi} instance editor should provide editing functionality to create, update and delete nodes
+    The \ac{xmi} instance editor should provide editing functionality to create, update and delete nodes and edges.
 \end{requirement}
 
 \begin{requirement}
@@ -46,36 +73,65 @@
 
 \begin{requirement}
     \label{r:xmi-rule-listing}
-    In the \ac{xmi} instance editor all applicable transformation rules should be listed.  When a rule is selected to get applied, all parameters have to be specifiable.
+    In the \ac{xmi} instance editor all applicable transformation rules should be listed.  When a rule is selected to get applied, a window to specify the rule parameters should be opened. After specifying the parameters, the rule can get applied to the \ac{xmi} instance.
 \end{requirement}
 
 \begin{requirement}
     \label{r:xmi-rule-application}
-    When a rule gets appplied, the graphical editor of the \ac{xmi} instance should be updated to reflect the changes made by the transformation rule. The application should also support undo and redo functionality for the applied transformation rules.
+    When a rule gets appplied, the graphical editor of the \ac{xmi} instance should be updated to reflect the changes made by the transformation rule. 
+\end{requirement}
+
+\subsection{Henshin editor requirements}
+
+\begin{requirement}
+  \label{r:henshin-rule-switching}
+  All rules of a \textit{.henshin} file should be listed. The user should be able to switch between all rules. New rules can be created, and existing rules can be deleted.
 \end{requirement}
 
 \begin{requirement}
     \label{r:henshin-graphical-display}
-    Henshin transformation rule files should be displayed in a graphical editor. That contains the nodes, edges and attributes of the model and their action types. The user should be able to switch between all rules of a \textit{.henshin} file.
+    Henshin transformation rule files should be displayed in a graphical editor. That contains the name, parameters, nodes, edges, action types, and attributes of all rules.  
 \end{requirement}
+
+\begin{requirement}
+    \label{r:henshin-parameter-editing}
+    The Henshin editor should provide editing functionality of the rule name, and its parameters.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:henshin-rule-editing}
+    The Henshin editor should provide editing functionality to create, update and delete nodes, edges and action-types of a specific rule.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:henshin-attribute-editing}
+    The Henshin editor should provide editing functionality to connect rule parameters to attributes of a specific rule.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:henshin-comment}
+    The Henshin editor should provide editing functionality to add, edit and delete comments.
+\end{requirement}
+
+\subsection{Ecore editor requirements}
 
 \begin{requirement}
     \label{r:ecore-graphical-display}
     \ac{emf} Ecore metamodel should be displayed in a graphical editor. That contains the nodes, edges and attributes of the metamodel.
 \end{requirement}
 
-Next to the core use case, the second use case is that a user wants to create a full transformation language from scratch, that can be used to model and test the system and generate production code from it. In this use case, the user wants to create and edit metamodels and transformation rules. To support this use case, the following additional functional requirements are defined:
-
-\textbf{Additional Functionallity:}
-
 \begin{requirement}
-    \label{r:henshin-rule-editing}
-    The Henshin rule editor should provide editing functionality to create, update and delete nodes, edges, attributes and their action types.
+    \label{r:ecore-editing}
+    The Ecore editor should provide editing functionality to create, update and delete nodes, edges and attributes.
 \end{requirement}
 
+\subsection{ Additional optional Requirements}
+
+The following requirements are additional functionality that can be implemented to provide more value to the users. They are not core functionality, but they extend the use cases of the application.
+
 \begin{requirement}
-    \label{r:ecore-metamodel-editing}
-    The Ecore metamodel editor should provide editing functionality to create, update and delete nodes, edges and attributes.
+    \label{r:attributes-expressions}
+    Henshin transformation rule attributes can contain JavaScript expressions to compute values.
 \end{requirement}
 
 \begin{requirement}
@@ -105,11 +161,14 @@ Next to the core use case, the second use case is that a user wants to create a 
 
   In addition to the core functionality, the system must meet several non-functional requirements:
 
-  \textbf{Non-Functional Requirements:}
-
 \begin{requirement}
     \label{r:web-based-access}
     The application should be web-based and preferably accessible via a web browser.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:accessibility}
+    The application should be accessible without the need to install additional software, except for a web browser.
 \end{requirement}
 
 \begin{requirement}
@@ -120,6 +179,16 @@ Next to the core use case, the second use case is that a user wants to create a 
 \begin{requirement}
     \label{r:user-friendly-interface}
     The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the exploerer and the predefined UI contorls of \ac{glsp}, like the tool palette or the context menu.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:extendable-architecture}
+    The application should have an extendable architecture that allows for easy integration of new features and functionalities.
+\end{requirement}
+
+\begin{requirement}
+    \label{r:portable-integration}
+    The application should be portable and easy to integrate into other \ac{glsp} integration options.
 \end{requirement}
 
   \section{System Constraints}
