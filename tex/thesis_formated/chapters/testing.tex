@@ -10,7 +10,7 @@
 
 The Henshin Web Model Transformation project employs a multi-layered testing strategy to ensure reliability and correctness across both backend and frontend components. For the Java backend, unit tests were implemented using JUnit 5 framework in conjunction with Mockito for mocking dependencies. Throughout the development process, tests were incrementally added for each milestone to ensure that newly implemented functionality works as expected and does not break existing features. The test suite covers the core functionality of the backend, including model operations, rule transformations, and handler implementations. Mocking was extensively used to simulate the behavior of complex components such as the ModelState, EditingDomain, and various EMF resources, allowing for isolated testing of individual components without dependencies on external systems.
 
-To test the user interface and end-to-end functionality, automated UI tests were created using Playwright framework. This choice was made after evaluating several alternatives including Cypress and Selenium, with Playwright being selected for its robust support of Theia applications through the specialized @theia/playwright testing library. The testing strategy ensures both individual component reliability through unit testing and complete system functionality through comprehensive end-to-end testing scenarios.
+To test the user interface and end-to-end functionality, automated \ac{ui} tests were created using Playwright framework. This choice was made after evaluating several alternatives including Cypress and Selenium, with Playwright being selected for its robust support of Theia applications through the specialized @theia/playwright testing library. The testing strategy ensures both individual component reliability through unit testing and complete system functionality through comprehensive end-to-end testing scenarios.
 
   \section{Unit Tests}
   \label{subsec:test-results}
@@ -82,7 +82,7 @@ A critical aspect of maintaining model consistency is ensuring that instance mod
 
 \textbf{Expected Results:} The test case successfully validated the model synchronization mechanism. When either the Ecore metamodel or Henshin transformation files were modified and saved, all open \ac{xmi} diagram editors were automatically closed to prevent users from working with potentially inconsistent views. All associated notation files were deleted, ensuring that stale layout information would not cause conflicts when the diagrams were reopened. The \ac{xmi} data files themselves remained intact, preserving the instance data. Upon reopening the \ac{xmi} files, the diagrams displayed with fresh automatic layouts appropriate for the updated metamodel structure.
 
-  \subsection{Eclipse \acs{ide} Compatibility Test: Interoperability Validation}
+  \subsection{Eclipse \ac{ide} Compatibility Test: Interoperability Validation}
   \label{subsubsec:eclipse-compatibility-test}
 
 A fundamental requirement for the Henshin Web application is seamless interoperability with the existing Henshin Eclipse \ac{ide} ecosystem. This test case validates that projects created in the Eclipse \ac{ide} can be imported into the web application, edited, and then exported back to Eclipse without loss of functionality or compatibility issues.

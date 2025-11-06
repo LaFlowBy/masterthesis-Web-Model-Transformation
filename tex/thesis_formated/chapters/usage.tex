@@ -40,7 +40,7 @@ Now elements of the graph can be created and deleted. To edit the properties of 
 
 The deployment of Henhin Web with Theia Cloud provides a user management. Here users can be created, deleted and managed. The administration is done over the Keycloak admin console, which is available at \url{http://<domain>/keycloak/} after the deployment of Henshin Web. Keycloak is an open-source identity and access management solution \cite{keycloak-repo}.
 
-After logging in with the admin credentials, specified in the \textit{terraform.tfvars} file, the admin console provides different management options. You can see the \acs{ui} in figure \ref{fig:admin-console}. In order to perform changes, the dropdown on the top right should be changed to \textit{TheiaCloud} realm. After a completly new deployment of Henshin Web, following configurations should be done in the Realm Settings:
+After logging in with the admin credentials, specified in the \textit{terraform.tfvars} file, the admin console provides different management options. You can see the \ac{ui} in figure \ref{fig:admin-console}. In order to perform changes, the dropdown on the top right should be changed to \textit{TheiaCloud} realm. After a completly new deployment of Henshin Web, following configurations should be done in the Realm Settings:
 \begin{itemize}
   \item Under General, change the \textit{display name} and the \textit{\ac{html} display name} to Henshin Web.
   \item Under Login, enable user registration, forgot password, remember me and verify email features.
@@ -124,7 +124,7 @@ To have a better overview of the project structure, here is a brief description 
     \item \textbf{Client Components}
     \begin{itemize}
         \item \textbf{\texttt{henshin-browser-app/}}: Main browser application integrating Theia with the \ac{glsp} extensions
-        \item \textbf{\texttt{henshin-glsp/}}: Core \ac{glsp} client module containing code for custom \acs{ui} elements and logic. The module is used in all three following diagram editor modules. 
+        \item \textbf{\texttt{henshin-glsp/}}: Core \ac{glsp} client module containing code for custom \ac{ui} elements and logic. The module is used in all three following diagram editor modules. 
         \item \textbf{\texttt{ecore-theia/}}: Client module for the Ecore diagram editor. Contains code for context menu and command contributions.
         \item \textbf{\texttt{xmi-theia/}}: Client module for the XMI diagram editor. Contains code for context menu and command contributions.
         \item \textbf{\texttt{rules-theia/}}: Client module for the Henshin rule editor. Contains code for context menu and command contributions. It also contains the code for the Theia explorer extensions.

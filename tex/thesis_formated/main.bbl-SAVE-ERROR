@@ -1,0 +1,1788 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{transformations-modeldriven}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7412403621b1682d2d1c85b388e34b6f}{%
+           family={Sendall},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2ac899b919791b8e86e07ffb12656668}{%
+           family={Kozaczynski},
+           familyi={K\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{fullhash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{fullhashraw}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{bibnamehash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{authorbibnamehash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{authornamehash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{authorfullhash}{b5fd178dfb1a1657f77058c34b723eb8}
+      \strng{authorfullhashraw}{b5fd178dfb1a1657f77058c34b723eb8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Software}
+      \field{number}{5}
+      \field{title}{Model transformation: the heart and soul of model-driven software development}
+      \field{volume}{20}
+      \field{year}{2003}
+      \field{pages}{42\bibrangedash 45}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/MS.2003.1231150
+      \endverb
+      \keyw{Heart;Programming;Unified modeling language;XML;Computer languages;Productivity;Java;Automation;Context modeling;Metamodeling}
+    \endentry
+    \entry{emf}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=4ebc9bf585605a0828563c6935af6481}{%
+           family={Steinberg},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0a1b4003a0c8f6684170bd0db0f4d562}{%
+           family={Budinsky},
+           familyi={B\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d406b86250eac1cd4e040cf2bf9017ed}{%
+           family={Paternostro},
+           familyi={P\bibinitperiod},
+           given={Marcelo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e420244d63b7d0f3670498a5e6ee6f5f}{%
+           family={Merks},
+           familyi={M\bibinitperiod},
+           given={Ed},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley Professional}%
+      }
+      \strng{namehash}{ca82401303918a137cf8ac2c04d3234d}
+      \strng{fullhash}{4f37f3c6a676d1506eef53ac7340b6e9}
+      \strng{fullhashraw}{4f37f3c6a676d1506eef53ac7340b6e9}
+      \strng{bibnamehash}{ca82401303918a137cf8ac2c04d3234d}
+      \strng{authorbibnamehash}{ca82401303918a137cf8ac2c04d3234d}
+      \strng{authornamehash}{ca82401303918a137cf8ac2c04d3234d}
+      \strng{authorfullhash}{4f37f3c6a676d1506eef53ac7340b6e9}
+      \strng{authorfullhashraw}{4f37f3c6a676d1506eef53ac7340b6e9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{0321331885}
+      \field{title}{EMF: Eclipse Modeling Framework 2.0}
+      \field{year}{2009}
+    \endentry
+    \entry{henshin-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=51177860ac6e6fd4467c870155f88203}{%
+           family={Strueber},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{51177860ac6e6fd4467c870155f88203}
+      \strng{fullhash}{51177860ac6e6fd4467c870155f88203}
+      \strng{fullhashraw}{51177860ac6e6fd4467c870155f88203}
+      \strng{bibnamehash}{51177860ac6e6fd4467c870155f88203}
+      \strng{authorbibnamehash}{51177860ac6e6fd4467c870155f88203}
+      \strng{authornamehash}{51177860ac6e6fd4467c870155f88203}
+      \strng{authorfullhash}{51177860ac6e6fd4467c870155f88203}
+      \strng{authorfullhashraw}{51177860ac6e6fd4467c870155f88203}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-henshin/henshin/wiki}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Henshin}
+      \field{year}{2025}
+    \endentry
+    \entry{henshin-usability}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=ec988eb06251c59e9aee0ee0383bfb17}{%
+           family={Strüber},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=71b93169bfad001d3003bb5a678c287a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Kristopher},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0fe2dc538217abdaaed8638730fa2430}{%
+           family={Gill},
+           familyi={G\bibinitperiod},
+           given={Kanwal\bibnamedelima Daud},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c8dd6bcdb2f7bec3b86886ba4f48366d}{%
+           family={Groner},
+           familyi={G\bibinitperiod},
+           given={Raffaela},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d79290f008da09d20408215ad85245d3}{%
+           family={Kehrer},
+           familyi={K\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4f4e7e63ff82f0190b42bbd094023537}{%
+           family={Ohrndorf},
+           familyi={O\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ea2fbe09fb6cdaf51ac090e0ebfe649a}{%
+           family={Tichy},
+           familyi={T\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=ea78ad6d206c269cbc42896d09b60fe2}{%
+           family={Lara},
+           familyi={L\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=b2ab7995784851c498b4888d842f73d4}{%
+           family={Plump},
+           familyi={P\bibinitperiod},
+           given={Detlef},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{fullhash}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{fullhashraw}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{bibnamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authorbibnamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authornamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authorfullhash}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{authorfullhashraw}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{editorbibnamehash}{b41b7dec0bdc647daaf4a557e9e54f60}
+      \strng{editornamehash}{b41b7dec0bdc647daaf4a557e9e54f60}
+      \strng{editorfullhash}{b41b7dec0bdc647daaf4a557e9e54f60}
+      \strng{editorfullhashraw}{b41b7dec0bdc647daaf4a557e9e54f60}
+      \field{extraname}{1}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Improved usability of tools is a fundamental prerequisite for a more widespread industrial adoption of Model-Driven Engineering. We present the current state of Henshin, a model transformation language and framework based on algebraic graph transformations. Our demonstration focuses on Henshin's novel usability-oriented features, specifically: (i) a textual syntax, complementing the existing graphical one by improved support for rapid transformation development, (ii) extended static validation, including checks for correct integration with general-purpose-language code, (iii) advanced refactoring support, in particular, for splitting large transformation programs, (iv) editing utilities for facilitating recurring tasks in model transformation development. We demonstrate the usefulness of these features using a running example.}
+      \field{booktitle}{Graph Transformation}
+      \field{isbn}{978-3-319-61470-0}
+      \field{title}{Henshin: A Usability-Focused Framework for EMF Model Transformation Development}
+      \field{year}{2017}
+      \field{pages}{196\bibrangedash 208}
+      \range{pages}{13}
+    \endentry
+    \entry{glsp-repo}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=50f0c6012d3f24126eb84a42705b8a06}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=18805a617497fdbaed10cf963bfde73f}{%
+           family={Ortmayr},
+           familyi={O\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{fullhash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{fullhashraw}{ded0578f4ac525770d1bf603bb386949}
+      \strng{bibnamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorbibnamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authornamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorfullhash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorfullhashraw}{ded0578f4ac525770d1bf603bb386949}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-glsp/glsp}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Eclipse GLSP}
+      \field{year}{2025}
+    \endentry
+    \entry{glsp-doc}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba965a2360c8acdc8182fb5f00ea04f0}{%
+           family={{Eclipse Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{bibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorbibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authornamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-05-20}
+      \field{title}{Eclipse GLSP™ – Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://eclipse.dev/glsp/documentation
+      \endverb
+      \verb{url}
+      \verb https://eclipse.dev/glsp/documentation
+      \endverb
+    \endentry
+    \entry{eclipse-review}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=24455f343ef379359328ee467c290561}{%
+           family={Jastram},
+           familyi={J\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {de}%
+      }
+      \list{publisher}{1}{%
+        {Systems Engineering Trends}%
+      }
+      \strng{namehash}{24455f343ef379359328ee467c290561}
+      \strng{fullhash}{24455f343ef379359328ee467c290561}
+      \strng{fullhashraw}{24455f343ef379359328ee467c290561}
+      \strng{bibnamehash}{24455f343ef379359328ee467c290561}
+      \strng{authorbibnamehash}{24455f343ef379359328ee467c290561}
+      \strng{authornamehash}{24455f343ef379359328ee467c290561}
+      \strng{authorfullhash}{24455f343ef379359328ee467c290561}
+      \strng{authorfullhashraw}{24455f343ef379359328ee467c290561}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.se-trends.de/eclipse-foundation-wird-20-jahre-alt/}}
+      \field{month}{12}
+      \field{note}{Accessed: 2025-6-2}
+      \field{title}{Die Eclipse Foundation wird 20 Jahre alt: Die interessantesten {SE-Projekte}}
+      \field{year}{2024}
+    \endentry
+    \entry{heise-eclipse-foundation}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=79f006d0f7937cafc1a1c5990dfdfa80}{%
+           family={Kleijn},
+           familyi={K\bibinitperiod},
+           given={Alexandra},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {heise online}%
+      }
+      \strng{namehash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{fullhash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{fullhashraw}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{bibnamehash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{authorbibnamehash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{authornamehash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{authorfullhash}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \strng{authorfullhashraw}{79f006d0f7937cafc1a1c5990dfdfa80}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-6-2}
+      \field{title}{Eclipse und die Eclipse Foundation}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://www.heise.de/-221997
+      \endverb
+      \verb{url}
+      \verb https://www.heise.de/-221997
+      \endverb
+    \endentry
+    \entry{eclipse-report}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba965a2360c8acdc8182fb5f00ea04f0}{%
+           family={{Eclipse Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{bibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorbibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authornamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.eclipse.org/org/foundation/reports/annual_report.php}}
+      \field{note}{Accessed: 2025-6-2}
+      \field{title}{2024 Annual Community Report}
+      \field{year}{2024}
+    \endentry
+    \entry{eclipse_modeling}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba965a2360c8acdc8182fb5f00ea04f0}{%
+           family={{Eclipse Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Eclipse Foundation}%
+      }
+      \strng{namehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{bibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorbibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authornamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-02}
+      \field{title}{Eclipse Modeling Project}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://eclipse.dev/modeling/
+      \endverb
+      \verb{url}
+      \verb https://eclipse.dev/modeling/
+      \endverb
+    \endentry
+    \entry{emf-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c29e9dd4709b3acadeef395a1b0997ed}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Eclipse},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{bibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-emf/org.eclipse.emf}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Eclipse Modeling Framework}
+      \field{year}{2025}
+    \endentry
+    \entry{eclipse_emf}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba965a2360c8acdc8182fb5f00ea04f0}{%
+           family={{Eclipse Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Eclipse Foundation}%
+      }
+      \strng{namehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{bibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorbibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authornamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-02}
+      \field{title}{Eclipse Modeling Framework}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://eclipse.dev/emf/
+      \endverb
+      \verb{url}
+      \verb https://eclipse.dev/emf/
+      \endverb
+    \endentry
+    \entry{henshin}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=41fef28c744c2fedc9d5feb64e702915}{%
+           family={Arendt},
+           familyi={A\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+        {{hash=3de28f67b800c2013d26d70e1322fc5e}{%
+           family={Biermann},
+           familyi={B\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8ee66cf3959909ae24c5f341303cf1d6}{%
+           family={Jurack},
+           familyi={J\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=56f4e60392dc80e77b41755bf6cfbbef}{%
+           family={Krause},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=1fd735054d9c2deb9f2bdff20474e5ba}{%
+           family={Taentzer},
+           familyi={T\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=a3e4f3d0e8c5b823cba96651f146b1e4}{%
+           family={Petriu},
+           familyi={P\bibinitperiod},
+           given={Dorina\bibnamedelima C.},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=619d8e4faa78cfda1577aa7829f29bad}{%
+           family={Rouquette},
+           familyi={R\bibinitperiod},
+           given={Nicolas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=ab70ef07eb9c54441363229de39616d7}{%
+           family={Haugen},
+           familyi={H\bibinitperiod},
+           given={{Ø}ystein},
+           giveni={Ø\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{8a880ec3e7970da78ed52fa209a0fc7b}
+      \strng{fullhash}{569ca8002d6bca00d0e4061985baad1c}
+      \strng{fullhashraw}{569ca8002d6bca00d0e4061985baad1c}
+      \strng{bibnamehash}{8a880ec3e7970da78ed52fa209a0fc7b}
+      \strng{authorbibnamehash}{8a880ec3e7970da78ed52fa209a0fc7b}
+      \strng{authornamehash}{8a880ec3e7970da78ed52fa209a0fc7b}
+      \strng{authorfullhash}{569ca8002d6bca00d0e4061985baad1c}
+      \strng{authorfullhashraw}{569ca8002d6bca00d0e4061985baad1c}
+      \strng{editorbibnamehash}{1753d25f10fac4be2f388affce6456c7}
+      \strng{editornamehash}{1753d25f10fac4be2f388affce6456c7}
+      \strng{editorfullhash}{1753d25f10fac4be2f388affce6456c7}
+      \strng{editorfullhashraw}{1753d25f10fac4be2f388affce6456c7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Eclipse Modeling Framework (EMF) provides modeling and code generation facilities for Java applications based on structured data models. Henshin is a new language and associated tool set for in-place transformations of EMF models. The Henshin transformation language uses pattern-based rules on the lowest level, which can be structured into nested transformation units with well-defined operational semantics. So-called amalgamation units are a special type of transformation units that provide a forall-operator for pattern replacement. For all of these concepts, Henshin offers a visual syntax, sophisticated editing functionalities, execution and analysis tools. The Henshin transformation language has its roots in attributed graph transformations, which offer a formal foundation for validation of EMF model transformations. The transformation concepts are demonstrated using two case studies: EMF model refactoring and meta-model evolution.}
+      \field{booktitle}{Model Driven Engineering Languages and Systems}
+      \field{isbn}{978-3-642-16145-2}
+      \field{title}{Henshin: Advanced Concepts and Tools for In-Place EMF Model Transformations}
+      \field{year}{2010}
+      \field{pages}{121\bibrangedash 135}
+      \range{pages}{15}
+    \endentry
+    \entry{lsp-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/microsoft/language-server-protocol}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Language Server Protocol}
+      \field{year}{2025}
+    \endentry
+    \entry{guice-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/google/guice}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Google Guice}
+      \field{year}{2025}
+    \endentry
+    \entry{sprotty-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c29e9dd4709b3acadeef395a1b0997ed}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Eclipse},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{bibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-sprotty/sprotty}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Sprotty}
+      \field{year}{2025}
+    \endentry
+    \entry{gson-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhashraw}{8b36e9207c24c76e6719268e49201d94}
+      \field{extraname}{2}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/google/gson}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Gson}
+      \field{year}{2025}
+    \endentry
+    \entry{bork2023vision}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=05abac57d6e99c8fb7e1617852d5277d}{%
+           family={Bork},
+           familyi={B\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+        {{hash=50f0c6012d3f24126eb84a42705b8a06}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=18805a617497fdbaed10cf963bfde73f}{%
+           family={Ortmayr},
+           familyi={O\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{fullhash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{fullhashraw}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{bibnamehash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{authorbibnamehash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{authornamehash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{authorfullhash}{a060580c774cda4bafe5bb72fcd20b77}
+      \strng{authorfullhashraw}{a060580c774cda4bafe5bb72fcd20b77}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a vision for flexible web-based modeling tools built with the Graphical Language Server Platform (GLSP). The authors discuss requirements for modern diagram editors and how GLSP addresses challenges in building custom modeling tools that work seamlessly across web browsers, VS Code, Eclipse Theia, and Eclipse IDE.}
+      \field{booktitle}{IFIP Working Conference on The Practice of Enterprise Modeling}
+      \field{isbn}{978-3-031-48583-1}
+      \field{title}{A vision for flexible GLSP-based web modeling tools}
+      \field{year}{2023}
+      \field{pages}{95\bibrangedash 111}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-031-48583-1_7
+      \endverb
+    \endentry
+    \entry{metin2023glsp}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=214ce5e382edd44b81faa99b220e1998}{%
+           family={Metin},
+           familyi={M\bibinitperiod},
+           given={Haydar},
+           giveni={H\bibinitperiod}}}%
+        {{hash=05abac57d6e99c8fb7e1617852d5277d}{%
+           family={Bork},
+           familyi={B\bibinitperiod},
+           given={Dominik},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{fullhash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{fullhashraw}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{bibnamehash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{authorbibnamehash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{authornamehash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{authorfullhash}{7cc844243c1b6df4e202819d820cdac1}
+      \strng{authorfullhashraw}{7cc844243c1b6df4e202819d820cdac1}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper reports on practical experiences developing bigUML, a web-based UML editor built with GLSP. The authors present lessons learned regarding architecture decisions, development challenges, and operational considerations for GLSP-based tools, providing valuable insights for practitioners building similar web modeling tools.}
+      \field{booktitle}{2023 ACM/IEEE 26th International Conference on Model Driven Engineering Languages and Systems (MODELS)}
+      \field{title}{On developing and operating GLSP-based web modeling tools: Lessons learned from bigUML}
+      \field{year}{2023}
+      \field{pages}{460\bibrangedash 470}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/MODELS58315.2023.00053
+      \endverb
+    \endentry
+    \entry{domros2018moving}{thesis}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ce0e05369907a3b7f1acd210b9ff936}{%
+           family={Domrös},
+           familyi={D\bibinitperiod},
+           given={Sören},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Kiel University}%
+      }
+      \strng{namehash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{fullhash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{fullhashraw}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{bibnamehash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{authorbibnamehash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{authornamehash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{authorfullhash}{9ce0e05369907a3b7f1acd210b9ff936}
+      \strng{authorfullhashraw}{9ce0e05369907a3b7f1acd210b9ff936}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{This thesis describes the migration of the KIELER modeling tool from Eclipse to web technologies using the Theia framework, addressing challenges in adapting desktop modeling tools for web-based environments.}
+      \field{title}{Moving model-driven engineering from Eclipse to web technologies}
+      \field{type}{Master's thesis}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://rtsys.informatik.uni-kiel.de/~biblio/downloads/theses/sdo-mt.pdf
+      \endverb
+      \verb{url}
+      \verb https://rtsys.informatik.uni-kiel.de/~biblio/downloads/theses/sdo-mt.pdf
+      \endverb
+    \endentry
+    \entry{struber2017henshin}{inproceedings}{}{}
+      \name{author}{7}{}{%
+        {{hash=ec988eb06251c59e9aee0ee0383bfb17}{%
+           family={Strüber},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=71b93169bfad001d3003bb5a678c287a}{%
+           family={Born},
+           familyi={B\bibinitperiod},
+           given={Kristopher},
+           giveni={K\bibinitperiod}}}%
+        {{hash=0fe2dc538217abdaaed8638730fa2430}{%
+           family={Gill},
+           familyi={G\bibinitperiod},
+           given={Kanwal\bibnamedelima Daud},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c8dd6bcdb2f7bec3b86886ba4f48366d}{%
+           family={Groner},
+           familyi={G\bibinitperiod},
+           given={Raffaela},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d79290f008da09d20408215ad85245d3}{%
+           family={Kehrer},
+           familyi={K\bibinitperiod},
+           given={Timo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4f4e7e63ff82f0190b42bbd094023537}{%
+           family={Ohrndorf},
+           familyi={O\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ea2fbe09fb6cdaf51ac090e0ebfe649a}{%
+           family={Tichy},
+           familyi={T\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{fullhash}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{fullhashraw}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{bibnamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authorbibnamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authornamehash}{9be25a337a7fe29009dd2d1342bb97c9}
+      \strng{authorfullhash}{fd101cf6df2d80c062501982f585ccfc}
+      \strng{authorfullhashraw}{fd101cf6df2d80c062501982f585ccfc}
+      \field{extraname}{2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents the current state of Henshin, a model transformation language and framework based on algebraic graph transformations. The authors emphasize usability aspects and demonstrate how Henshin provides both graphical and textual syntax for defining transformations on EMF models.}
+      \field{booktitle}{International Conference on Graph Transformation}
+      \field{isbn}{978-3-319-61470-0}
+      \field{title}{Henshin: A usability-focused framework for EMF model transformation development}
+      \field{year}{2017}
+      \field{pages}{196\bibrangedash 208}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1007/978-3-319-61470-0_12
+      \endverb
+    \endentry
+    \entry{kahani2019survey}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=85fe09edae4459c9130729487ff2a0a3}{%
+           family={Kahani},
+           familyi={K\bibinitperiod},
+           given={Nafiseh},
+           giveni={N\bibinitperiod}}}%
+        {{hash=a4e20b68e8ed25600e9f0b94283a5c00}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mojtaba},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6c61b394a2dd2673efe3995aeed49278}{%
+           family={Cordy},
+           familyi={C\bibinitperiod},
+           given={James\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=abb5eaa9ad562f0d14dbf45256fc5b92}{%
+           family={Dingel},
+           familyi={D\bibinitperiod},
+           given={Juergen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c4cd1b170ed10d42dbe44ad164ee2487}{%
+           family={Varró},
+           familyi={V\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{d4fff04f29f8b649c6536c6e7d4cb147}
+      \strng{fullhash}{c17a14a956d03345d2ceee09f035cace}
+      \strng{fullhashraw}{c17a14a956d03345d2ceee09f035cace}
+      \strng{bibnamehash}{d4fff04f29f8b649c6536c6e7d4cb147}
+      \strng{authorbibnamehash}{d4fff04f29f8b649c6536c6e7d4cb147}
+      \strng{authornamehash}{d4fff04f29f8b649c6536c6e7d4cb147}
+      \strng{authorfullhash}{c17a14a956d03345d2ceee09f035cace}
+      \strng{authorfullhashraw}{c17a14a956d03345d2ceee09f035cace}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Software \& Systems Modeling}
+      \field{title}{Survey and classification of model transformation tools}
+      \field{volume}{18}
+      \field{year}{2019}
+      \field{pages}{2361\bibrangedash 2397}
+      \range{pages}{37}
+    \endentry
+    \entry{atompm}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=46d4580f7536c437b6fce9f765a6f23f}{%
+           family={Syriani},
+           familyi={S\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ae584fbe3b96986d19b980d159d31458}{%
+           family={Vangheluwe},
+           familyi={V\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=d01c6ad4ccdc03a82febff440d6dde4f}{%
+           family={Mannadiar},
+           familyi={M\bibinitperiod},
+           given={Raphael},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7cec16f10332fad23e141e10dca5419e}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Conner},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5c2f8cbe27389f55a17ed10b927ff0b4}{%
+           family={Van\bibnamedelima Mierlo},
+           familyi={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=386fd5e55e057c72a11a71dcd0e72bae}{%
+           family={Ergin},
+           familyi={E\bibinitperiod},
+           given={Huseyin},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{8dada29c62d01a6903cd31c2ed808176}
+      \strng{fullhash}{b6edc369fb5baa442b099bc013eceedd}
+      \strng{fullhashraw}{b6edc369fb5baa442b099bc013eceedd}
+      \strng{bibnamehash}{8dada29c62d01a6903cd31c2ed808176}
+      \strng{authorbibnamehash}{8dada29c62d01a6903cd31c2ed808176}
+      \strng{authornamehash}{8dada29c62d01a6903cd31c2ed808176}
+      \strng{authorfullhash}{b6edc369fb5baa442b099bc013eceedd}
+      \strng{authorfullhashraw}{b6edc369fb5baa442b099bc013eceedd}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Joint proceedings of MODELS'13 Invited Talks, Demonstration Session, Poster Session, and ACM Student Research Competition co-located with the 16th International Conference on Model Driven Engineering Languages and Systems (MODELS 2013): September 29-October 4, 2013, Miami, USA}
+      \field{title}{AToMPM: A web-based modeling environment}
+      \field{year}{2013}
+      \field{pages}{21\bibrangedash 25}
+      \range{pages}{5}
+    \endentry
+    \entry{tcore}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=46d4580f7536c437b6fce9f765a6f23f}{%
+           family={Syriani},
+           familyi={S\bibinitperiod},
+           given={Eugene},
+           giveni={E\bibinitperiod}}}%
+        {{hash=ae584fbe3b96986d19b980d159d31458}{%
+           family={Vangheluwe},
+           familyi={V\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=295201a8193a62b61d9f93118bd6a57d}{%
+           family={Lashomb},
+           familyi={L\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag}%
+      }
+      \strng{namehash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{fullhash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{fullhashraw}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{bibnamehash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{authorbibnamehash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{authornamehash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{authorfullhash}{c4991424cb90fdb1975b4101cb237b26}
+      \strng{authorfullhashraw}{c4991424cb90fdb1975b4101cb237b26}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A large number of model transformation languages and tools have emerged since the early 2000s. A transformation engineer is thus left with too many choices for the language he use to perform a specific transformation task. Furthermore, it is currently not possible to combine or reuse transformations implemented in different languages. We therefore propose T-Core, a framework where primitive transformation constructs can be combined to define and encapsulate reusable model transformation idioms. In this context, the transformation engineer is free to use existing transformation building blocks from an extensible library or define his own transformation units. The proposed primitive transformation operators are the result of deconstructing different existing transformation languages. Reconstructing these languages offers a common basis to compare their expressiveness, provides a framework for inter-operating them, and allows the transformation engineer to design transformations with the most appropriate constructs for the task at hand.}
+      \field{issn}{1619-1366}
+      \field{journaltitle}{Softw. Syst. Model.}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{T-Core: a framework for custom-built model transformation engines}
+      \field{volume}{14}
+      \field{year}{2015}
+      \field{pages}{1215\bibrangedash 1243}
+      \range{pages}{29}
+      \verb{doi}
+      \verb 10.1007/s10270-013-0370-4
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10270-013-0370-4
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10270-013-0370-4
+      \endverb
+      \keyw{Transformation library,Reengineering,Model transformation,Domain-specific model transformation}
+    \endentry
+    \entry{webGME}{report}{}{}
+      \name{author}{8}{}{%
+        {{hash=b700ac19ae290650c5fe5791b8dd6846}{%
+           family={Maróti},
+           familyi={M\bibinitperiod},
+           given={Miklós},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f63087ce0057ea53beec67a860a7c464}{%
+           family={Kecskés},
+           familyi={K\bibinitperiod},
+           given={Tamás},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8fbf880d5156dad255b05d28ae59af51}{%
+           family={Kereskényi},
+           familyi={K\bibinitperiod},
+           given={Róbert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a64fae821a7684cba011b69c5058b4b2}{%
+           family={Broll},
+           familyi={B\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=fd03fec2a88e2671318db387c2075bd1}{%
+           family={Völgyesi},
+           familyi={V\bibinitperiod},
+           given={Péter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=d2631baec2cbe7c09e0b7ce91648d639}{%
+           family={Jurácz},
+           familyi={J\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod}}}%
+        {{hash=69cabfc282e0c5d5d444b56530947b99}{%
+           family={Levendoszky},
+           familyi={L\bibinitperiod},
+           given={Tihamér},
+           giveni={T\bibinitperiod}}}%
+        {{hash=30bc08935d94ef64593f214d49d79ca5}{%
+           family={Lédéczi},
+           familyi={L\bibinitperiod},
+           given={Ákos},
+           giveni={Á\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd51dfb0aebdf73898c15f5dd4f2a697}
+      \strng{fullhash}{fd9cd9da8a90d1ae03733ead8644f701}
+      \strng{fullhashraw}{fd9cd9da8a90d1ae03733ead8644f701}
+      \strng{bibnamehash}{bd51dfb0aebdf73898c15f5dd4f2a697}
+      \strng{authorbibnamehash}{bd51dfb0aebdf73898c15f5dd4f2a697}
+      \strng{authornamehash}{bd51dfb0aebdf73898c15f5dd4f2a697}
+      \strng{authorfullhash}{fd9cd9da8a90d1ae03733ead8644f701}
+      \strng{authorfullhashraw}{fd9cd9da8a90d1ae03733ead8644f701}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{White paper available at \url{https://webgme.org/WebGMEWhitePaper.pdf}}
+      \field{title}{Next Generation (Meta)Modeling: Web- and Cloud‑based Collaborative Tool Infrastructure}
+      \field{type}{White paper / Technical report}
+      \field{year}{2014}
+    \endentry
+    \entry{webgme-website}{misc}{}{}
+      \list{publisher}{1}{%
+        {Vanderbilt University}%
+      }
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-18}
+      \field{title}{WebGME: Web-based Generic Modeling Environment}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://webgme.org/
+      \endverb
+      \verb{url}
+      \verb https://webgme.org/
+      \endverb
+    \endentry
+    \entry{webDPF}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{hash=f65e3fe93922951e9a336a05fa3f5ebc}{%
+           family={Rabbi},
+           familyi={R\bibinitperiod},
+           given={Fazle},
+           giveni={F\bibinitperiod}}}%
+        {{hash=40b38b8934c3be970ba4b78d981e59f1}{%
+           family={Lamo},
+           familyi={L\bibinitperiod},
+           given={Yngve},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=982d00c636b1e6eba6632b72242efabc}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Ingrid\bibnamedelima Chieh},
+           giveni={I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=36739c92953df627c5032825a5f343c1}{%
+           family={Kristensen},
+           familyi={K\bibinitperiod},
+           given={Lars\bibnamedelima Michael},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1b105a8cb41efa480bddbf6ff3cd21c}
+      \strng{fullhash}{7d32f02f5bf17f3ba755b9d676ff3244}
+      \strng{fullhashraw}{7d32f02f5bf17f3ba755b9d676ff3244}
+      \strng{bibnamehash}{f1b105a8cb41efa480bddbf6ff3cd21c}
+      \strng{authorbibnamehash}{f1b105a8cb41efa480bddbf6ff3cd21c}
+      \strng{authornamehash}{f1b105a8cb41efa480bddbf6ff3cd21c}
+      \strng{authorfullhash}{7d32f02f5bf17f3ba755b9d676ff3244}
+      \strng{authorfullhashraw}{7d32f02f5bf17f3ba755b9d676ff3244}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 4th International Conference on Model-Driven Engineering and Software Development (MODELSWARD)}
+      \field{title}{WebDPF: A web-based metamodelling and model transformation environment}
+      \field{year}{2016}
+      \field{pages}{87\bibrangedash 98}
+      \range{pages}{12}
+      \keyw{Tools;Semantics;Analytical models;Navigation;Software;Visualization;Silicon;Model Driven Engineering;Metamodelling;Model Transformation;Domain Specific Modelling;Model Completion}
+    \endentry
+    \entry{glsp-ecore-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c29e9dd4709b3acadeef395a1b0997ed}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Eclipse},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{bibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipsesource/ecore-glsp}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{ecore-glsp}
+      \field{year}{2025}
+    \endentry
+    \entry{manhattan}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=8b46abf5fdca158b8b3b9099969cba78}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Cheng-Kok},
+           giveni={C\bibinithyphendelim K\bibinitperiod}}}%
+        {{hash=f9797729277c4bbfcfa28a91e14f5a14}{%
+           family={Madden},
+           familyi={M\bibinitperiod},
+           given={Patrick\bibnamedelima H.},
+           giveni={P\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Chicago, Illinois, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{603b07206f2c28442259dec65e059bb2}
+      \strng{fullhash}{603b07206f2c28442259dec65e059bb2}
+      \strng{fullhashraw}{603b07206f2c28442259dec65e059bb2}
+      \strng{bibnamehash}{603b07206f2c28442259dec65e059bb2}
+      \strng{authorbibnamehash}{603b07206f2c28442259dec65e059bb2}
+      \strng{authornamehash}{603b07206f2c28442259dec65e059bb2}
+      \strng{authorfullhash}{603b07206f2c28442259dec65e059bb2}
+      \strng{authorfullhashraw}{603b07206f2c28442259dec65e059bb2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Circuit interconnect has become a substantial obstacle in the design of high performance systems. In this paper we explore a new routing paradigm that strikes at the root of the interconnect problem by reducing wire lengths directly. We present a non-Manhattan Steiner tree heuristic, obtaining wire length reductions of much as 17\% on average, when compared to rectilinear topologies. Moreover, we present a graph-based interconnect optimization algorithm, called the GRATS-tree algorithm, which allows performance optimization beyond what can be obtained through wire length reduction alone. The two tree construction algorithms are integrated into a new global router that allows large scale non-Manhattan design. Although we consider circuit placements performed under rectilinear objectives, our global router can reduce maximum congestion levels by as much as 20\%. In general we find that the non-Manhattan approach requires additional Steiner points and bends; realization of non-Manhattan routing structures requires additional vias. We observe that the increase in via cost is much less dramatic than might be expected; the benefits of wire length reduction may outweigh the additional via cost.}
+      \field{booktitle}{Proceedings of the 10th Great Lakes Symposium on VLSI}
+      \field{isbn}{1581132514}
+      \field{series}{GLSVLSI '00}
+      \field{title}{Manhattan or non-Manhattan? a study of alternative VLSI routing architectures}
+      \field{year}{2000}
+      \field{pages}{47\bibrangedash 52}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1145/330855.330961
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/330855.330961
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/330855.330961
+      \endverb
+    \endentry
+    \entry{vscode}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={{Microsoft}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhashraw}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-07-23}
+      \field{title}{Visual Studio Code}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/
+      \endverb
+    \endentry
+    \entry{intellij}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b6a77f3f5bead76a495a90d63703e1f9}{%
+           family={{JetBrains}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{fullhash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{fullhashraw}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{bibnamehash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{authorbibnamehash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{authornamehash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{authorfullhash}{b6a77f3f5bead76a495a90d63703e1f9}
+      \strng{authorfullhashraw}{b6a77f3f5bead76a495a90d63703e1f9}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-07-23}
+      \field{title}{IntelliJ IDEA}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.jetbrains.com/idea/
+      \endverb
+      \verb{url}
+      \verb https://www.jetbrains.com/idea/
+      \endverb
+    \endentry
+    \entry{claude_sonnet}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f431db65cea024a5f19eab835afefee2}{%
+           family={{Anthropic}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f431db65cea024a5f19eab835afefee2}
+      \strng{fullhash}{f431db65cea024a5f19eab835afefee2}
+      \strng{fullhashraw}{f431db65cea024a5f19eab835afefee2}
+      \strng{bibnamehash}{f431db65cea024a5f19eab835afefee2}
+      \strng{authorbibnamehash}{f431db65cea024a5f19eab835afefee2}
+      \strng{authornamehash}{f431db65cea024a5f19eab835afefee2}
+      \strng{authorfullhash}{f431db65cea024a5f19eab835afefee2}
+      \strng{authorfullhashraw}{f431db65cea024a5f19eab835afefee2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-07-23}
+      \field{title}{Claude 3 Sonnet}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.anthropic.com/claude/sonnet
+      \endverb
+      \verb{url}
+      \verb https://www.anthropic.com/claude/sonnet
+      \endverb
+    \endentry
+    \entry{nashorn-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9c7489f1dfc0ef1b77d56bb6be7f5552}{%
+           family={OpenJDK},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{fullhash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{fullhashraw}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{bibnamehash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{authorbibnamehash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{authornamehash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{authorfullhash}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \strng{authorfullhashraw}{9c7489f1dfc0ef1b77d56bb6be7f5552}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/openjdk/nashorn}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Nashorn Engine}
+      \field{year}{2025}
+    \endentry
+    \entry{elk-engine}{misc}{}{}
+      \name{author}{5}{}{%
+        {{hash=9ce0e05369907a3b7f1acd210b9ff936}{%
+           family={Domrös},
+           familyi={D\bibinitperiod},
+           given={Sören},
+           giveni={S\bibinitperiod}}}%
+        {{hash=279338b41bd103d790f5a202e2b8b520}{%
+           family={Hanxleden},
+           familyi={H\bibinitperiod},
+           given={Reinhard},
+           giveni={R\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=f2c4b63d0845b24cc8965045b5de8c39}{%
+           family={Spönemann},
+           familyi={S\bibinitperiod},
+           given={Miro},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6dc3d423196b5a24a2b75d669fe68fdb}{%
+           family={Rüegg},
+           familyi={R\bibinitperiod},
+           given={Ulf},
+           giveni={U\bibinitperiod}}}%
+        {{hash=da21432153f29fca2aae7fd6ccd797b0}{%
+           family={Schulze},
+           familyi={S\bibinitperiod},
+           given={Christoph\bibnamedelima Daniel},
+           giveni={C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{bbbebf3d9755705fa9b18529fa82564e}
+      \strng{fullhash}{11f40329ebaed88c837328bcaf98f696}
+      \strng{fullhashraw}{11f40329ebaed88c837328bcaf98f696}
+      \strng{bibnamehash}{bbbebf3d9755705fa9b18529fa82564e}
+      \strng{authorbibnamehash}{bbbebf3d9755705fa9b18529fa82564e}
+      \strng{authornamehash}{bbbebf3d9755705fa9b18529fa82564e}
+      \strng{authorfullhash}{11f40329ebaed88c837328bcaf98f696}
+      \strng{authorfullhashraw}{11f40329ebaed88c837328bcaf98f696}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.DS}
+      \field{eprinttype}{arXiv}
+      \field{title}{The Eclipse Layout Kernel}
+      \field{year}{2023}
+      \verb{eprint}
+      \verb 2311.00533
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2311.00533
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2311.00533
+      \endverb
+    \endentry
+    \entry{glsp-client-repo}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=50f0c6012d3f24126eb84a42705b8a06}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=18805a617497fdbaed10cf963bfde73f}{%
+           family={Ortmayr},
+           familyi={O\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{fullhash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{fullhashraw}{ded0578f4ac525770d1bf603bb386949}
+      \strng{bibnamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorbibnamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authornamehash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorfullhash}{ded0578f4ac525770d1bf603bb386949}
+      \strng{authorfullhashraw}{ded0578f4ac525770d1bf603bb386949}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-glsp/glsp-client}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Eclipse GLSP - Client}
+      \field{year}{2025}
+    \endentry
+    \entry{eclipse-doc}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=ba965a2360c8acdc8182fb5f00ea04f0}{%
+           family={{Eclipse Foundation}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{fullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{bibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorbibnamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authornamehash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhash}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \strng{authorfullhashraw}{ba965a2360c8acdc8182fb5f00ea04f0}
+      \field{extraname}{5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Eclipse Documentation - Current Release}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://help.eclipse.org/latest/index.jsp
+      \endverb
+      \verb{url}
+      \verb https://help.eclipse.org/latest/index.jsp
+      \endverb
+    \endentry
+    \entry{vscode-doc}{manual}{}{}
+      \name{author}{1}{}{%
+        {{hash=b9a8b868588ad4bc6b36c29936e26423}{%
+           family={{Microsoft Corporation}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{fullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{bibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorbibnamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authornamehash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhash}{b9a8b868588ad4bc6b36c29936e26423}
+      \strng{authorfullhashraw}{b9a8b868588ad4bc6b36c29936e26423}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{{Visual Studio Code Documentation}}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://code.visualstudio.com/docs
+      \endverb
+      \verb{url}
+      \verb https://code.visualstudio.com/docs
+      \endverb
+    \endentry
+    \entry{stackoverflow2024survey}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=84d7dc19766c446f5e4084e8fce87f82}{%
+           family={{Stack Overflow}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{fullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{bibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorbibnamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authornamehash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhash}{84d7dc19766c446f5e4084e8fce87f82}
+      \strng{authorfullhashraw}{84d7dc19766c446f5e4084e8fce87f82}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{{Stack Overflow Developer Survey 2024: Technology}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb \url{https://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools%7D
+      \endverb
+    \endentry
+    \entry{theia-doc}{misc}{}{}
+      \list{organization}{1}{%
+        {Eclipse Foundation}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Eclipse Theia Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb \url{https://theia-ide.org/docs/}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://theia-ide.org/docs/%7D
+      \endverb
+    \endentry
+    \entry{docker}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=10d7200e2bfcc5a34efbee3b80c90f13}{%
+           family={Merkel},
+           familyi={M\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{fullhash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{fullhashraw}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{bibnamehash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{authorbibnamehash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{authornamehash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{authorfullhash}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \strng{authorfullhashraw}{10d7200e2bfcc5a34efbee3b80c90f13}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Linux journal}
+      \field{number}{239}
+      \field{title}{Docker: lightweight linux containers for consistent development and deployment}
+      \field{volume}{2014}
+      \field{year}{2014}
+      \field{pages}{2}
+      \range{pages}{1}
+    \endentry
+    \entry{theia-cloud-doc}{misc}{}{}
+      \list{organization}{1}{%
+        {Eclipse Foundation}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Theia Cloud}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb \url{https://theia-cloud.io/documentation/}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://theia-cloud.io/documentation/%7D
+      \endverb
+    \endentry
+    \entry{kubernetes}{misc}{}{}
+      \list{organization}{1}{%
+        {Linux Foundation}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Kubernetes Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb \url{https://kubernetes.io/docs/home/}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://kubernetes.io/docs/home/%7D
+      \endverb
+    \endentry
+    \entry{minikube-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fd8e67856064116ead0c0e53d8c0de72}{%
+           family={Authors},
+           familyi={A\bibinitperiod},
+           given={The\bibnamedelima Kubernetes},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{fullhash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{fullhashraw}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{bibnamehash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{authorbibnamehash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{authornamehash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{authorfullhash}{fd8e67856064116ead0c0e53d8c0de72}
+      \strng{authorfullhashraw}{fd8e67856064116ead0c0e53d8c0de72}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/kubernetes/minikube}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{minikube}
+      \field{year}{2025}
+    \endentry
+    \entry{theia-cloud-minikube}{misc}{}{}
+      \list{organization}{1}{%
+        {EclipseSource}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Try Theia Cloud on Minikube}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb \url{https://theia-cloud.io/documentation/try/minikube/}
+      \endverb
+      \verb{url}
+      \verb %5Curl%7Bhttps://theia-cloud.io/documentation/try/minikube/%7D
+      \endverb
+    \endentry
+    \entry{gke-doc}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=57f3af2a3d1051c172ab3c3db7d5409d}{%
+           family={{Google Cloud}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{fullhash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{fullhashraw}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{bibnamehash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{authorbibnamehash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{authornamehash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{authorfullhash}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \strng{authorfullhashraw}{57f3af2a3d1051c172ab3c3db7d5409d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Google Kubernetes Engine (GKE)}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://cloud.google.com/kubernetes-engine?hl=en
+      \endverb
+      \verb{url}
+      \verb https://cloud.google.com/kubernetes-engine?hl=en
+      \endverb
+    \endentry
+    \entry{electron-repo}{misc}{}{}
+      \name{author}{2}{}{%
+        {{hash=37ad480f97bed434bd748fcd4aa11d40}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={OpenJS},
+           giveni={O\bibinitperiod}}}%
+        {{hash=e9c05e6b2e193f02ad925ba6fcdb8963}{%
+           family={contributors},
+           familyi={c\bibinitperiod},
+           given={Electron},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{fullhash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{fullhashraw}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{bibnamehash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{authorbibnamehash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{authornamehash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{authorfullhash}{9a1ca44c48cb4d405a80ba5310d74948}
+      \strng{authorfullhashraw}{9a1ca44c48cb4d405a80ba5310d74948}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/electron/electron}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Electron}
+      \field{year}{2025}
+    \endentry
+    \entry{terraform-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1129ea7ef173c0128f37020fea647cec}{%
+           family={HashiCorp},
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{fullhash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{fullhashraw}{1129ea7ef173c0128f37020fea647cec}
+      \strng{bibnamehash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{authorbibnamehash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{authornamehash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{authorfullhash}{1129ea7ef173c0128f37020fea647cec}
+      \strng{authorfullhashraw}{1129ea7ef173c0128f37020fea647cec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/hashicorp/terraform}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Terraform}
+      \field{year}{2025}
+    \endentry
+    \entry{keycloak-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5ac3a20270a4ee3d69eb50f7ccb7b8de}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Cloud\bibnamedelimb Native\bibnamedelima Computing},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{fullhash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{fullhashraw}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{bibnamehash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{authorbibnamehash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{authornamehash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{authorfullhash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \strng{authorfullhashraw}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/keycloak/keycloak}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Keycloak - Open Source Identity and Access Management}
+      \field{year}{2025}
+    \endentry
+    \entry{edapt-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c4dc808d98028a0c078cd051fca29d55}{%
+           family={Project},
+           familyi={P\bibinitperiod},
+           given={Eclipse\bibnamedelima Modeling},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{fullhash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{fullhashraw}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{bibnamehash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{authorbibnamehash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{authornamehash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{authorfullhash}{c4dc808d98028a0c078cd051fca29d55}
+      \strng{authorfullhashraw}{c4dc808d98028a0c078cd051fca29d55}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-edapt/edapt}}
+      \field{journaltitle}{GitHub repository}
+      \field{title}{Eclipse Edapt™ - Migrating EMF Models}
+      \field{year}{2025}
+    \endentry
+    \entry{glsp-collab}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=073396d7380bdac0daba32120e04cc3e}{%
+           family={Helming},
+           familyi={H\bibinitperiod},
+           given={Jonas},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c82db82c6ef6a06ebcb6ca238806a821}{%
+           family={Koegel},
+           familyi={K\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=50f0c6012d3f24126eb84a42705b8a06}{%
+           family={Langer},
+           familyi={L\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{fullhash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{fullhashraw}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{bibnamehash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{authorbibnamehash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{authornamehash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{authorfullhash}{1de9a08cee3305ccb8e72ea17395f234}
+      \strng{authorfullhashraw}{1de9a08cee3305ccb8e72ea17395f234}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{Blog post, EclipseSource}
+      \field{month}{2}
+      \field{note}{Accessed: 2025-10-22}
+      \field{title}{Real-time Collaboration on Diagrams with Eclipse GLSP}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://eclipsesource.com/blogs/2024/02/21/real-time-collaboration-on-diagrams-with-eclipse-glsp/
+      \endverb
+      \verb{url}
+      \verb https://eclipsesource.com/blogs/2024/02/21/real-time-collaboration-on-diagrams-with-eclipse-glsp/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
