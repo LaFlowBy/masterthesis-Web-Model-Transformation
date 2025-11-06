@@ -551,9 +551,6 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT main.toc
-INPUT ./main.acr
-INPUT ./main.acr
-INPUT main.acr
 INPUT ./chapters/introuction.tex
 INPUT ./chapters/introuction.tex
 INPUT chapters/introuction.tex
@@ -702,6 +699,9 @@ INPUT ./listings/dockerfile.tex
 INPUT ./listings/dockerfile.tex
 INPUT listings/dockerfile.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecit0900.tfm
+INPUT ./main.acr
+INPUT ./main.acr
+INPUT main.acr
 INPUT ./main.lof
 INPUT ./main.lof
 INPUT main.lof
@@ -710,6 +710,10 @@ INPUT ./main.lot
 INPUT ./main.lot
 INPUT main.lot
 OUTPUT main.lot
+INPUT ./main.lol
+INPUT ./main.lol
+INPUT main.lol
+OUTPUT main.lol
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
