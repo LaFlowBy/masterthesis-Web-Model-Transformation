@@ -34,14 +34,13 @@ The E2E tests simulate realistic user interactions such as opening the bank exam
 \section{Manual Test Cases}
 \label{subsec:test-cases}
 
-To complement the automated test suite and validate real-world usage scenarios, a series of manual test cases were executed throughout the development process. These test cases focused on user workflows that are difficult to automate or require human judgment to evaluate, such as visual appearance, performance perception, and overall usability. The following subsections describe key manual test cases that validate the end-to-end functionality of the application.
+To complement the automated test suite and validate real-world usage scenarios, a series of manual test cases were executed throughout the development process. These test cases focused on user workflows that are difficult to automate or require human judgment to evaluate, such as visual appearance, performance perception, and overall usability. The following blocks describe key manual test cases that validate the end-to-end functionality of the application.\\
 
-  \subsection{Complete Workflow Test: Project Creation to Rule Application}
-  \label{subsubsec:complete-workflow-test}
+\textbf{Complete Workflow Test: Project Creation to Rule Application}
 
 One of the most comprehensive manual test case involved creating a complete project from scratch and testing the entire transformation workflow. This test case validates the integration of all major components of the system and ensures that the requirements for metamodel editing, transformation rule creation, and rule application are properly implemented.
 
-\textbf{Test Objective:} Verify that a user can create a complete Henshin transformation project from scratch, including metamodel definition, transformation rule creation, instance model creation, and successful rule application. These are the necessary test steps:
+The test objective is to verify that a user can create a complete Henshin transformation project from scratch, including metamodel definition, transformation rule creation, instance model creation, and successful rule application. These are the necessary test steps:
 
 \begin{enumerate}
     \item \textbf{Project Creation:} Create a new project folder in the application using the file explorer functionality. This validates requirement \ref{r:project-manage}.
@@ -57,14 +56,13 @@ One of the most comprehensive manual test case involved creating a complete proj
     \item \textbf{Verification:} Verify that all created files can be reopened, the graphical editors correctly display all model elements with proper zooming and panning (\ref{r:editor-zoom}), elements can be selected and repositioned with layouts being persisted (\ref{r:nodes-selectable-draggable}), and undo/redo operations work correctly across all editing actions (\ref{r:undo-redo}).
 \end{enumerate}
 
-\textbf{Expected Results:} The test case successfully validated the complete workflow from project creation to rule application. All graphical editors rendered correctly, editing operations were intuitive and responsive, and the transformation rule was successfully applied with the expected results reflected in the instance model. The test confirmed that all relevant functional requirements were properly implemented and integrated.
+The expected results of the test case are that the test case successfully validated the complete workflow from project creation to rule application. All graphical editors rendered correctly, editing operations were intuitive and responsive, and the transformation rule was successfully applied with the expected results reflected in the instance model. The test confirmed that all relevant functional requirements were properly implemented and integrated.\\
 
-  \subsection{Model Synchronization Test: \ac{xmi} Diagram Adaptation After Metamodel Changes}
-  \label{subsubsec:model-synchronization-test}
+  \textbf{Model Synchronization Test: \ac{xmi} Diagram Adaptation After Metamodel Changes}
 
 A critical aspect of maintaining model consistency is ensuring that instance models properly adapt when their underlying metamodel or transformation rules change. This test case validates the system's behavior when Ecore metamodel files or Henshin transformation files are modified while \ac{xmi} instance files exist in the workspace.
 
-\textbf{Test Objective:} Verify that the application correctly handles \ac{xmi} diagram files when changes are made to their corresponding Ecore metamodel or Henshin transformation files, ensuring that stale notation layouts are removed and editors are properly closed to prevent inconsistencies. These are the necessary test steps:
+The test objective is to verify that the application correctly handles \ac{xmi} diagram files when changes are made to their corresponding Ecore metamodel or Henshin transformation files, ensuring that stale notation layouts are removed and editors are properly closed to prevent inconsistencies. These are the necessary test steps:
 
 \begin{enumerate}
     \item \textbf{Initial Setup:} Prepare a project with an existing Ecore metamodel file, Henshin transformation rule files, and multiple \ac{xmi} instance files. Open several \ac{xmi} files in the graphical editor, arrange the diagram elements with custom layouts, and verify that the custom layouts are saved in the corresponding notation files.
@@ -80,16 +78,13 @@ A critical aspect of maintaining model consistency is ensuring that instance mod
     \item \textbf{Henshin Rule Modification:} Open multiple \ac{xmi} files again and create custom layouts, save the layouts to generate new notation files, modify the Henshin transformation rule file (e.g., add or remove rule parameters, modify node actions), save the Henshin file, and verify that the same automatic closure and notation deletion behavior occurs.
 \end{enumerate}
 
-\textbf{Expected Results:} The test case successfully validated the model synchronization mechanism. When either the Ecore metamodel or Henshin transformation files were modified and saved, all open \ac{xmi} diagram editors were automatically closed to prevent users from working with potentially inconsistent views. All associated notation files were deleted, ensuring that stale layout information would not cause conflicts when the diagrams were reopened. The \ac{xmi} data files themselves remained intact, preserving the instance data. Upon reopening the \ac{xmi} files, the diagrams displayed with fresh automatic layouts appropriate for the updated metamodel structure.
+The expected results of the test case are that the test case successfully validated the model synchronization mechanism. When either the Ecore metamodel or Henshin transformation files were modified and saved, all open \ac{xmi} diagram editors were automatically closed to prevent users from working with potentially inconsistent views. All associated notation files were deleted, ensuring that stale layout information would not cause conflicts when the diagrams were reopened. The \ac{xmi} data files themselves remained intact, preserving the instance data. Upon reopening the \ac{xmi} files, the diagrams displayed with fresh automatic layouts appropriate for the updated metamodel structure.\\
 
-  \subsection{Eclipse \ac{ide} Compatibility Test: Interoperability Validation}
-  \label{subsubsec:eclipse-compatibility-test}
+  \textbf{Eclipse \ac{ide} Compatibility Test: Interoperability Validation}
 
 A fundamental requirement for the Henshin Web application is seamless interoperability with the existing Henshin Eclipse \ac{ide} ecosystem. This test case validates that projects created in the Eclipse \ac{ide} can be imported into the web application, edited, and then exported back to Eclipse without loss of functionality or compatibility issues.
 
-\textbf{Test Objective:} Verify bidirectional compatibility between the Henshin Web application and the Eclipse IDE Henshin plugin, ensuring that users can seamlessly transition between both environments and that file formats remain fully compatible.
-
-\textbf{Test Steps:}
+The test objective is to verify bidirectional compatibility between the Henshin Web application and the Eclipse IDE Henshin plugin, ensuring that users can seamlessly transition between both environments and that file formats remain fully compatible. These are the necessary test steps:
 
 \begin{enumerate}
     \item \textbf{Eclipse Project Creation:} Create a Henshin project in Eclipse \ac{ide} with the Henshin plugin installed, define an Ecore metamodel with multiple classes, attributes, and relationships, create several Henshin transformation rules with various features (parameters, action types, edge conditions, attribute conditions), create multiple \ac{xmi} instance files conforming to the metamodel, apply transformation rules in Eclipse to verify functionality, and export the complete project folder. In the project folder should be one Ecore file, one Henshin file, and any number of \ac{xmi} files.
@@ -111,4 +106,4 @@ A fundamental requirement for the Henshin Web application is seamless interopera
     \item \textbf{Round-Trip Validation:} Make additional changes in Eclipse, upload the project again to the web application, verify that Eclipse changes are correctly displayed in the web version, and test that the system handles multiple import/export cycles without degradation.
 \end{enumerate}
 
-\textbf{Expected Results:} The test case successfully demonstrated full bidirectional compatibility between the Henshin Web application and the Eclipse IDE Henshin plugin. Projects created in Eclipse were correctly imported into the web application with all model elements, transformation rules, and instance data accurately displayed. All file types maintained their semantic integrity during the import process. Modifications made in the web application were successfully exported and re-imported into Eclipse without any loss of functionality. The Eclipse Henshin plugin correctly interpreted all changes made in the web version, including new metamodel elements, modified transformation rules, and updated instance data. Transformation rules modified in the web application executed correctly when applied in Eclipse, confirming that the underlying \ac{emf} and Henshin data structures remained fully compatible.
+The expected results of the test case are that the test case successfully demonstrated full bidirectional compatibility between the Henshin Web application and the Eclipse IDE Henshin plugin. Projects created in Eclipse were correctly imported into the web application with all model elements, transformation rules, and instance data accurately displayed. All file types maintained their semantic integrity during the import process. Modifications made in the web application were successfully exported and re-imported into Eclipse without any loss of functionality. The Eclipse Henshin plugin correctly interpreted all changes made in the web version, including new metamodel elements, modified transformation rules, and updated instance data. Transformation rules modified in the web application executed correctly when applied in Eclipse, confirming that the underlying \ac{emf} and Henshin data structures remained fully compatible.
