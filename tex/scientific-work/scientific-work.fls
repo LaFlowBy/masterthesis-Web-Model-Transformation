@@ -195,6 +195,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 INPUT c:/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-en.ini
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
+INPUT ./scientific-work.aux
+INPUT ./scientific-work.aux
+INPUT scientific-work.aux
 OUTPUT scientific-work.aux
 INPUT c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 INPUT c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx

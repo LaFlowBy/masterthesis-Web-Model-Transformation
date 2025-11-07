@@ -551,9 +551,9 @@ INPUT c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT main.toc
-INPUT ./chapters/introuction.tex
-INPUT ./chapters/introuction.tex
-INPUT chapters/introuction.tex
+INPUT ./chapters/introduction.tex
+INPUT ./chapters/introduction.tex
+INPUT chapters/introduction.tex
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecsx1440.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/ecbx1095.tfm
