@@ -12,14 +12,14 @@ Therefore, the goal exists to create a graphical editor to use the Henshin model
 \section{Problem Statement}
 \label{subsec:problem-statement}
 
-While Henshin offers powerful model transformation capabilities, its integration exclusively as an Eclipse \ac{ide} plugin creates barriers in accessibility for potential users. Users that want to work with Henshin must first install and properly configure the entire Eclipse \ac{ide} environment, a prerequisite that narrows the framework's practical accessibility and constrains the frameworks reach and usability.
+While Henshin offers powerful model transformation capabilities, its integration exclusively as an Eclipse \ac{ide} plugin creates barriers in accessibility for potential users. Users who want to work with Henshin must first install and properly configure the entire Eclipse \ac{ide} environment, a prerequisite that narrows the framework's practical accessibility and constrains the framework's reach and usability.
 
 The Eclipse installation requirement itself acts as a notable entry barrier. Students and researchers exploring \ac{mde} concepts often want to experiment with transformation rules without investing time in setting up a comprehensive development environment. Yet Henshin's current distribution model forces that. There are complicated installation procedures, environment configurations to overcome and the need to familiarize oneself with Eclipse's interface—all before actually engaging with Henshin's core functionality.
 
 Eclipse as a platform introduces its own complications. As a feature-rich development environment designed for professional software development, Eclipse's extensive capabilities and complex interface can overwhelm users whose objective is creating and executing model transformations. Accomplishing transformation tasks requires navigating through numerous wizards, views, and menu structures, which slows down work and creates friction in the workflow.
 The default tree-based editors for Ecore metamodels, Henshin rules, and \ac{xmi} instances become difficult to work with as models grow in size and complexity. For graphical editing of transformation rules, a separate initialization of diagram files has to be manually executed. Similarly, visualizing Ecore metamodels graphically requires specific diagram setup steps. Working with \ac{xmi} instance files demands additional extension installations. Most notably, applying transformation rules lacks any graphical support. Users have to start a wizard to be able to apply model transformations on a \ac{xmi} instance.
 
-Collaboration and flexibility suffer under the current environment. Teams cannot easily share model transformation examples or work together on the same rules within Eclipse. The use of \ac{vcs} brings some colaborative elements, but real-time collaboration or user based workspace access across multiple devices remains impossible.
+Collaboration and flexibility suffer under the current environment. Teams cannot easily share model transformation examples or work together on the same rules within Eclipse. The use of \ac{vcs} brings some collaborative elements, but real-time collaboration or user based workspace access across multiple devices remains impossible.
 
 These accessibility and usability challenges lead to inefficient workflows. Newcomers encounter steep learning curves before they can productively use the tool, while experienced users who need straightforward access to model transformation features must tolerate unnecessary and unused \ac{ide} complexity.
 
@@ -54,7 +54,7 @@ This question evaluates the accessibility and usability of the web-based solutio
     How do different deployment strategies affect the accessibility, usability, and adoption barriers for web-based model transformation tools?
 \end{researchquestion}
 
-This question explores various deployment options for the \textit{Henshin Web} editor. That includes a standalone web applications, cloud-hosted services, or distribution through a desktop application. It assesses how these strategies impact user access, usability, and the overall adoption of the tool among different user groups.
+This question explores various deployment options for the \textit{Henshin Web} editor. That includes standalone web applications, cloud-hosted services, or distribution through a desktop application. It assesses how these strategies impact user access, usability, and the overall adoption of the tool among different user groups.
 
 \begin{researchquestion}
 \label{rq:ecosystem-integration}
@@ -72,7 +72,7 @@ This thesis focuses on developing a web-based solution for Henshin model transfo
 
 The research addresses accessibility improvements to minimize the initial challenge for beginners, where users need quick access to model transformation capabilities. There they don't need an extensive setup and can directly work with the model graphically. The evaluation covers usability aspects, and functional completeness to cover most meaningful use cases. The system should integrate with the existing \ac{emf} and Henshin ecosystems, to ensure compatibility with established workflows and file formats.
 
-There are some limitations that constrain the scope of this research. On is that the web-based implementation does not aim to replicate every advanced feature from the Eclipse Henshin plugin. Complex transformation scenarios, advanced debugging capabilities are beyond the current scope. The focus remains on core functionality that serves the primary use cases that are defined in the requirements analysis.
+There are some limitations that constrain the scope of this research. One is that the web-based implementation does not aim to replicate every advanced feature from the Eclipse Henshin plugin. Complex transformation scenarios, advanced debugging capabilities are beyond the current scope. The focus remains on core functionality that serves the primary use cases that are defined in the requirements analysis.
 
 The evaluation only covers a limited set of scenarios and user interactions. While the research aims to demonstrate improvements over the Eclipse approach, comprehensive studies or extensive industrial validation are not part of the scope of this thesis work.
 
