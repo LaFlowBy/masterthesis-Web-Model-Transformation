@@ -104,6 +104,12 @@
 
 \usepackage[shortcuts, acronym]{glossaries}
 \makeglossaries
+
+% Reduce spacing between glossary entries
+\setglossarystyle{long}
+\renewcommand{\glsgroupskip}{}
+\setlength{\glsdescwidth}{0.8\textwidth}
+
 \input{acronyms}
 
 \begin{document}
@@ -145,7 +151,7 @@
 \appendix
 \input{chapters/appendix}
 
-\section*{List of Acronyms}
+% \section*{List of Acronyms}
 \printglossary[type=\acronymtype, title=List of Acronyms]
 
 \listoffigures{}

@@ -8,7 +8,7 @@
 
   \begin{itemize}
     \item \textbf{Students}: Students who want to learn about \ac{mde} and transformation rules, want a very simple and intuitive entry into the topic. Trying out transformations in the browser is a good start, without having to install a lot of software. For Students the core functionality is sufficient, as they only want to try out transformation rules and learn how they work.
-    \item \textbf{Researchers}: Researchers, that are researching for \ac{mde} and come arcross Henshin, want to be able to test or try out model transformations of Henshin. For Researchers the core functionality could be sufficient, but editing capabilites of the transformation rules and metamodels are pracitcal for them.
+    \item \textbf{Researchers}: Researchers, that are researching for \ac{mde} and come across Henshin, want to be able to test or try out model transformations of Henshin. For Researchers the core functionality could be sufficient, but editing capabilites of the transformation rules and metamodels are practical for them.
     \item \textbf{Software Engineers}: Software engineers, that are using \ac{mde}, want to be able to test their transformation rules. They want a powerful editor and a colaborative environment to work on their models. For Software Engineers the defined additional functionality as well as some code generation support are needed to cover their needs.
   \end{itemize}
 
@@ -154,7 +154,7 @@ The following requirements are additional functionality that can be implemented 
     Provide the functionality to apply a conflict and dependency analysis on a \ac{xmi} instance. 
 \end{requirement}
 
-  There exist many more use cases for model transformations and \ac{mde} in general. The application can grow to a web-based platform for \ac{mde} in th future. Additional functionality will be disscused in section \ref{subsec:suggestions-future-development} but these usecases are not scope of this thesis.
+  There exist many more use cases for model transformations and \ac{mde} in general. The application can grow to a web-based platform for \ac{mde} in th future. Additional functionality will be discussed in section \ref{subsec:suggestions-future-development} but these usecases are not scope of this thesis.
 
   \section{Non-Functional Requirements}
   \label{subsec:non-functional-requirements}
@@ -178,7 +178,7 @@ The following requirements are additional functionality that can be implemented 
 
 \begin{requirement}
     \label{r:user-friendly-interface}
-    The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the exploerer and the predefined \ac{ui} contorls of \ac{glsp}, like the tool palette or the context menu.
+    The application should be user-friendly and intuitive to use. For that, the application should follow the design principles of \ac{glsp} and Eclipse Theia. That includes the use of views of theia, like the explorer and the predefined \ac{ui} controls of \ac{glsp}, like the tool palette or the context menu.
 \end{requirement}
 
 \begin{requirement}
@@ -194,7 +194,7 @@ The following requirements are additional functionality that can be implemented 
   \section{System Constraints}
   \label{subsec:system-constraints}
 
-  One constraint is the use of Henshin as a tranformation language. Henshin is a Java-based framework, which menas that the application needs a possibility to run Java code in the backend. The easiest way for that is to use a Java-based backend, that can directly use the Henshin SDK code.
+  One constraint is the use of Henshin as a model transformation language. Henshin is a Java-based framework, which means that the application needs a possibility to run Java code in the backend. The easiest way for that is to use a Java-based backend, that can directly use the Henshin SDK code.
   The use of Henshin also brings the constraint that, metamodels and instances are based on \ac{emf}.
 
   Another constraint is the use of web-based technologies and preferably a resulting web application. For model transformations, there exist many applications, but not many of them are web-based. This constraint is also a non functional requirement and was also motivated in previous sections.
