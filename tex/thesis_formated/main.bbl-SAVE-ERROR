@@ -124,6 +124,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-henshin/henshin/wiki}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 41f826df5a02c10c5ef9738434af379af508782f}
       \field{title}{Henshin}
       \field{year}{2025}
     \endentry
@@ -241,6 +242,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-glsp/glsp}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: c29a688bb4fa4d0d14c1cb994bdad55d1d4516e1}
       \field{title}{Eclipse GLSP}
       \field{year}{2025}
     \endentry
@@ -423,6 +425,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-emf/org.eclipse.emf}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 157748e0ecdc2368d1cf451ca9c7fc78431c6c91}
       \field{title}{Eclipse Modeling Framework}
       \field{year}{2025}
     \endentry
@@ -557,6 +560,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/microsoft/language-server-protocol}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: fb079951948ed4fe4100f96f8819e9d9facffc40}
       \field{title}{Language Server Protocol}
       \field{year}{2025}
     \endentry
@@ -584,6 +588,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/google/guice}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 5e17283ce6780728c6524ecd47709cb23e978863}
       \field{title}{Google Guice}
       \field{year}{2025}
     \endentry
@@ -613,6 +618,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-sprotty/sprotty}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: a30b0a3a589b66d8fc163f48c8318fccb87ba78a}
       \field{title}{Sprotty}
       \field{year}{2025}
     \endentry
@@ -640,6 +646,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/google/gson}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: dd2fe59c0d3390b2ad3dd365ed6938a5c15844cb}
       \field{title}{Gson}
       \field{year}{2025}
     \endentry
@@ -1043,10 +1050,15 @@
       \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{White paper available at \url{https://webgme.org/WebGMEWhitePaper.pdf}}
       \field{title}{Next Generation (Meta)Modeling: Web- and Cloud‑based Collaborative Tool Infrastructure}
       \field{type}{White paper / Technical report}
       \field{year}{2014}
+      \verb{urlraw}
+      \verb https://webgme.org/WebGMEWhitePaper.pdf
+      \endverb
+      \verb{url}
+      \verb https://webgme.org/WebGMEWhitePaper.pdf
+      \endverb
     \endentry
     \entry{webgme-website}{misc}{}{}
       \list{publisher}{1}{%
@@ -1133,6 +1145,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipsesource/ecore-glsp}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 6c0bab10dc1a2a0432514b8c1d93bbca00dea3df}
       \field{title}{ecore-glsp}
       \field{year}{2025}
     \endentry
@@ -1293,6 +1306,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/openjdk/nashorn}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 1b0abe0b45dd419c636fd9ac5878d9e28cf1c8ff}
       \field{title}{Nashorn Engine}
       \field{year}{2025}
     \endentry
@@ -1352,6 +1366,53 @@
       \verb https://arxiv.org/abs/2311.00533
       \endverb
     \endentry
+    \entry{theia-repo}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=c29e9dd4709b3acadeef395a1b0997ed}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Eclipse},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {GitHub}%
+      }
+      \strng{namehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{fullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{bibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorbibnamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authornamehash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhash}{c29e9dd4709b3acadeef395a1b0997ed}
+      \strng{authorfullhashraw}{c29e9dd4709b3acadeef395a1b0997ed}
+      \field{extraname}{4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/eclipse-theia/theia}}
+      \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 7946ca874b04e6249d883e9a586f193194df1365}
+      \field{title}{Theia - Cloud \& Desktop IDE Framework}
+      \field{year}{2025}
+    \endentry
+    \entry{theia-doc}{misc}{}{}
+      \list{organization}{1}{%
+        {Eclipse Foundation}%
+      }
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: 2025-06-28}
+      \field{title}{Eclipse Theia Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://theia-ide.org/docs/
+      \endverb
+      \verb{url}
+      \verb https://theia-ide.org/docs/
+      \endverb
+    \endentry
     \entry{glsp-client-repo}{misc}{}{}
       \name{author}{2}{}{%
         {{hash=50f0c6012d3f24126eb84a42705b8a06}{%
@@ -1383,6 +1444,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-glsp/glsp-client}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 7f25dd5b9f33d6b846e6f4ba873c357a985e646d}
       \field{title}{Eclipse GLSP - Client}
       \field{year}{2025}
     \endentry
@@ -1466,27 +1528,10 @@
       \field{title}{{Stack Overflow Developer Survey 2024: Technology}}
       \field{year}{2024}
       \verb{urlraw}
-      \verb \url{https://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools}
+      \verb https://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools%7D
-      \endverb
-    \endentry
-    \entry{theia-doc}{misc}{}{}
-      \list{organization}{1}{%
-        {Eclipse Foundation}%
-      }
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed: 2025-06-28}
-      \field{title}{Eclipse Theia Documentation}
-      \field{year}{2025}
-      \verb{urlraw}
-      \verb \url{https://theia-ide.org/docs/}
-      \endverb
-      \verb{url}
-      \verb %5Curl%7Bhttps://theia-ide.org/docs/%7D
+      \verb https://survey.stackoverflow.co/2024/technology#most-popular-technologies-new-collab-tools
       \endverb
     \endentry
     \entry{docker}{article}{}{}
@@ -1528,10 +1573,10 @@
       \field{title}{Theia Cloud}
       \field{year}{2025}
       \verb{urlraw}
-      \verb \url{https://theia-cloud.io/documentation/}
+      \verb https://theia-cloud.io/documentation/
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://theia-cloud.io/documentation/%7D
+      \verb https://theia-cloud.io/documentation/
       \endverb
     \endentry
     \entry{kubernetes}{misc}{}{}
@@ -1545,10 +1590,10 @@
       \field{title}{Kubernetes Documentation}
       \field{year}{2025}
       \verb{urlraw}
-      \verb \url{https://kubernetes.io/docs/home/}
+      \verb https://kubernetes.io/docs/home/
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://kubernetes.io/docs/home/%7D
+      \verb https://kubernetes.io/docs/home/
       \endverb
     \endentry
     \entry{minikube-repo}{misc}{}{}
@@ -1576,6 +1621,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/kubernetes/minikube}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 420fe34e8fb92dbc811df88b42b75938e3887f48}
       \field{title}{minikube}
       \field{year}{2025}
     \endentry
@@ -1590,10 +1636,10 @@
       \field{title}{Try Theia Cloud on Minikube}
       \field{year}{2025}
       \verb{urlraw}
-      \verb \url{https://theia-cloud.io/documentation/try/minikube/}
+      \verb https://theia-cloud.io/documentation/try/minikube/
       \endverb
       \verb{url}
-      \verb %5Curl%7Bhttps://theia-cloud.io/documentation/try/minikube/%7D
+      \verb https://theia-cloud.io/documentation/try/minikube/
       \endverb
     \endentry
     \entry{gke-doc}{misc}{}{}
@@ -1654,6 +1700,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/electron/electron}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 79cd6a261415c3a60b1b52d79f6e2c21d68398d0}
       \field{title}{Electron}
       \field{year}{2025}
     \endentry
@@ -1680,6 +1727,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/hashicorp/terraform}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: 2274026c68260dd7be6ca77e72c355a0da6db1b6}
       \field{title}{Terraform}
       \field{year}{2025}
     \endentry
@@ -1702,13 +1750,14 @@
       \strng{authornamehash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
       \strng{authorfullhash}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
       \strng{authorfullhashraw}{5ac3a20270a4ee3d69eb50f7ccb7b8de}
-      \field{extraname}{4}
+      \field{extraname}{5}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/keycloak/keycloak}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: ab7b835e51cf1569093abdc600fdbe84041d87d6}
       \field{title}{Keycloak - Open Source Identity and Access Management}
       \field{year}{2025}
     \endentry
@@ -1737,6 +1786,7 @@
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://github.com/eclipse-edapt/edapt}}
       \field{journaltitle}{GitHub repository}
+      \field{note}{Accessed commit: f916f6010d39e1f4889188d375d10fa4708a057a}
       \field{title}{Eclipse Edapt™ - Migrating EMF Models}
       \field{year}{2025}
     \endentry
