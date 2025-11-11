@@ -1,7 +1,8 @@
+
 \chapter{Deployment}
 \label{sec:deployment}
 
-This chapter shows different deployment and usage options for the Henshin Web editor. The options are evaluated, and the best one is selected. Finally, the implementation of the deployment is described.
+This chapter shows different deployment and usage options for the \textit{Henshin Web} editor. The options are evaluated, and the best one is selected. Finally, the implementation of the deployment is described.
 
 \section{GLSP Integration Options}
 \label{sec:integration-options}
@@ -24,7 +25,7 @@ A \ac{glsp} editor can be deployed and used in production in various ways. \ac{g
     \item \textbf{Theia extensions} are the core architecture parts of Theia. Theia is fully built using Theia extensions in a modular way. The template Theia \ac{ide} contains Theia extensions, including the core. Custom Theia extensions can be developed and added to Theia with full access to all Theia functionality via dependency injection. They need to be installed at compile time. \cite{theia-doc}
   \end{itemize}
 
-  The \ac{glsp} Theia integration is creating a Theia extension, that is packed into a custom Theia \ac{ide}. It is also possible to use the \ac{glsp} \ac{vscode} integration that provides a \ac{vscode} extension, that can also be added to a Theia \ac{ide} at runtime. \cite{glsp-repo} The option to use the diagram editor in the browser makes the \ac{glsp} Eclipse integration not interesting for \textit{Henshin Web}. \ac{vscode} has the advantage of popularity and simplicity to use the editor without any registration or installation. Eclipse Theia has the advantage of modularity and further extensibility. Further features can be added in the future to provide a web-based environment for \ac{mde}. Theia also provides different ways to deploy a Theia \ac{ide}. These considerations show that the Theia integration is the best option for deploying the Henshin Web editor. Theia combines the advantages of browser-based access, modularity, and extensibility.
+  The \ac{glsp} Theia integration is creating a Theia extension, that is packed into a custom Theia \ac{ide}. It is also possible to use the \ac{glsp} \ac{vscode} integration that provides a \ac{vscode} extension, that can also be added to a Theia \ac{ide} at runtime. \cite{glsp-repo} The option to use the diagram editor in the browser makes the \ac{glsp} Eclipse integration not interesting for \textit{Henshin Web}. \ac{vscode} has the advantage of popularity and simplicity to use the editor without any registration or installation. Eclipse Theia has the advantage of modularity and further extensibility. Further features can be added in the future to provide a web-based environment for \ac{mde}. Theia also provides different ways to deploy a Theia \ac{ide}. These considerations show that the Theia integration is the best option for deploying the \textit{Henshin Web} editor. Theia combines the advantages of browser-based access, modularity, and extensibility.
 
   \begin{figure}[h]
     \centering
@@ -50,17 +51,17 @@ A \ac{glsp} editor can be deployed and used in production in various ways. \ac{g
     \label{fig:theia-cloud-components}
   \end{figure}
 
-  The third option is to use \ac{glsp} Theia application as a desktop application. Theia uses Electron \cite{electron-repo} to bundle the application into a desktop application, that can be installed via an installer. This approach also provides access to the local file system, since the electron application works like a self-hosted web application, and therefore the \ac{glsp} Java server is started locally. All in all, the \ac{glsp} Theia integration provides all different options to use the Henshin Web editor. Further clients can always be added later if needed.
+  The third option is to use \ac{glsp} Theia application as a desktop application. Theia uses Electron \cite{electron-repo} to bundle the application into a desktop application, that can be installed via an installer. This approach also provides access to the local file system, since the electron application works like a self-hosted web application, and therefore the \ac{glsp} Java server is started locally. All in all, the \ac{glsp} Theia integration provides all different options to use the \textit{Henshin Web} editor. Further clients can always be added later if needed.
 
   \input{tables/deployment-comparison.tex}
 
-  In table \ref{tab:deployment-comparison} the different deployment options are listed. Each pair of options is similar.The self-hosted Docker and Desktop Electron bring no costs to provide the application, can be used offline and provide full local file access. Here the Desktop option is easier to install and use, as no external dependencies need to be installed before. And even though it doesn't use the browser, it is based on web technologies. The other two similar options are hosting a container in the cloud and using Theia Cloud. A cloud hosted container would be a self-implemented and configured solution. That would bring more flexibility, but also more effort to implement and maintain. Especially when the user management and workspace management should be implemented. Theia Cloud on the other hand provides these features out of the box. Both options bring costs for hosting the server and need an internet connection to be used. They also don't provide access to the local file system, as they are not self-hosted. Since Theia Cloud also leaves configuration options open and it is made for hosting Theia based products, it is the better option to host Henshin Web in the cloud.
-  Now the decision is between the Electron desktop application and Theia Cloud. The desktop application has the advantages, that it can be used offline and provides full access to the local file system. This would be no big difference to use Henshin in the Eclipse IDE. Theia Cloud on the other hand provides the advantage of easy access via a web browser without any installation. It also provides the possibility to use Henshin Web on different devices, like tablets or smartphones. Therefore Theia Cloud is the best fitting option to deploy Henshin Web.
+  In table \ref{tab:deployment-comparison} the different deployment options are listed. Each pair of options is similar.The self-hosted Docker and Desktop Electron bring no costs to provide the application, can be used offline and provide full local file access. Here the Desktop option is easier to install and use, as no external dependencies need to be installed before. And even though it doesn't use the browser, it is based on web technologies. The other two similar options are hosting a container in the cloud and using Theia Cloud. A cloud hosted container would be a self-implemented and configured solution. That would bring more flexibility, but also more effort to implement and maintain. Especially when the user management and workspace management should be implemented. Theia Cloud on the other hand provides these features out of the box. Both options bring costs for hosting the server and need an internet connection to be used. They also don't provide access to the local file system, as they are not self-hosted. Since Theia Cloud also leaves configuration options open and it is made for hosting Theia based products, it is the better option to host \textit{Henshin Web} in the cloud.
+  Now the decision is between the Electron desktop application and Theia Cloud. The desktop application has the advantages, that it can be used offline and provides full access to the local file system. This would be no big difference to use Henshin in the Eclipse IDE. Theia Cloud on the other hand provides the advantage of easy access via a web browser without any installation. It also provides the possibility to use \textit{Henshin Web} on different devices, like tablets or smartphones. Therefore Theia Cloud is the best fitting option to deploy Henshin Web.
   
  \section{Deployment Implementation}
   \label{sec:deployment-implementation}
 
-  This chapter describes the implementation of the deployment of Henshin Web using Theia Cloud. Theia Cloud provides two different deployment options to host the application on. It is possible to host the application on a Kubernetes cluster in the Google Cloud using \ac{gke} or on a local Kubernetes cluster using minikube. The following implementation shows the deployment using \ac{gke}. The implementation using minikube is similar, only the terraform code and the prerequisites of the local machine are different.
+  This chapter describes the implementation of the deployment of \textit{Henshin Web} using Theia Cloud. Theia Cloud provides two different deployment options to host the application on. It is possible to host the application on a Kubernetes cluster in the Google Cloud using \ac{gke} or on a local Kubernetes cluster using minikube. The following implementation shows the deployment using \ac{gke}. The implementation using minikube is similar, only the terraform code and the prerequisites of the local machine are different.
 
   \subsection{Docker Container Architecture}
   \label{subsec:docker-architecture}
@@ -118,7 +119,7 @@ variable "theia_docker_image" {
 \subsection{Deployment Execution}
 \label{subsec:deployment-execution}
 
-The deployment of the Henshin Web application follows a systematic process that combines containerization, cloud infrastructure provisioning, and configuration management. The deployment workflow is automated through PowerShell scripts that orchestrate the entire process from local development to production deployment on Google Cloud Platform.
+The deployment of the \textit{Henshin Web} application follows a systematic process that combines containerization, cloud infrastructure provisioning, and configuration management. The deployment workflow is automated through PowerShell scripts that orchestrate the entire process from local development to production deployment on Google Cloud Platform.
 
 Before executing the deployment, several prerequisites must be satisfied:
 
@@ -162,7 +163,7 @@ The Terraform configuration executes the deployment in a specific sequence to en
     \item \textbf{Core Services Deployment}: Installs NGINX Ingress Controller and Cert-Manager
     \item \textbf{Database Setup}: Deploys PostgreSQL for Keycloak authentication services
     \item \textbf{Authentication Configuration}: Installs and configures Keycloak with realm settings
-    \item \textbf{Application Deployment}: Deploys the Henshin Web application and landing page
+    \item \textbf{Application Deployment}: Deploys the \textit{Henshin Web} application and landing page
     \item \textbf{SSL Certificate Provisioning}: Automatically obtains Let's Encrypt certificates
 \end{enumerate}
 

@@ -1,3 +1,6 @@
+ \chapter{Architecture}
+  \label{sec:architecture}
+  
  In this chapter, the architecture of the system is described. The system is designed to achieve the following goals. The system should be modular and easily extensible to allow future extensions towards a full model transformation platform for production use cases. The system should also be maintainable. In the following sections, the high-level architecture following the \ac{glsp} architecture is described. Then, the design of the components, control flow, and data models is described. In the end, the \ac{ui} design is explained.
 
  \section{Design Decisions}
@@ -11,7 +14,7 @@
   Another decision was to select an edge routing style. \ac{glsp} provides two different routing algorithms, the Manhattan and Polyline styles. The Manhattan style was invented by \citeauthor{manhattan} to achieve wire length optimization in circuit design. It only uses vertical and horizontal lines to connect nodes. \cite{manhattan}. The connection can be split into multiple segments, changing from a horizontal to a vertical line or the other way round to create a stair like connection between nodes. The Polyline style on the other hand uses straight lines to connect nodes. The line can also be split into multiple segments with arbitrary angles between them.
   For this use case, the main aspect is the clarity and readability of the graph. You can see the comparison of the two styles in figure \ref{fig:edge-kind-comparison}. Advantages of the Manhattan style are that it can prevent edge crossings, and therefore can help reduce visual clutter. In complex diagrams with many nodes and edges, it is easier to trace the horizontal and vertical lines. On the other hand, it can overlap with other edges, which can make it hard to follow the edge. Especially named edges that overlap partly with another edge can't be followed without clicking and highlighting it. You can see that in figure \ref{fig:edge-kind-comparison} between the \textit{Bank-Account} and the \textit{Account-Client} edge. To prevent that, the edge routing needs to be stored in the notation file to be able to persist changes in the routing that remove overlapping edges. The Polyline style on the other hand is generally simpler and more compact. It can get very cluttered with many edges crossing and other nodes overlapping the diagonal lines. Metamodel, transformation rules and instances are typically not that complex, so that a simple line between nodes is sufficient and additional edge segments are not needed. Because of that, the edge placement doesn't have to be stored in the notation file. The edges automatically align themselves when nodes are moved. The rotation of the edge label that it runs parallel with the line supports the simple and compact design of the Polyline style. To additionally prevent crossing lines, an option to dynamically hide the root node and its edges in \ac{xmi} graphs is introduced.
 
-  \begin{figure}
+  \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{edge-kind-comparison}
     \caption{Visual comparison of the two edge routing styles of \ac{glsp}}
@@ -32,7 +35,7 @@
 
   Another important part of each diagram module is the \code{GModelFactory}, which is responsible for creating the graphical model that is sent to the client from the source model. Since metamodel, transformation and instance \ac{emf} model are structured differently, each \code{GModelFactory} of each diagram module is implementing its own mappings.
 
-  \begin{figure}
+  \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{architecture.png}
     \caption{High-Level Architecture of the System}
